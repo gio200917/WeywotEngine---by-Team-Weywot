@@ -1,0 +1,1120 @@
+[
+  {
+    "id": "jezero_delta",
+    "name": "Jezero Crater Delta",
+    "body": "mars",
+    "lat": 18.38,
+    "lon": 77.58,
+    "elevationM": -2569,
+    "featureFootprintKm": 8.0,
+    "missionArchetype": "Fluvial-Lacustrine Rover & Biosignature Caching",
+    "summary": "Noachian paleolake delta preserving Mg-carbonates, Fe/Mg-smectites, olivine-rich mafic floor units, and stratified mudstones.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 5.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.48,
+      "silicaWtPct": 45.2,
+      "tiO2WtPct": 0.85,
+      "clayIndex": 0.42,
+      "sulfateIndex": 0.16,
+      "carbonateIndex": 0.62,
+      "waterEquivalentHydrogenWtPct": 3.4,
+      "simulantReference": "MGS-1 + Mg-Carbonate / Smectite Blend"
+    },
+    "morphology": {
+      "medianSlopeDeg": 3.8,
+      "p95SlopeDeg": 12.4,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.14,
+      "cohesionKpa": 2.4,
+      "frictionAngleDeg": 31.0,
+      "regolithThicknessM": 1.8,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -11.5
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 265,
+      "tMeanK": 216,
+      "tSeasonalAmpK": 18,
+      "diurnalDeltaK": 68,
+      "albedo": 0.21,
+      "uvAbFluxWm2": 51.0,
+      "uvCFluxWm2": 3.4
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0155,
+      "medianGrainDiameterUm": 135,
+      "particleDensityKgM3": 2900,
+      "dustOpacityTauBase": 0.45
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.6,
+      "clearSkyFraction": 0.85,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.9
+    },
+    "astrobiologyTarget": {
+      "targetModeDefault": "biosignature_habitability_analog",
+      "waterActivityAw": 0.85,
+      "surfacePh": 8.4,
+      "biosignaturePreservationIndex": 0.9,
+      "targetGuilds": [
+        "halophile",
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation",
+      "dust_devils_storms"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation",
+      "evaporite_brine_precipitation"
+    ],
+    "defaultPreset": "rover_mobility",
+    "defaultDomainWeights": {
+      "geochemistry": 0.24,
+      "morphology": 0.24,
+      "thermal": 0.14,
+      "atmospheric": 0.12,
+      "operations": 0.26
+    },
+    "dataSources": [
+      "MRO CRISM",
+      "MOLA / CTX DTM",
+      "Perseverance APXS/PIXL",
+      "MEDA"
+    ],
+    "citations": [
+      "DOI: 10.1029/2018JE005882 (Horgan et al., 2020, Carbonate in Jezero Margin)",
+      "DOI: 10.1126/science.abl4051 (Mangold et al., 2021, Perseverance delta stratigraphy)",
+      "DOI: 10.1016/j.icarus.2019.04.017 (Cannon et al., 2019, MGS-1 Mars Global Simulant)"
+    ]
+  },
+  {
+    "id": "gale_crater",
+    "name": "Gale Crater (Aeolis Mons)",
+    "body": "mars",
+    "lat": -5.4,
+    "lon": 137.8,
+    "elevationM": -4500,
+    "featureFootprintKm": 10.0,
+    "missionArchetype": "Stratigraphic Sulfate-Clay Transition Rover",
+    "summary": "Equatorial impact basin hosting lacustrine mudstones, hydrated Mg/Ca-sulfates, and basaltic aeolian bedforms.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 6.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.46,
+      "silicaWtPct": 47.5,
+      "tiO2WtPct": 0.95,
+      "clayIndex": 0.36,
+      "sulfateIndex": 0.58,
+      "carbonateIndex": 0.08,
+      "waterEquivalentHydrogenWtPct": 3.8,
+      "simulantReference": "MGS-1S Sulfate-Bearing Simulant"
+    },
+    "morphology": {
+      "medianSlopeDeg": 5.2,
+      "p95SlopeDeg": 16.5,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.12,
+      "cohesionKpa": 2.1,
+      "frictionAngleDeg": 32.5,
+      "regolithThicknessM": 1.4,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -10.8
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 295,
+      "tMeanK": 223,
+      "tSeasonalAmpK": 14,
+      "diurnalDeltaK": 74,
+      "albedo": 0.22,
+      "uvAbFluxWm2": 54.0,
+      "uvCFluxWm2": 3.8
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0175,
+      "medianGrainDiameterUm": 125,
+      "particleDensityKgM3": 2900,
+      "dustOpacityTauBase": 0.55
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.3,
+      "clearSkyFraction": 0.82,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.9
+    },
+    "astrobiologyTarget": {
+      "targetModeDefault": "biosignature_habitability_analog",
+      "waterActivityAw": 0.78,
+      "surfacePh": 6.2,
+      "biosignaturePreservationIndex": 0.85,
+      "targetGuilds": [
+        "halophile",
+        "chemoautotroph",
+        "acidophile"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation",
+      "dust_devils_storms"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation",
+      "evaporite_brine_precipitation"
+    ],
+    "defaultPreset": "rover_mobility",
+    "defaultDomainWeights": {
+      "geochemistry": 0.26,
+      "morphology": 0.24,
+      "thermal": 0.14,
+      "atmospheric": 0.12,
+      "operations": 0.24
+    },
+    "dataSources": [
+      "MSL APXS/SAM/CheMin",
+      "MSL REMS",
+      "MRO HiRISE/CRISM"
+    ],
+    "citations": [
+      "DOI: 10.1126/science.1242777 (Grotzinger et al., 2014, Habitable fluvio-lacustrine environment)",
+      "DOI: 10.1002/2016JE005079 (Martinez et al., 2017, REMS modern meteorology)"
+    ]
+  },
+  {
+    "id": "olympus_mons_scarp",
+    "name": "Olympus Mons Basal Escarpment",
+    "body": "mars",
+    "lat": 18.65,
+    "lon": -133.8,
+    "elevationM": -1500,
+    "featureFootprintKm": 12.0,
+    "missionArchetype": "Steep Basalt Scarp & Extreme-Relief Mobility",
+    "summary": "High-relief volcanic basal scarp with steep talus slopes, fresh mafic basalt flows, high rock abundance, and minimal phyllosilicate alteration.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 18.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.68,
+      "silicaWtPct": 47.0,
+      "tiO2WtPct": 1.15,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.04,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 0.6,
+      "simulantReference": "JSC Mars-1A / Basaltic Tephra"
+    },
+    "morphology": {
+      "medianSlopeDeg": 22.5,
+      "p95SlopeDeg": 37.0,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.34,
+      "cohesionKpa": 1.2,
+      "frictionAngleDeg": 37.5,
+      "regolithThicknessM": 0.6,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.8
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 340,
+      "tMeanK": 212,
+      "tSeasonalAmpK": 16,
+      "diurnalDeltaK": 64,
+      "albedo": 0.16,
+      "uvAbFluxWm2": 53.0,
+      "uvCFluxWm2": 3.7
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.013,
+      "medianGrainDiameterUm": 260,
+      "particleDensityKgM3": 2950,
+      "dustOpacityTauBase": 0.35
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.5,
+      "clearSkyFraction": 0.86,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.85
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "lava_tube_inflation"
+    ],
+    "defaultPreset": "rover_mobility",
+    "defaultDomainWeights": {
+      "geochemistry": 0.22,
+      "morphology": 0.34,
+      "thermal": 0.14,
+      "atmospheric": 0.1,
+      "operations": 0.2
+    },
+    "dataSources": [
+      "MRO CTX/HiRISE",
+      "THEMIS TI",
+      "MOLA 463m"
+    ],
+    "citations": [
+      "DOI: 10.1029/2003JE002153 (Bleacher et al., 2007, Olympus Mons volcanic flanks)",
+      "DOI: 10.1016/j.icarus.2011.09.020 (McGovern et al., Tectonic basal scarp slopes)"
+    ]
+  },
+  {
+    "id": "utopia_planitia_ice",
+    "name": "Utopia Planitia Ice Margin",
+    "body": "mars",
+    "lat": 46.7,
+    "lon": 117.5,
+    "elevationM": -4200,
+    "featureFootprintKm": 10.0,
+    "missionArchetype": "Mid-Latitude Subsurface Ice & Permafrost Drill",
+    "summary": "Polygonal patterned ground overlying shallow water-ice deposits (~0.4-1.5 m depth) verified by SHARAD and Zhurong.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": true,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 2.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.5,
+      "silicaWtPct": 46.8,
+      "tiO2WtPct": 0.88,
+      "clayIndex": 0.08,
+      "sulfateIndex": 0.12,
+      "carbonateIndex": 0.03,
+      "waterEquivalentHydrogenWtPct": 12.5,
+      "simulantReference": "Ice-Cemented Basaltic Regolith"
+    },
+    "morphology": {
+      "medianSlopeDeg": 1.8,
+      "p95SlopeDeg": 5.5,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.09,
+      "cohesionKpa": 6.5,
+      "frictionAngleDeg": 34.0,
+      "regolithThicknessM": 1.2,
+      "iceTableDepthM": 0.45,
+      "sarBackscatterSigma0Db": -9.2
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 280,
+      "tMeanK": 195,
+      "tSeasonalAmpK": 28,
+      "diurnalDeltaK": 52,
+      "albedo": 0.24,
+      "uvAbFluxWm2": 36.0,
+      "uvCFluxWm2": 2.2
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.019,
+      "medianGrainDiameterUm": 110,
+      "particleDensityKgM3": 2850,
+      "dustOpacityTauBase": 0.4
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 2.2,
+      "clearSkyFraction": 0.8,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.85
+    },
+    "activeProcesses": [
+      "cryogenic_sublimation_permafrost",
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "defaultPreset": "cryogenic_drill",
+    "defaultDomainWeights": {
+      "geochemistry": 0.2,
+      "morphology": 0.3,
+      "thermal": 0.22,
+      "atmospheric": 0.08,
+      "operations": 0.2
+    },
+    "dataSources": [
+      "MRO SHARAD",
+      "Odyssey HEND",
+      "MOLA"
+    ],
+    "citations": [
+      "DOI: 10.1002/2016GL070138 (Stuurman et al., 2016, Utopia Planitia SHARAD water ice)",
+      "DOI: 10.1038/s41586-022-05147-5 (Li et al., 2022, Layered subsurface radar in Utopia)"
+    ]
+  },
+  {
+    "id": "oxia_planum",
+    "name": "Oxia Planum",
+    "body": "mars",
+    "lat": 18.16,
+    "lon": -24.37,
+    "elevationM": -3100,
+    "featureFootprintKm": 10.0,
+    "missionArchetype": "ExoMars Phyllosilicate Biosignature Drill",
+    "summary": "Low-slope Noachian Fe/Mg-phyllosilicate plain targeted for 2 m subsurface organic-preservation drilling.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 3.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.44,
+      "silicaWtPct": 48.0,
+      "tiO2WtPct": 0.78,
+      "clayIndex": 0.65,
+      "sulfateIndex": 0.14,
+      "carbonateIndex": 0.06,
+      "waterEquivalentHydrogenWtPct": 4.5,
+      "simulantReference": "Fe/Mg-Smectite Rich Regolith"
+    },
+    "morphology": {
+      "medianSlopeDeg": 2.4,
+      "p95SlopeDeg": 7.8,
+      "dtmResolutionM": 6.0,
+      "rockCfaK": 0.08,
+      "cohesionKpa": 3.1,
+      "frictionAngleDeg": 30.0,
+      "regolithThicknessM": 2.2,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -12.4
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 240,
+      "tMeanK": 218,
+      "tSeasonalAmpK": 16,
+      "diurnalDeltaK": 66,
+      "albedo": 0.23,
+      "uvAbFluxWm2": 50.0,
+      "uvCFluxWm2": 3.3
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0165,
+      "medianGrainDiameterUm": 105,
+      "particleDensityKgM3": 2800,
+      "dustOpacityTauBase": 0.45
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.6,
+      "clearSkyFraction": 0.84,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.9
+    },
+    "astrobiologyTarget": {
+      "targetModeDefault": "biosignature_habitability_analog",
+      "waterActivityAw": 0.88,
+      "surfacePh": 7.6,
+      "biosignaturePreservationIndex": 0.94,
+      "targetGuilds": [
+        "chemoautotroph",
+        "halophile",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation"
+    ],
+    "defaultPreset": "astrobiology",
+    "defaultDomainWeights": {
+      "geochemistry": 0.4,
+      "morphology": 0.16,
+      "thermal": 0.14,
+      "atmospheric": 0.08,
+      "operations": 0.22
+    },
+    "dataSources": [
+      "TGO CaSSIS",
+      "MRO CRISM",
+      "Odyssey THEMIS"
+    ],
+    "citations": [
+      "DOI: 10.1089/ast.2019.2189 (Quantin-Nataf et al., 2021, Oxia Planum ExoMars site)",
+      "DOI: 10.1029/2018JE005850 (Mandon et al., 2021, Clay-bearing units in Oxia)"
+    ]
+  },
+  {
+    "id": "arsia_mons_skylight",
+    "name": "Arsia Mons Lava Skylight",
+    "body": "mars",
+    "lat": -8.26,
+    "lon": -119.58,
+    "elevationM": 16200,
+    "featureFootprintKm": 0.5,
+    "missionArchetype": "Martian Lava Tube Skylight & Radiation Shelter",
+    "summary": "High-altitude Tharsis volcanic collapse skylight (~150 m diameter) offering subsurface cavern access shielded from UV-C and GCR.",
+    "isAnhydrousRegolith": false,
+    "isVacuumRegime": false,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": true,
+    "isPermanentBaseCandidate": false,
+    "horizonMaskMaxDeg": 55.0,
+    "gravityMs2": 3.721,
+    "geology": {
+      "maficIndex": 0.64,
+      "silicaWtPct": 47.8,
+      "tiO2WtPct": 1.1,
+      "clayIndex": 0.01,
+      "sulfateIndex": 0.03,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 0.5,
+      "simulantReference": "MGS-1C Basaltic Tephra"
+    },
+    "morphology": {
+      "medianSlopeDeg": 14.0,
+      "p95SlopeDeg": 42.0,
+      "dtmResolutionM": 1.0,
+      "rockCfaK": 0.3,
+      "cohesionKpa": 1.4,
+      "frictionAngleDeg": 36.0,
+      "regolithThicknessM": 0.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -6.2
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 320,
+      "tMeanK": 204,
+      "tSeasonalAmpK": 14,
+      "diurnalDeltaK": 4.0,
+      "albedo": 0.14,
+      "uvAbFluxWm2": 58.0,
+      "uvCFluxWm2": 4.2
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0042,
+      "medianGrainDiameterUm": 220,
+      "particleDensityKgM3": 2950,
+      "dustOpacityTauBase": 0.25
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.4,
+      "clearSkyFraction": 0.88,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.8
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 28.0,
+      "voidSpanWidthM": 75.0,
+      "ceilingHeightM": 38.0,
+      "skylightAccessSlopeDeg": 68.0,
+      "subterraneanDeltaTK": 2.0
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism"
+    ],
+    "defaultPreset": "subsurface_void",
+    "defaultDomainWeights": {
+      "geochemistry": 0.2,
+      "morphology": 0.3,
+      "thermal": 0.15,
+      "atmospheric": 0.05,
+      "operations": 0.3
+    },
+    "dataSources": [
+      "MRO HiRISE",
+      "Mars Odyssey THEMIS",
+      "USGS Mars Cave Catalog"
+    ],
+    "citations": [
+      "DOI: 10.1029/2007GL030709 (Cushing et al., 2007, Martian cave skylights on Arsia Mons)",
+      "DOI: 10.1016/j.icarus.2020.113792 (Sauro et al., 2020, Lava tubes on Mars & Moon)"
+    ]
+  },
+  {
+    "id": "shackleton_psr",
+    "name": "Shackleton Crater PSR",
+    "body": "moon",
+    "lat": -89.67,
+    "lon": 129.17,
+    "elevationM": -4200,
+    "featureFootprintKm": 4.0,
+    "missionArchetype": "Cryogenic Polar Volatile Drill (PSR)",
+    "summary": "Permanently shadowed lunar south polar floor (~40-50 K) trapping water ice and volatile frost in highland anorthosite.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": true,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 12.0,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.17,
+      "silicaWtPct": 45.2,
+      "tiO2WtPct": 0.35,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 1.5,
+      "simulantReference": "LHS-1 + Cryo-Ice / NU-LHT-2M"
+    },
+    "morphology": {
+      "medianSlopeDeg": 14.5,
+      "p95SlopeDeg": 29.0,
+      "dtmResolutionM": 5.0,
+      "rockCfaK": 0.09,
+      "cohesionKpa": 3.5,
+      "frictionAngleDeg": 38.0,
+      "regolithThicknessM": 6.0,
+      "iceTableDepthM": 0.15,
+      "sarBackscatterSigma0Db": -3.8
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 48,
+      "tMeanK": 45,
+      "tSeasonalAmpK": 5,
+      "diurnalDeltaK": 1.5,
+      "albedo": 0.24,
+      "uvAbFluxWm2": 0.0,
+      "uvCFluxWm2": 0.0
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 75,
+      "particleDensityKgM3": 2950,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 0.0,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.85
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.15,
+      "constructionFeedstockSuitability": 0.85,
+      "landingPlumeDustHazard": 0.72,
+      "directToEarthVisibilityPct": 5.0
+    },
+    "activeProcesses": [
+      "cryogenic_sublimation_permafrost"
+    ],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "defaultPreset": "cryogenic_drill",
+    "defaultDomainWeights": {
+      "geochemistry": 0.22,
+      "morphology": 0.28,
+      "thermal": 0.24,
+      "atmospheric": 0.08,
+      "operations": 0.18
+    },
+    "dataSources": [
+      "LRO Diviner",
+      "LRO LEND",
+      "LRO LOLA",
+      "LRO Mini-RF"
+    ],
+    "citations": [
+      "DOI: 10.1038/nature11165 (Zuber et al., 2012, Shackleton LOLA reflectance & ice)",
+      "DOI: 10.1126/science.1193374 (Paige et al., 2010, Diviner lunar PSR temperatures)",
+      "DOI: 10.1126/science.1197135 (Mitrofanov et al., 2010, LEND neutron hydrogen)"
+    ]
+  },
+  {
+    "id": "shackleton_ridge_pel",
+    "name": "Shackleton Connecting Ridge (PEL)",
+    "body": "moon",
+    "lat": -89.45,
+    "lon": -137.4,
+    "elevationM": 1200,
+    "featureFootprintKm": 3.0,
+    "missionArchetype": "Permanent Moon Base Peak of Eternal Light & ISRU",
+    "summary": "High-illumination (>80% solar duty cycle) Artemis south polar ridge with grazing sun, DTE line-of-sight, and adjacent PSR ice access.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 0.2,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.19,
+      "silicaWtPct": 45.6,
+      "tiO2WtPct": 0.42,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.35,
+      "simulantReference": "LHS-1 / NU-LHT-2M Highland Anorthosite"
+    },
+    "morphology": {
+      "medianSlopeDeg": 8.5,
+      "p95SlopeDeg": 17.5,
+      "dtmResolutionM": 5.0,
+      "rockCfaK": 0.07,
+      "cohesionKpa": 1.6,
+      "frictionAngleDeg": 39.0,
+      "regolithThicknessM": 8.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -6.5
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 65,
+      "tMeanK": 215,
+      "tSeasonalAmpK": 25,
+      "diurnalDeltaK": 55,
+      "albedo": 0.22,
+      "uvAbFluxWm2": 115.0,
+      "uvCFluxWm2": 11.2
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 72,
+      "particleDensityKgM3": 2950,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 5.5,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.9
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.2,
+      "constructionFeedstockSuitability": 0.9,
+      "landingPlumeDustHazard": 0.55,
+      "directToEarthVisibilityPct": 88.0
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "defaultPreset": "moon_base_isru",
+    "defaultDomainWeights": {
+      "geochemistry": 0.3,
+      "morphology": 0.24,
+      "thermal": 0.16,
+      "atmospheric": 0.04,
+      "operations": 0.26
+    },
+    "dataSources": [
+      "LRO LOLA Illumination",
+      "NASA Artemis III Candidate Region",
+      "LRO Diviner"
+    ],
+    "citations": [
+      "DOI: 10.1016/j.icarus.2016.03.005 (Mazarico et al., 2011/2016, Lunar south pole illumination)",
+      "NASA-SP-20205009602 (Artemis III Science Definition Team Report)"
+    ]
+  },
+  {
+    "id": "mare_tranquillitatis_pit",
+    "name": "Mare Tranquillitatis Skylight",
+    "body": "moon",
+    "lat": 8.33,
+    "lon": 33.22,
+    "elevationM": -1800,
+    "featureFootprintKm": 0.3,
+    "missionArchetype": "Lunar Lava Tube Skylight & Habitat Vault",
+    "summary": "Collapsed high-Ti mare basalt skylight (~100 m deep) leading to an inferred ~45 m wide lava tube conduit with ~290 K stable thermal interior.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": true,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 62.0,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.58,
+      "silicaWtPct": 42.5,
+      "tiO2WtPct": 7.5,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.05,
+      "simulantReference": "JSC-1A / LMS-1 High-Ti Mare Basalt"
+    },
+    "morphology": {
+      "medianSlopeDeg": 10.5,
+      "p95SlopeDeg": 34.0,
+      "dtmResolutionM": 1.5,
+      "rockCfaK": 0.18,
+      "cohesionKpa": 1.5,
+      "frictionAngleDeg": 37.0,
+      "regolithThicknessM": 4.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -4.8
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 95,
+      "tMeanK": 290,
+      "tSeasonalAmpK": 2,
+      "diurnalDeltaK": 2.0,
+      "albedo": 0.08,
+      "uvAbFluxWm2": 118.0,
+      "uvCFluxWm2": 11.6
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 85,
+      "particleDensityKgM3": 3100,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.2,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.85
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 40.0,
+      "voidSpanWidthM": 45.0,
+      "ceilingHeightM": 25.0,
+      "skylightAccessSlopeDeg": 72.0,
+      "subterraneanDeltaTK": 2.0
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.9,
+      "constructionFeedstockSuitability": 0.92,
+      "landingPlumeDustHazard": 0.45,
+      "directToEarthVisibilityPct": 98.0
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism",
+      "impact_shock_ejecta"
+    ],
+    "defaultPreset": "subsurface_void",
+    "defaultDomainWeights": {
+      "geochemistry": 0.2,
+      "morphology": 0.3,
+      "thermal": 0.15,
+      "atmospheric": 0.05,
+      "operations": 0.3
+    },
+    "dataSources": [
+      "LRO NAC Stereo",
+      "LRO Mini-RF",
+      "Kaguya LISM"
+    ],
+    "citations": [
+      "DOI: 10.1038/s41550-024-02302-y (Carrer et al., 2024, Radar evidence of Mare Tranquillitatis lava tube)",
+      "DOI: 10.1029/2010GL044006 (Robinson et al., 2012, Lunar mare pits)"
+    ]
+  },
+  {
+    "id": "marius_hills_pit",
+    "name": "Marius Hills Pit",
+    "body": "moon",
+    "lat": 14.09,
+    "lon": -56.74,
+    "elevationM": -1500,
+    "featureFootprintKm": 0.4,
+    "missionArchetype": "Volcanic Sinuous Rille Lava Tube Analog",
+    "summary": "65 m diameter vertical collapse skylight intersecting an uncollapsed volcanic sinuous rille/lava tube within the Marius Hills dome field.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": true,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 58.0,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.54,
+      "silicaWtPct": 44.0,
+      "tiO2WtPct": 4.2,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.04,
+      "simulantReference": "LMS-1 / JSC-1A Mare Basalt"
+    },
+    "morphology": {
+      "medianSlopeDeg": 9.2,
+      "p95SlopeDeg": 30.0,
+      "dtmResolutionM": 2.0,
+      "rockCfaK": 0.15,
+      "cohesionKpa": 1.4,
+      "frictionAngleDeg": 36.5,
+      "regolithThicknessM": 4.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.4
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 88,
+      "tMeanK": 275,
+      "tSeasonalAmpK": 4,
+      "diurnalDeltaK": 2.5,
+      "albedo": 0.09,
+      "uvAbFluxWm2": 117.0,
+      "uvCFluxWm2": 11.4
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 80,
+      "particleDensityKgM3": 3050,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.3,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.85
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 32.0,
+      "voidSpanWidthM": 60.0,
+      "ceilingHeightM": 30.0,
+      "skylightAccessSlopeDeg": 65.0,
+      "subterraneanDeltaTK": 2.5
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.68,
+      "constructionFeedstockSuitability": 0.9,
+      "landingPlumeDustHazard": 0.48,
+      "directToEarthVisibilityPct": 95.0
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism"
+    ],
+    "defaultPreset": "subsurface_void",
+    "defaultDomainWeights": {
+      "geochemistry": 0.2,
+      "morphology": 0.3,
+      "thermal": 0.15,
+      "atmospheric": 0.05,
+      "operations": 0.3
+    },
+    "dataSources": [
+      "Kaguya SELENE",
+      "GRAIL",
+      "LRO NAC"
+    ],
+    "citations": [
+      "DOI: 10.1029/2009GL040635 (Haruyama et al., 2009, Possible lunar lava tube skylight in Marius Hills)",
+      "DOI: 10.1002/2017GL074998 (Kaku et al., 2017, SELENE LRS echo)"
+    ]
+  },
+  {
+    "id": "oceanus_procellarum",
+    "name": "Oceanus Procellarum",
+    "body": "moon",
+    "lat": 18.4,
+    "lon": -57.4,
+    "elevationM": -2100,
+    "featureFootprintKm": 15.0,
+    "missionArchetype": "Artemis Mare Mobility & Ilmenite O2 ISRU",
+    "summary": "Expansive low-slope anhydrous basaltic mare plain rich in FeO and TiO2 (ilmenite) for rover mobility and oxygen extraction.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 2.0,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.56,
+      "silicaWtPct": 43.8,
+      "tiO2WtPct": 4.6,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.03,
+      "simulantReference": "JSC-1A / LMS-1 Mare Basalt"
+    },
+    "morphology": {
+      "medianSlopeDeg": 3.5,
+      "p95SlopeDeg": 9.8,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.08,
+      "cohesionKpa": 1.1,
+      "frictionAngleDeg": 36.0,
+      "regolithThicknessM": 4.2,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -8.4
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 75,
+      "tMeanK": 255,
+      "tSeasonalAmpK": 10,
+      "diurnalDeltaK": 160,
+      "albedo": 0.09,
+      "uvAbFluxWm2": 118.0,
+      "uvCFluxWm2": 11.5
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 78,
+      "particleDensityKgM3": 3080,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.4,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.92
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.78,
+      "constructionFeedstockSuitability": 0.88,
+      "landingPlumeDustHazard": 0.6,
+      "directToEarthVisibilityPct": 99.0
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "impact_shock_ejecta"
+    ],
+    "defaultPreset": "rover_mobility",
+    "defaultDomainWeights": {
+      "geochemistry": 0.28,
+      "morphology": 0.28,
+      "thermal": 0.14,
+      "atmospheric": 0.06,
+      "operations": 0.24
+    },
+    "dataSources": [
+      "LRO LROC/M3",
+      "Chang'e-5/Apollo 12",
+      "LRO Diviner"
+    ],
+    "citations": [
+      "DOI: 10.1038/s41586-021-04100-2 (Li et al., 2021, Young mare volcanism in Oceanus Procellarum)",
+      "DOI: 10.1016/j.icarus.2022.115000 (Isachenkov et al., 2022, LMS-1 mare simulant)"
+    ]
+  },
+  {
+    "id": "aristarchus_plateau",
+    "name": "Aristarchus Plateau",
+    "body": "moon",
+    "lat": 25.5,
+    "lon": -49.5,
+    "elevationM": 1900,
+    "featureFootprintKm": 12.0,
+    "missionArchetype": "Pyroclastic Glass ISRU & Sinuous Rille",
+    "summary": "Elevated lunar volcanic plateau blanketed by dark Ti/Fe-rich pyroclastic glass beads ideal for hydrogen-reduction oxygen ISRU.",
+    "isAnhydrousRegolith": true,
+    "isVacuumRegime": true,
+    "requiresCryogenicIce": false,
+    "isSubsurfaceVoidTarget": false,
+    "isPermanentBaseCandidate": true,
+    "horizonMaskMaxDeg": 3.0,
+    "gravityMs2": 1.622,
+    "geology": {
+      "maficIndex": 0.52,
+      "silicaWtPct": 44.5,
+      "tiO2WtPct": 3.8,
+      "clayIndex": 0.0,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.08,
+      "simulantReference": "Pyroclastic Basalt Glass / JSC-1A"
+    },
+    "morphology": {
+      "medianSlopeDeg": 6.4,
+      "p95SlopeDeg": 16.0,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.06,
+      "cohesionKpa": 1.3,
+      "frictionAngleDeg": 35.5,
+      "regolithThicknessM": 5.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -9.0
+    },
+    "thermalBase": {
+      "apparentThermalInertia": 60,
+      "tMeanK": 250,
+      "tSeasonalAmpK": 12,
+      "diurnalDeltaK": 155,
+      "albedo": 0.07,
+      "uvAbFluxWm2": 114.0,
+      "uvCFluxWm2": 11.0
+    },
+    "atmosphericBase": {
+      "ambientDensityKgM3": 0.0,
+      "medianGrainDiameterUm": 60,
+      "particleDensityKgM3": 3000,
+      "dustOpacityTauBase": 0.0
+    },
+    "operationsIdeal": {
+      "grazingSunHoursPerDay": 1.5,
+      "clearSkyFraction": 1.0,
+      "visualAlienation": 1.0,
+      "rfQuietnessScore": 1.0,
+      "roadDistanceKm": 15.0,
+      "logisticsFrictionIndex": 0.9
+    },
+    "isruRequirements": {
+      "ilmeniteO2YieldPotential": 0.72,
+      "constructionFeedstockSuitability": 0.86,
+      "landingPlumeDustHazard": 0.68,
+      "directToEarthVisibilityPct": 98.0
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "lava_tube_inflation"
+    ],
+    "defaultPreset": "moon_base_isru",
+    "defaultDomainWeights": {
+      "geochemistry": 0.3,
+      "morphology": 0.24,
+      "thermal": 0.16,
+      "atmospheric": 0.04,
+      "operations": 0.26
+    },
+    "dataSources": [
+      "Chandrayaan-1 M3",
+      "LRO Diviner/LOLA"
+    ],
+    "citations": [
+      "DOI: 10.1038/ngeo2993 (Milliken & Li, 2017, Indigenous water in lunar pyroclastics)",
+      "DOI: 10.1029/2018JE005756 (Jawin et al., 2019, Aristarchus pyroclastic deposits)"
+    ]
+  }
+]

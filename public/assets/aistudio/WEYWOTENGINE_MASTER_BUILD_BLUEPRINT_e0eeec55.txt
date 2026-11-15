@@ -1,0 +1,254 @@
+# WEYWOTENGINE: MASTER IMPLEMENTATION BLUEPRINT & AI BUILD PROMPT
+**Challenge:** NASA Space Apps 2026 — Permanent Moon Base Locations & Mars (Planetary Analog Locations)  
+**Architecture Version:** 7.0.0-LEAN-PRODUCTION  
+**Execution Model:** Phased 4-Slice Build (Vertical Integration — Do Not Stub)
+
+---
+
+## 0. SYSTEM ROLE & NON-NEGOTIABLE GUARDRAILS
+
+You are the Lead Systems, Geospatial, and Planetary Software Engineer building **WeywotEngine**—an interactive, scientifically rigorous planetary analog discovery and mission-qualification engine for **Mars** and **Permanent Moon Base** exploration.
+
+### HARD CONSTRAINTS (VIOLATING ANY RULE IS A BUILD FAILURE)
+1. **NO PRE-BAKED EARTH SCORES:** `EarthAnalogSite` MUST store raw physical, chemical, geotechnical, void, process, and 12-month climatological measurements. Never store target-agnostic scores on Earth candidates. Every score MUST be computed dynamically against the active `CelestialTarget` vector at the selected epoch.
+2. **TARGET-FIRST CAUSALITY:** Earth analog evaluation, Global Discovery sweeps, and Live Coordinate Probing remain locked until `>= 1` Mars or Moon target is selected.
+3. **ZERO-AVERAGING INVARIANT:** Never average, pool, or blend multiple extraterrestrial targets. Run isolated pipelines `P(tau_i)` for every selected target and render discrete tabbed dossiers + a non-destructive Cross-Target Comparison Matrix.
+4. **NO SATURATING GAUSSIAN KERNELS & NO INVENTED COVARIANCE INVERSIONS:** Use a weighted diagonal robust Z-score distance inside each domain (observed-subspace normalized by `p_eff`) mapped through a **heavy-tailed Student-t / Rational-Quadratic kernel (`nu = 2.0`)**, plus an **Earth Achievable Frontier %** (`100 * S_k / max_earth(S_k)`), so extreme planetary gaps (e.g., Mars air density or 40 K lunar PSRs) never flatline Earth sites to `0.000%` or crash with `NaN`.
+5. **NO 250 MB GLOBAL GRID BLOAT:** Use **12-month climatologies** (with intra-month `tStdK` and `pPrecipGt5Mm`) for Tier-1 sites (`~25 sites`), and a **compact `1.0°` land screening grid** (`~14,000 cells`, `< 2 MB` typed/JSON) using 4 seasonal quarters for Global Discovery Mode—fetching full 12-month `NASA POWER` data live only when a user clicks a discovered hotspot.
+6. **RESILIENT API PIPELINE (NO CORS OR 429/504 HANGS):** Route live Earth probes through the Hono proxy using a **Fast 2-API Core** (`NASA POWER` + `AWS Terrarium` PNG decoded via `pngjs`) returning in `< 2 s`, with `Macrostrat v2` and `OSM Overpass` (`15 km` max radius, `8 s` timeout) as **non-blocking best-effort enrichments** with graceful fallbacks. Never block UI on `ISRIC SoilGrids` (5 req/min throttle, `null` below `60°S`).
+7. **RIGHT-HANDED THREE.JS & CORRECTED COORDINATES:** Map positive East longitude `lon` to `-Z` (`Z = -(N + h) * cos(lat) * sin(lon)`). In Leaflet 2D Map Mode, Mars/Moon Trek `EQ` tiles use a **2x1 zoom-0 `EPSG:4326` grid**, and polar lunar targets (`|lat| > 75°`) automatically display a **South Pole Stereographic Inset**.
+8. **JUDGING-READY DUAL UX (`Guided Ops` Default + `Deep Telemetry` Toggle):** Default UI cards MUST be immediately intelligible to non-geologist executives (`Why It Matches`, `Where It Breaks Down`, `What Exploration It Enables`, `Live NASA Data Lineage`), with deep math/equations tucked cleanly behind an expandable `[ Inspect Physics ]` drawer.
+
+---
+
+## 1. TECH STACK & REPOSITORY STRUCTURE
+
+### 1.1 Exact Stack
+- **Frontend:** Vite + React 19 + TypeScript (`strict: true`) + TailwindCSS v4 + Zustand
+- **3D Globe:** `three` + `@types/three` (`MeshStandardMaterial` + real NASA Trek/GIBS textures + atmospheric Fresnel rim + `try/catch` automatic fallback to 2D Map Mode if WebGL is unavailable)
+- **2D Map:** `leaflet` + `@types/leaflet` (Dual CRS: `EPSG:3857` for Earth GIBS/OSM/ASTER GDEM + custom `EPSG:4326` 2x1 zoom-0 grid for Mars/Moon Trek + Polar Stereographic inset for Lunar South Pole)
+- **Compute Engine:** Browser Web Worker (`src/engine/worker.ts`) running all ranking, 12-month windowing, 14,000-cell global discovery sweeps, `±15%` sensitivity robustness, and 2-site portfolio optimization deterministically in `< 35 ms`.
+- **Backend Proxy:** Node.js + `hono` + `pngjs` + file/SQLite LRU cache (`server/`)
+- **Offline Data Seeder:** Python 3.11+ (`scripts/seed_catalog.py`) generating Tier-1 catalog, Mars/Moon targets, and compact `1.0°` Global Discovery Grid from real NASA/partner APIs and cited literature.
+- **Test Gate:** `vitest` (`npm test`)
+
+### 1.2 Directory Layout
+```text
+weywot-engine/
+├── scripts/
+│   ├── raw_literature_overrides.json   # Cited lab/field values (oxides, caves, SAR, subsurface, DOIs)
+│   ├── seed_catalog.py                 # Hydrates real 10-yr NASA POWER, Terrarium, Macrostrat, SoilGrids
+│   └── build_discovery_grid.py         # Builds compact <2 MB 1.0° global land screening grid JSON
+├── server/
+│   ├── index.ts                        # Hono server: /probe/earth-point, /ai/parse-brief, /tiles proxy
+│   ├── probeService.ts                 # Fast 2-API core (POWER + Terrarium pngjs) + async Macrostrat/OSM
+│   └── briefParser.ts                  # Deterministic ontology parser + physical conflict detector + optional LLM
+├── src/
+│   ├── types/planetary.ts              # Canonical schema (29-D Base + Conditional Void/Bio/ISRU/Process)
+│   ├── data/
+│   │   ├── celestial_targets.json      # 12 Mars & Moon targets (incl. Tranquillitatis/Arsia skylights & Shackleton PSR)
+│   │   ├── tier1_earth_catalog.json    # 22 curated Earth sites (surface, caves/lava tubes, base analogs, anti-analog)
+│   │   └── global_discovery_grid.json  # Compact 1.0° land screening grid (<2 MB) with isClassicRegion mask
+│   ├── engine/
+│   │   ├── math.ts                     # Robust Z-score, asymmetric breaches, Student-t (nu=2), Frontier %
+│   │   ├── physics.ts                  # Shao-Lu u*t, Mars Ls (deg + 250.99), Lunar beta_sun + horizon mask, Earth sun hrs
+│   │   ├── temporal.ts                 # 12-month interpolated sliding window [3-90d], downside drift, rain cliff
+│   │   ├── voidAndIsru.ts              # Layer B (caves/lava tubes) + Moon Base ISRU/plume/DTE comms + Layer C (processes/bio)
+│   │   ├── evaluator.ts                # Isolated per-target pipeline, ±15% deterministic sensitivity, narrative generator
+│   │   ├── portfolio.ts                # Non-negative 2-site split optimizer + CTCM (Harmonic Versatility & Dissonance)
+│   │   ├── deficits.ts                 # Unreplicated deficits & hardware compensation specs (offload F, UV-C, sun hours)
+│   │   └── worker.ts                   # Web Worker message handler
+│   ├── store/missionStore.ts
+│   ├── components/
+│   │   ├── layout/ConsoleShell.tsx     # Top Showcase Bar + 3-Column Aerospace Console + Guided/Telemetry toggle
+│   │   ├── config/MissionConfigPanel.tsx
+│   │   ├── viewport/
+│   │   │   ├── SpatialViewport.tsx     # [3D GLOBE | 2D MAP] + [ALL|EARTH|MARS|MOON] + Layer + Discovery Heatmap + Probe
+│   │   │   ├── GlobeView.tsx           # Three.js (-Z East lon) + raycast pins + probe click + WebGL fallback
+│   │   │   └── MapView.tsx             # Leaflet dual-CRS + Lunar South Pole inset + Discovery heatmap + pins
+│   │   └── dossiers/
+│   │       ├── TargetDossierTabs.tsx   # Isolated target tabs + Cross-Target Matrix + 2-Site Portfolio Builder
+│   │       ├── CandidateCard.tsx       # Narrative + Fit % + Earth Frontier % + Radar SVG + Monthly SVG + Compensation
+│   │       ├── DataLineageDrawer.tsx   # Live NASA & Partner Data Provenance Inspector
+│   │       └── ExportModal.tsx         # JSON / GeoJSON / Markdown Field Brief with SHA-256 config hash
+│   └── tests/
+│       ├── math.test.ts
+│       ├── physics.test.ts
+│       └── concordance.test.ts         # 6-Mission Historical + Challenge Validation Suite
+```
+
+---
+
+## 2. FINALIZED CRITERIA, SUBSURFACE FEATURES & VERIFIED REAL DATA SOURCES
+
+WeywotEngine evaluates candidates across **3 cleanly separated layers** so continuous physical distances, structural cave geometries, and discrete process/biological tags never corrupt each other:
+
+### 2.1 Layer A — 29-Dimensional Continuous Physical Tensor (5 Separable Domains)
+
+#### Domain 1: Geochemistry & Mineralogy (7 dims)
+| Dim | Variable | Rule / Breach | Real Earth Source | Mars / Moon Source |
+|---|---|---|---|---|
+| 1–3 | `maficIndex`, `silicaWtPct`, `tiO2WtPct` | `mafic = (FeO+MgO)/(SiO2+Al2O3+alkalis)`; simulant proximity (`MGS-1, JSC-1A, LMS-1, LHS-1, NU-LHT-2M`) | **Tier-1:** Literature XRF/oxide.<br>**Tier-2 Live:** `Macrostrat v2` (`https://macrostrat.org/api/v2/geologic_units/map?lat={lat}&lng={lng}`) maps dominant lithology to reference oxide priors. | Mars APXS / Moon Apollo/M3. |
+| 4 | `clayIndex` `[0,1]` | Asymmetric penalty `lambda = 3.0` if `tau.isAnhydrousRegolith && clayIndex > 0.05` | **Tier-1:** Spectral DB.<br>**Tier-2:** SoilGrids `clay` (fallback `0.05` if `null`/polar). | Mars CRISM phyllosilicate; Moon `0.0`. |
+| 5–6 | `sulfateIndex`, `carbonateIndex` `[0,1]` | Direct scaled distance | **Tier-1:** Literature.<br>**Tier-2:** Macrostrat evaporite/carbonate unit priors. | Mars CRISM; Moon `0.0`. |
+| 7 | `waterEquivalentHydrogenWtPct` | ISRU recoverable $\text{H}_2\text{O}$ / structural hydration | **Tier-1:** Literature / `GWETTOP` permafrost.<br>**Tier-2:** `NASA POWER` `GWETTOP` + permafrost latitude prior. | **Moon:** **LRO LEND** neutron hydrogen.<br>**Mars:** Odyssey HEND / hydrated minerals. |
+
+#### Domain 2: Surface & Subsurface Morphology (8 dims — scale-tagged `dtmResolutionM`)
+| Dim | Variable | Rule / Scale | Real Earth Source | Mars / Moon Source |
+|---|---|---|---|---|
+| 8–9 | `medianSlopeDeg`, `p95SlopeDeg` | **Adaptive footprint zoom:** `z=14` (~9.5 m/px) if `featureFootprintKm < 1.5`, `z=12` (~38 m/px) for `1.5–10 km`, `z=10` for `>10 km` | **AWS Mapzen Terrarium RGB PNG** (`https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png`, decode `(R*256 + G + B/256) - 32768`) -> Horn's 3x3 slope over 32x32 patch. | **Mars:** MOLA (`463 m`) / CTX (`20 m`) / HiRISE (`1 m`).<br>**Moon:** LOLA (`20 m`) / NAC (`2 m`). |
+| 10 | `rockCfaK` `[0,1]` | Golombek-Rapp cumulative fractional rock area; masked if `null` | **Tier-1:** Field counts.<br>**Tier-2:** Optional `SoilGrids cfvo` (coarse fragments). | Mars THEMIS/HiRISE; Moon Diviner rock abundance. |
+| 11–12 | `cohesionKpa`, `frictionAngleDeg` | Mohr-Coulomb terramechanics; masked if `null` | **Tier-1:** Lab bevameter.<br>**Tier-2:** Masked or pedotransfer prior. | Apollo / Viking / MSL wheel-track literature. |
+| 13–14 | `regolithThicknessM`, `iceTableDepthM` | Subsurface drill/excavation stratigraphy; `iceTableDepthM` masked if target non-icy | **Tier-1:** Borehole/GPR logs.<br>**Tier-2:** Macrostrat unit thickness / permafrost zonation. | Apollo core / SHARAD / Phoenix / LEND. |
+| 15 | `sarBackscatterSigma0Db` | Cross-planetary cm-scale roughness & volumetric ice radar proxy | **Tier-1 / Grid:** **ESA CDSE Sentinel-1 C-band SAR** & **CSA RADARSAT** reference values. | **Moon:** **LRO Mini-RF** S/X-band radar.<br>**Mars:** SHARAD / Arecibo. |
+
+#### Domain 3: Thermal & Radiative Kinetics (5 dims + UV-C Flag)
+| Dim | Variable | Rule | Real Earth Source | Mars / Moon Source |
+|---|---|---|---|---|
+| 16 | `apparentThermalInertia` | Log-transformed `ln(I)` | **Tier-1:** MODIS/field TI.<br>**Tier-2:** Derived from elevation/soil texture + `GWETTOP` proxy. | Mars THEMIS TI; Moon Diviner TI. |
+| 17–18 | `tMeanK(m)`, `diurnalDeltaK(m)` | Proximity to target's thermal regime (high swing for equator, `-> 0` for Lunar PSR) | **NASA POWER API** (`https://power.larc.nasa.gov/api/temporal/daily/point`, `2015–2024`, Public Domain, `community=AG`): `T2M`, `T2M_MIN`, `T2M_MAX` -> 12 monthly bins (`tMeanK`, `tStdK`, `diurnalDeltaK`). | Mars `T(Ls)` / Moon Diviner `T`. |
+| 19 | `albedo` `[0,1]` | Broadband hemispherical | **NASA POWER API** (`community=RE`): `ALLSKY_SRF_ALB`. | Mars TES / Moon LOLA albedo. |
+| 20 | `uvAbFluxWm2(m)` | Surface `280–400 nm`; always emits **Unreplicated UV-C (`200–280 nm`) Deficit Flag** for Mars/Moon | **NASA POWER API** (`community=RE`): `ALLSKY_SFC_UVA + ALLSKY_SFC_UVB`. | Radiative solar UV model. |
+
+#### Domain 4: Atmospheric & Aeolian Dynamics (3 dims + Vacuum Guard)
+| Dim | Variable | Rule | Real Earth Source | Mars / Moon Source |
+|---|---|---|---|---|
+| 21 | `ambientDensityKgM3(m)` | `ln(rho)` via `(PS * 1000) / (287.058 * T2M_K)` | **NASA POWER API:** `PS` (kPa) + `T2M`. | Mars `rho(Ls)`; Moon `isVacuumRegime = true`. |
+| 22 | `medianGrainDiameterUm` | `ln(d_p)` | **Tier-1:** Sieve data.<br>**Tier-2:** SoilGrids texture prior (fallback `150 um`). | Sieved / thermal-inertia derived grain size. |
+| 23 | `thresholdFrictionVelMs(m)` | **Shao & Lu (2000)** cohesive threshold `sqrt(0.0123 * (((rho_p - rho_a)/rho_a)*g*d_p + 1.65e-4/(rho_a*d_p)))`; **masked when `isVacuumRegime = true`** | Computed analytically from Earth `rho(m)`, `g=9.807`, `d_p`. | Computed from Mars `rho(Ls)`, `g=3.721`, `d_p`. |
+
+#### Domain 5: Operations, Illumination & Logistics (6 dims)
+| Dim | Variable | Rule | Real Earth Source |
+|---|---|---|---|
+| 24 | `roadDistanceKm` | `ln(1 + km)` | **OSM Overpass API** (`timeout:8`, `15 km` max radius; fallback `>=15 km` remote). |
+| 25 | `rfQuietnessScore` `[0,1]` | Settlement proximity proxy | OSM Overpass `place~"city\|town\|village"` (15 km check). |
+| 26 | `visualAlienation` `[0,1]` | Hard masks out open water (`NDWI >= 0`) & unrequested snow (`SNODP > 2 cm` / `NDSI >= 0.4` unless `requiresCryogenicIce`); penalizes `NDVI > 0` linearly to `0` at `0.25` | **NASA POWER** `SNODP` + **Tier-1** MODIS `NDVI/NDWI/NDSI` + OSM water mask. |
+| 27 | `grazingSunHoursPerDay(m)` | Analytical solar elevation `0 < beta_sun < 10 deg` (96 quarter-hour steps at mid-month day) * `clearSkyFraction(m)` | Analytical ephemeris from `(lat, month)` * `(1 - CLOUD_AMT/100)`. |
+| 28 | `clearSkyFraction(m)` `[0,1]` | `1 - CLOUD_AMT / 100` | **NASA POWER API:** `CLOUD_AMT`. |
+| 29 | `logisticsFrictionIndex` `[0,1]` | Encodes `permitTier` (`open_public=1.0`, `regulated_research=0.7`, `protected_park=0.35`, `polar_expedition=0.15`) + heavy-equipment road access | **Tier-1** verified permits + **OSM** `boundary=protected_area\|national_park`. |
+
+*(NASA POWER Reminder: Max 15 parameters per request. Execute 2 parallel calls (`AG` + `RE`), filter `-999` fill values!)*
+
+### 2.2 Layer B — Conditional Subsurface Void & Permanent Moon Base ISRU Modules
+Activated seamlessly by preset or target flags—never diluting unrelated continuous metrics:
+- **Subsurface Void / Cave Module (`voidProfile`, active for `Subsurface Cave / Lava Tube` preset or skylight targets):**
+  - `voidType`: `'none' | 'lava_tube' | 'karst_cave' | 'mine_shaft' | 'impact_melt_pit' | 'subglacial_cavern'`
+  - `overburdenThicknessM`, `voidSpanWidthM`, `ceilingHeightM`, `skylightAccessSlopeDeg`, `subterraneanDeltaTK` (internal cave thermal stability, typically `0.5–3.0 K`).
+  - **Real Sources:** **ASU Ronald Greeley Center Lava Tube Database** (34 countries, height/width/floor slope/lava type) + **WHYMAP World Karst Aquifer Map (WOKAM)** + **Mare Tranquillitatis Pit**, **Marius Hills Pit**, **Arsia Mons Skylight**.
+- **Permanent Base & ISRU Module (`isruProfile`, active for `Permanent Moon Base & ISRU` preset):**
+  - `ilmeniteO2YieldPotential` (from `tiO2WtPct`), `constructionFeedstockSuitability` (`[0,1]` basaltic/anorthositic sintering & geopolymer suitability vs. swelling clays), `landingPlumeDustHazard` (`[0,1]` fine silt `<63 um` ejecta risk), and `directToEarthVisibilityPct` (`[0,100]` near-side/polar rim LOS vs far-side relay).
+
+### 2.3 Layer C — Dual-Mode Biology & Dynamic Process Matcher
+- **Dual-Mode Astrobiology (`astrobiologyMode: 'clean_instrument_test' | 'biosignature_habitability_analog' | 'ignore'`):**
+  - In `clean_instrument_test`, terrestrial TOC flags biotic false-positive risk for flight instruments.
+  - In `biosignature_habitability_analog`, evaluates `waterActivityAw`, `surfacePh`, `biosignaturePreservationIndex` (silica sinters, smectite mudstones, evaporites, hydromagnesite), and `extremophileGuilds[]` (`halophile`, `psychrophile`, `acidophile`, `thermophile`, `cryptoendolith`, `chemoautotroph`).
+- **Process Analogy Score (`ProcessSimilarityPct`):**
+  - Evaluates weighted overlap between target & candidate `activeProcesses[]` and `relictProcesses[]` (`aeolian_saltation`, `dust_devils_storms`, `fluvial_deltaic_sedimentation`, `evaporite_brine_precipitation`, `acid_hydrothermal_alteration`, `effusive_basalt_volcanism`, `lava_tube_inflation`, `cryogenic_sublimation_permafrost`, `impact_shock_ejecta`, `pit_collapse_karst`), explicitly labeling **Active Process Analogs** vs **Relict Morpho-Structural Analogs**.
+
+---
+
+## 3. MATHEMATICAL ENGINE SPECIFICATION
+
+### 3.1 Scale-Normalized Diagonal SPD Distance + Student-$t$ Kernel
+1. Standardize log-transformed positive features and linear indices against Tier-1 catalog median and scaled IQR ($\mu_i^{\text{ref}}, \sigma_i^{\text{ref}} = \max(10^{-4}, 0.7413 \cdot \text{IQR}_i)$).
+2. Apply dimensionless asymmetric breach penalties $\Psi_i(\Delta z_{k,i})$ directly to component residuals (`clayIndex > 0.05` on anhydrous lunar targets $\lambda=3.0$; `pPrecipGt5Mm > 0.15` on hyper-arid missions $\lambda=2.5$; `visualAlienation < 0.4` $\lambda=2.5$).
+3. Over the observed non-null feature set $\mathcal{O}_k$ in domain $k$, compute the strictly positive weighted distance:
+   $$d_k^2(\tau, \alpha, m) = \sum_{i \in \mathcal{O}_k} w_{k,i} \left(\Psi_i(\Delta z_{k,i})\right)^2, \qquad p_{\text{eff}, k} = \max\left(10^{-6}, \sum_{i \in \mathcal{O}_k} w_{k,i}\right)$$
+4. Map via the **heavy-tailed Student-$t$ / Rational-Quadratic kernel ($\nu = 2.0$)**:
+   $$S_k(\tau, \alpha, m) = 100 \cdot \left(1 + \frac{d_k^2(\tau, \alpha, m)}{2.0 \cdot p_{\text{eff}, k}}\right)^{-1.0}$$
+   Also compute `domainFrontierPct` $= 100 \cdot S_k / \max_{\alpha'} S_k$ and composite `S_month(tau, alpha, m) = sum(w_k * S_k) / sum(w_k)`.
+
+### 3.2 Ephemeris, 12-Month Interpolated Campaign Window & Deterministic Sensitivity
+- **Mars $L_s$:** Solve $E - 0.0934\sin E = M(t_{\text{epoch}})$, get $\nu_{\text{rad}}$, convert to degrees: $L_s = (\frac{180}{\pi}\nu_{\text{rad}} + 250.99^\circ) \pmod{360^\circ}$. Modulate target temperature, $\text{CO}_2$ frost, and dust opacity.
+- **Lunar $\beta_\odot$ & Horizon Mask:** Test solar elevation against target `horizonMaskMaxDeg` to distinguish sunlit ridges from cryogenic PSRs.
+- **Continuous `[3, 90]`-Day Window Integration:** Given campaign start day-of-year $d_0 \in \{1..365\}$ and duration $\Delta t$, sample daily interpolated scores $S_{\text{day}}(d)$ across $d \in [d_0, d_0 + \Delta t - 1]$ from the 12 monthly bins:
+  $$\bar{S}_{\text{win}} = \frac{1}{\Delta t}\sum_{d} S_{\text{day}}(d), \qquad \sigma_{\text{down}} = \sqrt{\frac{1}{\Delta t}\sum_{d} \max(0, \bar{S}_{\text{win}} - S_{\text{day}}(d))^2}$$
+  $$P_{\text{drift}} = \sigma_{\text{down}} \cdot \left(1 - e^{-\Delta t / 14.0}\right), \qquad P_{\text{rain}} = 1 - \prod_{d} (1 - P_{\text{wet}, >5\text{mm}}(d))^{1 / 3.0}$$
+  $$\Omega_{\text{cliff}} = 20.0 \cdot \max\left(0, \frac{P_{\text{rain}} - 0.10}{0.90}\right) \cdot w_{\text{hydro}}, \qquad S_{\text{final}} = \max_{d_0} \max(0, \bar{S}_{\text{win}} - P_{\text{drift}} - \Omega_{\text{cliff}})$$
+- **Deterministic Sensitivity Check:** For the Top 5 ranked candidates, evaluate $\pm 15\%$ domain weight perturbations deterministically to output `sensitivityRange: [minScore, maxScore]` and `top3RobustnessPct` (`0–100%`).
+
+### 3.3 Multi-Target Matrix, Sparing AI & Non-Negative 2-Site Split Optimizer
+- **Harmonic Versatility Index:** $\mathcal{V}(\alpha_j) = K / \sum_{i=1}^K \max(M_{i,j}, 10^{-3})^{-1}$.
+- **Mean Pairwise Rank Dissonance:** $\mathcal{D}_{\text{rank}} = \frac{1}{\binom{K}{2}} \sum_{a<b} (1 - \rho_s(\mathbf{M}_{a,:}, \mathbf{M}_{b,:})) / 2$.
+- **2-Site Non-Negative Portfolio Optimizer:** Solves $\max_{(\alpha_A, \alpha_B),\, \mathbf{w}_A + \mathbf{w}_B = \mathbf{w}_\mu,\; \mathbf{w}_A, \mathbf{w}_B \ge 0} \min(S_{\text{final}}(\tau, \alpha_A \mid \mathbf{w}_A),\, S_{\text{final}}(\tau, \alpha_B \mid \mathbf{w}_B))$ across binary/simplex 5D partitions—always accessible in the Portfolio tab and auto-triggered when $\max_\alpha S_{\text{final}} < 72\%$.
+- **Sparing AI Brief Parser (`/api/v1/ai/parse-brief`):** Requires `targetIds` + `briefText`. Uses a deterministic ontology keyword/rule mapper (+ optional `temperature = 0` structured extraction) returning matched evidence chips, deterministic $C_{\text{conflict}}$, and **at most 1** multiple-choice clarifying question iff $C_{\text{conflict}} > 0.70$.
+
+---
+
+## 4. DUAL-VIEWPORT ARCHITECTURE: 3D GLOBE MODE & 2D TACTICAL MAP MODE
+
+Column 2 (`SpatialViewport.tsx`) exposes a synchronized mode bar: **`[ 3D GLOBE ] | [ 2D TACTICAL MAP ]`** + **`[ ALL | EARTH | MARS | MOON ]`** + **Overlay Layer Selector** + **`[ Discovery Heatmap ]`** + **`[ + Probe Any Earth Point ]`**.
+
+### 4.1 3D Globe Mode (`GlobeView.tsx` — Three.js)
+- **Coordinates:** `X = (N+h)*cos(lat)*cos(lon)`, `Y = (N*(1-e^2)+h)*sin(lat)`, `Z = -(N+h)*cos(lat)*sin(lon)` (East longitude mapped to `-Z`).
+- **Rendering:** WGS84 (Earth), IAU-2000 (Mars), IAU ME (Moon) spheres with `MeshStandardMaterial` + real NASA GIBS/Trek global equirectangular textures + subtle atmospheric Fresnel rim + `[System Overview]` (compressed orbital spacing) vs `[Planet Focus]` (Slerp camera) + `try/catch` automatic fallback to `MapView` if WebGL fails.
+
+### 4.2 2D Tactical Map Mode (`MapView.tsx` — Leaflet)
+Switching between Globe and Map preserves selected body, center `(lat, lon)`, zoom, pins, 2-site geodesic arcs, and Discovery Heatmap:
+- **Earth (`CRS.EPSG3857`):**
+  - *True Color:* `NASA GIBS BlueMarble_NextGeneration` (`https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg`) or `OpenStreetMap`.
+  - *Elevation / Relief:* `NASA GIBS ASTER_GDEM_Greyscale_Shaded_Relief` (`GoogleMapsCompatible_Level12`).
+- **Mars (Custom `CRS.EPSG4326` 2x1 Zoom-0 Grid):**
+  - *MOLA Color Shaded:* `https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/{z}/{y}/{x}.jpg`
+  - *THEMIS Night IR / CTX:* Proxied via `/api/v1/tiles/mars/{layer}/{z}/{y}/{x}` (or parsed capabilities) to avoid browser CORS issues.
+  - *Grid Config:* Explicit Leaflet `EPSG:4326` transformation with 2 columns x 1 row at `z = 0` (`bounds: [[-90,-180],[90,180]]`).
+- **Moon (`CRS.EPSG4326` 2x1 + Auto South Pole Stereographic Inset):**
+  - *LRO WAC Global:* `https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0/default/default028mm/{z}/{y}/{x}.jpg`.
+  - *Polar Stereographic Inset:* Automatically mounts in the corner whenever a lunar polar target (`|lat| > 75°`, e.g., Shackleton Crater) is active, displaying NASA Moon Trek's `WAC_POLE_ILL_PCT_SOUTH_100M` illumination contours!
+
+---
+
+## 5. UX DESIGN FOR MAXIMUM CLARITY & VALIDITY (GUIDED OPS + TELEMETRY)
+
+1. **Top Header Bar:**
+   - **3 One-Click Showcase Scenarios:** `[1. Jezero vs. Olympus (Isolation)]`, `[2. Shackleton PSR Base/Drill (Split)]`, `[3. Global Unrecognized Discovery]`
+   - **View Complexity Switch:** `[ Guided Ops View (Default) ]` vs `[ Deep Telemetry View ]`
+2. **Column 1 (Left, 360 px) — Mission Config:**
+   - Body & Multi-Target Selector (`12` Mars/Moon targets incl. caves/pits & polar PSRs)
+   - **6 Challenge-Aligned Presets:** `Permanent Moon Base & ISRU`, `Subsurface Cave / Lava Tube`, `Astrobiology & Extremophiles`, `Surface Rover Mobility`, `Cryogenic Volatile Drill`, `Custom`
+   - Epoch Date Picker (shows `Ls` / Lunar `beta_sun`) + Duration Slider (`3–90 days`)
+   - `[ Discovery Mode: Hide Classic Analog Regions ]` toggle + Permit/Access filters + Sparing AI Brief Drawer
+3. **Column 2 (Center, Flex-1) — Dual Spatial Console (`Globe` / `Map` + `Discovery Heatmap` + `Click-Anywhere Earth Probe`)**
+4. **Column 3 (Right, 460 px) — Isolated Target Dossiers:**
+   - Default `Guided Ops View` shows:
+     - **Headline Score:** `Mission Fit: 79.4%` (`88% of Earth's physical limit`, `Robustness: 100%`) + Provenance Badge
+     - **3-Part Scientific Exploration Narrative:** *Why It Matches* | *Where It Breaks Down* | *What Moon/Mars Exploration It Enables*
+     - **5-Axis Domain Radar SVG** + **12-Month Window & Storm-Risk SVG**
+     - **Hardware Compensation Checklist** (exact offload force `F`, UV-C chamber flag, grazing sun local hours) + **Earth Co-Benefits** (desertification / karst aquifer / UV hazard note)
+     - **Expandable `Live NASA & Partner Data Lineage` Strip** (showing exact NASA POWER, LRO LEND/Diviner/Mini-RF, MRO CRISM/THEMIS, ASU Lava Tube, WHYMAP sources driving the score)
+   - Dedicated Tabs for **2-Site Portfolio Builder**, **Cross-Target Matrix**, **Anti-Analog False Friend Card**, and **Export (JSON / GeoJSON / Markdown Brief with SHA-256 hash)**.
+
+---
+
+## 6. VERIFIED SEED DATA & 6-MISSION ACCEPTANCE TESTS
+
+### 6.1 Seed Datasets (`scripts/seed_catalog.py` & `scripts/build_discovery_grid.py`)
+- **12 Extraterrestrial Targets:** Jezero Crater Delta, Gale Crater, Olympus Mons Basal Escarpment, Utopia Planitia Ice, Oxia Planum, **Arsia Mons Lava Skylight**, Shackleton Crater PSR, Shackleton Connecting Ridge (PEL), **Mare Tranquillitatis Skylight**, **Marius Hills Pit**, Oceanus Procellarum, Aristarchus Plateau.
+- **22 Curated Tier-1 Earth Sites:** Atacama (Yungay Core), Atacama (Salar de Llamara), Lake Salda Shoreline (Turkey), Rio Tinto (Spain), Askja Inner Caldera Scarp (Iceland), Krafla Lava Field (Iceland), Mauna Kea Summit (Hawaii), Kazumura Lava Tube (Hawaii), Mojave / Silver Lake Playa (USA), Black Point Lava Flow (Arizona), Craters of the Moon (Idaho), Valentine Cave / Lava Beds (California), Pilot Valley (Utah), University Valley (Antarctica), Haughton Impact Structure (Canada), Shawmere Anorthosite (Ontario), Mistastin Impact Structure (Labrador), Undara Lava Tubes (Australia), Qadisha / Jeita High Karst & Caves (Lebanon — Mediterranean karst cave/high-relief analog), Pilbara Gorge (Australia), White Sands (USA), Erg Chebbi (Morocco — visual false-friend anti-analog).
+- **1.0° Global Discovery Grid (`< 2 MB`):** ~14,000 land cells with `isClassicRegion` boolean masking sites within `200 km` of classic analog hubs.
+
+### 6.2 Mandatory Vitest Suite (`npm test` MUST pass 100%)
+1. `math.test.ts`: Positive diagonal metrics never emit `NaN`; Student-$t$ ($\nu=2$) preserves positive rankings at $10\sigma$ vs $20\sigma$; Harmonic Versatility scores `1%/1.1%` near `1%`; observed-subspace masking ignores `null` fields cleanly.
+2. `physics.test.ts`: Mars $L_s$ within `<1°` of 2026 equinox/solstice dates; Three.js `(lat=0, lon=+90E)` maps to `(0, 0, -a)`; Shao-Lu $u_{*t}$ captures fine-dust cohesion minimum near `75–120 um` and masks cleanly on Moon vacuum.
+3. `concordance.test.ts` (6-Mission Gate):
+   - *Jezero Geo-Focused:* Lake Salda top 3.
+   - *Jezero Balanced Rover:* Atacama beats Lake Salda (liquid lake/NDVI penalized).
+   - *Olympus Mons Steep Basalt:* Askja Scarp / Mauna Kea beat flat playas; Erg Chebbi fails as anti-analog.
+   - *Artemis Mare Mobility:* Black Point Lava Flow / Craters of the Moon top 3; clay soils penalized.
+   - *Shackleton PSR Volatile Drill:* Single-site max `< 72%`, triggering non-negative 2-site split (McMurdo Dry Valleys + Shawmere Anorthosite).
+   - *Mare Tranquillitatis Skylight / Subsurface Cave:* Lava tube analogs (Kazumura / Valentine Cave / Undara) outrank flat surface deserts; Discovery Mode hides Hawaii/Iceland/Atacama/Antarctica and surfaces unrecognized global cave/karst candidates (e.g., Mediterranean/Australian voids).
+
+---
+
+## 7. MANDATORY 4-SLICE EXECUTION PLAN (BUILD IN THIS EXACT ORDER)
+
+Execute sequentially. Verify `tsc --noEmit` and tests after every slice before proceeding:
+
+- **SLICE 1 — Truth Engine & Real Data Seed:**
+  Implement `src/types/planetary.ts`, `src/engine/*` (`math.ts`, `physics.ts`, `temporal.ts`, `voidAndIsru.ts`, `evaluator.ts`, `portfolio.ts`, `deficits.ts`), `scripts/raw_literature_overrides.json`, `scripts/seed_catalog.py`, `scripts/build_discovery_grid.py`, and `src/tests/*`. Run `seed_catalog.py`, `build_discovery_grid.py`, and `npm test` until all unit + 6-mission concordance tests pass.
+- **SLICE 2 — Flight Console UI & 2D Tactical Map:**
+  Implement `src/engine/worker.ts`, `missionStore.ts`, `ConsoleShell.tsx`, `MissionConfigPanel.tsx`, `MapView.tsx` (Leaflet Earth GIBS/OSM + Mars/Moon Trek 2x1 `EPSG:4326` + Lunar South Pole inset + Discovery Heatmap), `TargetDossierTabs.tsx`, `CandidateCard.tsx` (Guided Ops + Deep Telemetry + SVGs + Lineage Drawer), `PortfolioBuilder.tsx`, and `ExportModal.tsx`.
+- **SLICE 3 — 3D Spatial Globe Mode:**
+  Implement `GlobeView.tsx` (Three.js `-Z` East longitude, real NASA textures, raycast pins, synced state with `MapView`, WebGL `try/catch` auto-fallback to `MapView`).
+- **SLICE 4 — Backend Proxy (Live Earth Probe & Deterministic AI):**
+  Implement `server/probeService.ts` (2-API fast core `NASA POWER` + `Terrarium pngjs` + async 3s-timeout `Macrostrat`/`OSM` + LRU cache), `server/briefParser.ts` (target-aware conflict detector + max-1 question), and `server/index.ts`. Run final `tsc --noEmit`, `npm test`, and end-to-end verification across all 3 Showcase Scenarios, Discovery Mode, and Live Coordinate Probing.

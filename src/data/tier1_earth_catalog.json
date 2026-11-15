@@ -1,0 +1,6424 @@
+[
+  {
+    "id": "atacama_yungay",
+    "name": "Atacama (Yungay Core)",
+    "region": "Antofagasta",
+    "country": "Chile",
+    "lat": -24.08,
+    "lon": -69.91,
+    "elevationM": 1005,
+    "isClassicRegion": true,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.32,
+      "silicaWtPct": 58.5,
+      "tiO2WtPct": 0.65,
+      "clayIndex": 0.14,
+      "sulfateIndex": 0.48,
+      "carbonateIndex": 0.05,
+      "waterEquivalentHydrogenWtPct": 0.9,
+      "simulantNearest": "Mars Nitrate/Sulfate Regolith",
+      "macrostratLithology": "Alluvial evaporite & andesitic-basaltic regolith [Macrostrat: Granite]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 2.9,
+      "p95SlopeDeg": 8.2,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.12,
+      "cohesionKpa": 2.6,
+      "frictionAngleDeg": 33.0,
+      "regolithThicknessM": 1.6,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -11.2
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 310,
+      "albedo": 0.27
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 135,
+      "particleDensityKgM3": 2680
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 6.5,
+      "rfQuietnessScore": 0.88,
+      "ndvi": 0.02,
+      "ndwi": -0.35,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.72
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.18,
+      "constructionFeedstockSuitability": 0.55,
+      "landingPlumeDustHazard": 0.52,
+      "directToEarthVisibilityPct": 94.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.003,
+      "waterActivityAw": 0.42,
+      "surfacePh": 7.4,
+      "biosignaturePreservationIndex": 0.84,
+      "extremophileGuilds": [
+        "halophile",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation",
+      "dust_devils_storms"
+    ],
+    "relictProcesses": [
+      "evaporite_brine_precipitation",
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Benchmarks hyper-arid soil salinization, solar-array dust soiling, and extreme UV-B degradation monitoring.",
+    "citations": [
+      "DOI: 10.1126/science.1089143 (Navarro-Gonzalez et al., 2003, Mars-like soils in Yungay)",
+      "DOI: 10.1089/ast.2018.1912 (Azua-Bustos et al., 2019, Hyperarid Yungay core)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 293.28,
+        "tStdK": 1.17,
+        "diurnalDeltaK": 14.94,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.44,
+        "ambientDensityKgM3": 1.0386,
+        "uvAbFluxWm2": 0.57,
+        "clearSkyFraction": 0.788,
+        "grazingSunHoursPerDay": 1.182,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.105
+      },
+      {
+        "month": 2,
+        "tMeanK": 293.58,
+        "tStdK": 1.15,
+        "diurnalDeltaK": 14.69,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.43,
+        "ambientDensityKgM3": 1.0374,
+        "uvAbFluxWm2": 0.54,
+        "clearSkyFraction": 0.797,
+        "grazingSunHoursPerDay": 1.196,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.101
+      },
+      {
+        "month": 3,
+        "tMeanK": 292.81,
+        "tStdK": 1.16,
+        "diurnalDeltaK": 14.56,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 87.46,
+        "ambientDensityKgM3": 1.0405,
+        "uvAbFluxWm2": 0.47,
+        "clearSkyFraction": 0.869,
+        "grazingSunHoursPerDay": 1.304,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.107
+      },
+      {
+        "month": 4,
+        "tMeanK": 291.04,
+        "tStdK": 1.52,
+        "diurnalDeltaK": 14.03,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.5,
+        "ambientDensityKgM3": 1.0474,
+        "uvAbFluxWm2": 0.38,
+        "clearSkyFraction": 0.852,
+        "grazingSunHoursPerDay": 1.277,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.113
+      },
+      {
+        "month": 5,
+        "tMeanK": 289.58,
+        "tStdK": 1.81,
+        "diurnalDeltaK": 13.81,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.58,
+        "ambientDensityKgM3": 1.0535,
+        "uvAbFluxWm2": 0.3,
+        "clearSkyFraction": 0.773,
+        "grazingSunHoursPerDay": 1.16,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.109
+      },
+      {
+        "month": 6,
+        "tMeanK": 288.23,
+        "tStdK": 2.19,
+        "diurnalDeltaK": 13.76,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 87.59,
+        "ambientDensityKgM3": 1.0587,
+        "uvAbFluxWm2": 0.26,
+        "clearSkyFraction": 0.761,
+        "grazingSunHoursPerDay": 1.522,
+        "snowDepthCm": 0.12,
+        "gwettop": 0.125
+      },
+      {
+        "month": 7,
+        "tMeanK": 288.04,
+        "tStdK": 2.21,
+        "diurnalDeltaK": 14.0,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.59,
+        "ambientDensityKgM3": 1.0593,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.767,
+        "grazingSunHoursPerDay": 1.151,
+        "snowDepthCm": 0.05,
+        "gwettop": 0.117
+      },
+      {
+        "month": 8,
+        "tMeanK": 288.63,
+        "tStdK": 2.48,
+        "diurnalDeltaK": 15.19,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 87.58,
+        "ambientDensityKgM3": 1.0571,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.843,
+        "grazingSunHoursPerDay": 1.264,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.117
+      },
+      {
+        "month": 9,
+        "tMeanK": 289.59,
+        "tStdK": 2.26,
+        "diurnalDeltaK": 16.1,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.54,
+        "ambientDensityKgM3": 1.0531,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.861,
+        "grazingSunHoursPerDay": 1.292,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.098
+      },
+      {
+        "month": 10,
+        "tMeanK": 290.59,
+        "tStdK": 1.88,
+        "diurnalDeltaK": 16.16,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.51,
+        "ambientDensityKgM3": 1.049,
+        "uvAbFluxWm2": 0.51,
+        "clearSkyFraction": 0.85,
+        "grazingSunHoursPerDay": 1.275,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.098
+      },
+      {
+        "month": 11,
+        "tMeanK": 291.38,
+        "tStdK": 1.29,
+        "diurnalDeltaK": 16.0,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.45,
+        "ambientDensityKgM3": 1.0455,
+        "uvAbFluxWm2": 0.56,
+        "clearSkyFraction": 0.853,
+        "grazingSunHoursPerDay": 1.28,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.107
+      },
+      {
+        "month": 12,
+        "tMeanK": 292.4,
+        "tStdK": 1.17,
+        "diurnalDeltaK": 15.65,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 87.42,
+        "ambientDensityKgM3": 1.0416,
+        "uvAbFluxWm2": 0.58,
+        "clearSkyFraction": 0.808,
+        "grazingSunHoursPerDay": 1.212,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.106
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.232)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Alluvial evaporite & andesitic-basaltic regolith [Macrostrat: Granite]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=960.0m, medSlope=1.3 deg (lit=2.9 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Mars Nitrate/Sulfate Regolith, O2 potential=0.18",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "atacama_llamara",
+    "name": "Atacama (Salar de Llamara)",
+    "region": "Tarapaca",
+    "country": "Chile",
+    "lat": -21.28,
+    "lon": -69.62,
+    "elevationM": 755,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.24,
+      "silicaWtPct": 44.0,
+      "tiO2WtPct": 0.45,
+      "clayIndex": 0.18,
+      "sulfateIndex": 0.78,
+      "carbonateIndex": 0.28,
+      "waterEquivalentHydrogenWtPct": 2.4,
+      "simulantNearest": "Evaporite Gypsum-Halite Crust",
+      "macrostratLithology": "Salar gypsum-halite evaporite crust [Macrostrat: Evaporite]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 1.1,
+      "p95SlopeDeg": 3.4,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.05,
+      "cohesionKpa": 3.4,
+      "frictionAngleDeg": 31.0,
+      "regolithThicknessM": 2.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -9.8
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 360,
+      "albedo": 0.34
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 115,
+      "particleDensityKgM3": 2550
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 8.0,
+      "rfQuietnessScore": 0.92,
+      "ndvi": 0.04,
+      "ndwi": -0.18,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.45
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.1,
+      "constructionFeedstockSuitability": 0.35,
+      "landingPlumeDustHazard": 0.58,
+      "directToEarthVisibilityPct": 95.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.04,
+      "waterActivityAw": 0.68,
+      "surfacePh": 8.1,
+      "biosignaturePreservationIndex": 0.89,
+      "extremophileGuilds": [
+        "halophile",
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "evaporite_brine_precipitation",
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Tracks evaporite brine desiccation and lithium-basin hydrological balance.",
+    "citations": [
+      "DOI: 10.1016/j.icarus.2016.08.015 (Farias et al., 2017, Salar de Llamara gypsum stromatolites)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 293.16,
+        "tStdK": 1.16,
+        "diurnalDeltaK": 12.52,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.48,
+        "ambientDensityKgM3": 1.0038,
+        "uvAbFluxWm2": 0.54,
+        "clearSkyFraction": 0.678,
+        "grazingSunHoursPerDay": 1.017,
+        "snowDepthCm": 0.09,
+        "gwettop": 0.091
+      },
+      {
+        "month": 2,
+        "tMeanK": 293.36,
+        "tStdK": 1.0,
+        "diurnalDeltaK": 12.11,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.48,
+        "ambientDensityKgM3": 1.0031,
+        "uvAbFluxWm2": 0.51,
+        "clearSkyFraction": 0.683,
+        "grazingSunHoursPerDay": 1.025,
+        "snowDepthCm": 0.09,
+        "gwettop": 0.102
+      },
+      {
+        "month": 3,
+        "tMeanK": 292.95,
+        "tStdK": 1.02,
+        "diurnalDeltaK": 12.39,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.49,
+        "ambientDensityKgM3": 1.0048,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.765,
+        "grazingSunHoursPerDay": 1.148,
+        "snowDepthCm": 0.05,
+        "gwettop": 0.098
+      },
+      {
+        "month": 4,
+        "tMeanK": 291.63,
+        "tStdK": 1.26,
+        "diurnalDeltaK": 12.8,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.53,
+        "ambientDensityKgM3": 1.0097,
+        "uvAbFluxWm2": 0.39,
+        "clearSkyFraction": 0.797,
+        "grazingSunHoursPerDay": 1.196,
+        "snowDepthCm": 0.08,
+        "gwettop": 0.1
+      },
+      {
+        "month": 5,
+        "tMeanK": 290.68,
+        "tStdK": 1.42,
+        "diurnalDeltaK": 12.82,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.59,
+        "ambientDensityKgM3": 1.0138,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.765,
+        "grazingSunHoursPerDay": 1.148,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.091
+      },
+      {
+        "month": 6,
+        "tMeanK": 289.39,
+        "tStdK": 1.81,
+        "diurnalDeltaK": 12.96,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.6,
+        "ambientDensityKgM3": 1.0184,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.72,
+        "grazingSunHoursPerDay": 1.08,
+        "snowDepthCm": 0.08,
+        "gwettop": 0.106
+      },
+      {
+        "month": 7,
+        "tMeanK": 289.38,
+        "tStdK": 1.9,
+        "diurnalDeltaK": 12.98,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.59,
+        "ambientDensityKgM3": 1.0183,
+        "uvAbFluxWm2": 0.29,
+        "clearSkyFraction": 0.727,
+        "grazingSunHoursPerDay": 1.09,
+        "snowDepthCm": 0.08,
+        "gwettop": 0.099
+      },
+      {
+        "month": 8,
+        "tMeanK": 289.79,
+        "tStdK": 1.9,
+        "diurnalDeltaK": 14.04,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.59,
+        "ambientDensityKgM3": 1.0169,
+        "uvAbFluxWm2": 0.36,
+        "clearSkyFraction": 0.789,
+        "grazingSunHoursPerDay": 1.183,
+        "snowDepthCm": 0.2,
+        "gwettop": 0.101
+      },
+      {
+        "month": 9,
+        "tMeanK": 290.77,
+        "tStdK": 1.64,
+        "diurnalDeltaK": 14.51,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.55,
+        "ambientDensityKgM3": 1.013,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.814,
+        "grazingSunHoursPerDay": 1.221,
+        "snowDepthCm": 0.02,
+        "gwettop": 0.092
+      },
+      {
+        "month": 10,
+        "tMeanK": 291.58,
+        "tStdK": 1.45,
+        "diurnalDeltaK": 14.63,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.52,
+        "ambientDensityKgM3": 1.0098,
+        "uvAbFluxWm2": 0.5,
+        "clearSkyFraction": 0.799,
+        "grazingSunHoursPerDay": 1.198,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.083
+      },
+      {
+        "month": 11,
+        "tMeanK": 291.95,
+        "tStdK": 1.11,
+        "diurnalDeltaK": 14.46,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 84.47,
+        "ambientDensityKgM3": 1.008,
+        "uvAbFluxWm2": 0.53,
+        "clearSkyFraction": 0.771,
+        "grazingSunHoursPerDay": 1.157,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.083
+      },
+      {
+        "month": 12,
+        "tMeanK": 292.68,
+        "tStdK": 1.15,
+        "diurnalDeltaK": 13.57,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 84.46,
+        "ambientDensityKgM3": 1.0053,
+        "uvAbFluxWm2": 0.53,
+        "clearSkyFraction": 0.733,
+        "grazingSunHoursPerDay": 1.099,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.087
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.24)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Salar gypsum-halite evaporite crust [Macrostrat: Evaporite]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=756.0m, medSlope=1.45 deg (lit=1.1 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  },
+  {
+    "id": "lake_salda",
+    "name": "Lake Salda Shoreline",
+    "region": "Burdur",
+    "country": "Turkey",
+    "lat": 37.55,
+    "lon": 29.68,
+    "elevationM": 1150,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.55,
+      "silicaWtPct": 43.5,
+      "tiO2WtPct": 0.52,
+      "clayIndex": 0.22,
+      "sulfateIndex": 0.08,
+      "carbonateIndex": 0.84,
+      "waterEquivalentHydrogenWtPct": 4.2,
+      "simulantNearest": "Ultramafic Hydromagnesite Carbonate",
+      "macrostratLithology": "Ultramafic ophiolite & hydromagnesite shoreline [Macrostrat: Major:{basalt group}, Minor{gabbro,serpentinite}]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 3.4,
+      "p95SlopeDeg": 10.2,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.11,
+      "cohesionKpa": 2.2,
+      "frictionAngleDeg": 30.5,
+      "regolithThicknessM": 1.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -11.9
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 390,
+      "albedo": 0.36
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 140,
+      "particleDensityKgM3": 2650
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 1.2,
+      "rfQuietnessScore": 0.55,
+      "ndvi": 0.22,
+      "ndwi": 0.05,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.35
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.12,
+      "constructionFeedstockSuitability": 0.42,
+      "landingPlumeDustHazard": 0.4,
+      "directToEarthVisibilityPct": 82.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.42,
+      "waterActivityAw": 0.95,
+      "surfacePh": 8.9,
+      "biosignaturePreservationIndex": 0.94,
+      "extremophileGuilds": [
+        "halophile",
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "evaporite_brine_precipitation"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Monitors fragile alkaline lacustrine microbialite reefs and Mediterranean drought resilience.",
+    "citations": [
+      "DOI: 10.1016/j.icarus.2019.05.004 (Garczynski et al., 2020, Lake Salda hydromagnesite analog to Jezero)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 274.55,
+        "tStdK": 4.0,
+        "diurnalDeltaK": 8.91,
+        "pPrecipGt5Mm": 0.2355,
+        "pressureKpa": 88.14,
+        "ambientDensityKgM3": 1.1183,
+        "uvAbFluxWm2": 0.13,
+        "clearSkyFraction": 0.382,
+        "grazingSunHoursPerDay": 0.764,
+        "snowDepthCm": 11.36,
+        "gwettop": 0.56
+      },
+      {
+        "month": 2,
+        "tMeanK": 276.48,
+        "tStdK": 3.71,
+        "diurnalDeltaK": 10.55,
+        "pPrecipGt5Mm": 0.1343,
+        "pressureKpa": 88.23,
+        "ambientDensityKgM3": 1.1116,
+        "uvAbFluxWm2": 0.18,
+        "clearSkyFraction": 0.436,
+        "grazingSunHoursPerDay": 0.871,
+        "snowDepthCm": 7.57,
+        "gwettop": 0.568
+      },
+      {
+        "month": 3,
+        "tMeanK": 278.73,
+        "tStdK": 3.58,
+        "diurnalDeltaK": 11.53,
+        "pPrecipGt5Mm": 0.1516,
+        "pressureKpa": 88.03,
+        "ambientDensityKgM3": 1.1002,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.408,
+        "grazingSunHoursPerDay": 0.612,
+        "snowDepthCm": 4.81,
+        "gwettop": 0.574
+      },
+      {
+        "month": 4,
+        "tMeanK": 283.87,
+        "tStdK": 3.96,
+        "diurnalDeltaK": 12.9,
+        "pPrecipGt5Mm": 0.06,
+        "pressureKpa": 88.12,
+        "ambientDensityKgM3": 1.0814,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.503,
+        "grazingSunHoursPerDay": 0.754,
+        "snowDepthCm": 1.1,
+        "gwettop": 0.542
+      },
+      {
+        "month": 5,
+        "tMeanK": 288.49,
+        "tStdK": 3.44,
+        "diurnalDeltaK": 12.5,
+        "pPrecipGt5Mm": 0.1,
+        "pressureKpa": 88.16,
+        "ambientDensityKgM3": 1.0645,
+        "uvAbFluxWm2": 0.38,
+        "clearSkyFraction": 0.514,
+        "grazingSunHoursPerDay": 1.027,
+        "snowDepthCm": 0.06,
+        "gwettop": 0.501
+      },
+      {
+        "month": 6,
+        "tMeanK": 293.01,
+        "tStdK": 3.4,
+        "diurnalDeltaK": 12.98,
+        "pPrecipGt5Mm": 0.1133,
+        "pressureKpa": 88.11,
+        "ambientDensityKgM3": 1.0476,
+        "uvAbFluxWm2": 0.44,
+        "clearSkyFraction": 0.667,
+        "grazingSunHoursPerDay": 1.334,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.457
+      },
+      {
+        "month": 7,
+        "tMeanK": 297.04,
+        "tStdK": 2.22,
+        "diurnalDeltaK": 15.01,
+        "pPrecipGt5Mm": 0.0194,
+        "pressureKpa": 88.01,
+        "ambientDensityKgM3": 1.0322,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.87,
+        "grazingSunHoursPerDay": 1.305,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.373
+      },
+      {
+        "month": 8,
+        "tMeanK": 297.64,
+        "tStdK": 1.99,
+        "diurnalDeltaK": 14.75,
+        "pPrecipGt5Mm": 0.0161,
+        "pressureKpa": 88.06,
+        "ambientDensityKgM3": 1.0307,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.828,
+        "grazingSunHoursPerDay": 1.242,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.339
+      },
+      {
+        "month": 9,
+        "tMeanK": 293.55,
+        "tStdK": 3.12,
+        "diurnalDeltaK": 14.09,
+        "pPrecipGt5Mm": 0.0433,
+        "pressureKpa": 88.28,
+        "ambientDensityKgM3": 1.0476,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.795,
+        "grazingSunHoursPerDay": 1.193,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.339
+      },
+      {
+        "month": 10,
+        "tMeanK": 287.74,
+        "tStdK": 3.06,
+        "diurnalDeltaK": 13.14,
+        "pPrecipGt5Mm": 0.0645,
+        "pressureKpa": 88.47,
+        "ambientDensityKgM3": 1.071,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.715,
+        "grazingSunHoursPerDay": 1.43,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.362
+      },
+      {
+        "month": 11,
+        "tMeanK": 281.69,
+        "tStdK": 3.22,
+        "diurnalDeltaK": 11.6,
+        "pPrecipGt5Mm": 0.1267,
+        "pressureKpa": 88.43,
+        "ambientDensityKgM3": 1.0936,
+        "uvAbFluxWm2": 0.16,
+        "clearSkyFraction": 0.6,
+        "grazingSunHoursPerDay": 0.9,
+        "snowDepthCm": 1.88,
+        "gwettop": 0.404
+      },
+      {
+        "month": 12,
+        "tMeanK": 277.07,
+        "tStdK": 3.4,
+        "diurnalDeltaK": 9.59,
+        "pPrecipGt5Mm": 0.2065,
+        "pressureKpa": 88.36,
+        "ambientDensityKgM3": 1.1109,
+        "uvAbFluxWm2": 0.11,
+        "clearSkyFraction": 0.449,
+        "grazingSunHoursPerDay": 0.898,
+        "snowDepthCm": 6.52,
+        "gwettop": 0.49
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.158)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Ultramafic ophiolite & hydromagnesite shoreline [Macrostrat: Major:{basalt group}, Minor{gabbro,serpentinite}]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1137.0m, medSlope=0.0 deg (lit=3.4 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  },
+  {
+    "id": "rio_tinto",
+    "name": "Rio Tinto Acidic Basin",
+    "region": "Andalusia",
+    "country": "Spain",
+    "lat": 37.7,
+    "lon": -6.55,
+    "elevationM": 380,
+    "isClassicRegion": true,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.38,
+      "silicaWtPct": 51.0,
+      "tiO2WtPct": 0.72,
+      "clayIndex": 0.34,
+      "sulfateIndex": 0.82,
+      "carbonateIndex": 0.02,
+      "waterEquivalentHydrogenWtPct": 4.8,
+      "simulantNearest": "Jarosite-Hematite Gossan",
+      "macrostratLithology": "Pyritic gossan & jarosite-hematite terrace [Macrostrat: conglomerate, sandstone, slate and limestone. coal]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 7.5,
+      "p95SlopeDeg": 18.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.16,
+      "cohesionKpa": 3.0,
+      "frictionAngleDeg": 32.0,
+      "regolithThicknessM": 1.2,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -9.5
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 420,
+      "albedo": 0.18
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 160,
+      "particleDensityKgM3": 2850
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 2.5,
+      "rfQuietnessScore": 0.62,
+      "ndvi": 0.16,
+      "ndwi": -0.05,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.68
+    },
+    "voidProfile": {
+      "voidType": "mine_shaft",
+      "overburdenThicknessM": 45.0,
+      "voidSpanWidthM": 8.0,
+      "ceilingHeightM": 5.0,
+      "skylightAccessSlopeDeg": 35.0,
+      "subterraneanDeltaTK": 1.5
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.16,
+      "constructionFeedstockSuitability": 0.38,
+      "landingPlumeDustHazard": 0.45,
+      "directToEarthVisibilityPct": 85.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.31,
+      "waterActivityAw": 0.92,
+      "surfacePh": 2.3,
+      "biosignaturePreservationIndex": 0.88,
+      "extremophileGuilds": [
+        "acidophile",
+        "chemoautotroph"
+      ]
+    },
+    "activeProcesses": [
+      "acid_hydrothermal_alteration",
+      "evaporite_brine_precipitation"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Advances acid-mine drainage remediation and iron-sulfur bioleaching diagnostics.",
+    "citations": [
+      "DOI: 10.1016/j.epsl.2005.08.015 (Fernandez-Remolar et al., 2005, Rio Tinto Mars iron-sulfate analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 282.36,
+        "tStdK": 2.62,
+        "diurnalDeltaK": 11.19,
+        "pPrecipGt5Mm": 0.0968,
+        "pressureKpa": 100.09,
+        "ambientDensityKgM3": 1.2349,
+        "uvAbFluxWm2": 0.14,
+        "clearSkyFraction": 0.584,
+        "grazingSunHoursPerDay": 1.168,
+        "snowDepthCm": 0.29,
+        "gwettop": 0.714
+      },
+      {
+        "month": 2,
+        "tMeanK": 284.13,
+        "tStdK": 2.31,
+        "diurnalDeltaK": 11.88,
+        "pPrecipGt5Mm": 0.0565,
+        "pressureKpa": 99.89,
+        "ambientDensityKgM3": 1.2247,
+        "uvAbFluxWm2": 0.19,
+        "clearSkyFraction": 0.532,
+        "grazingSunHoursPerDay": 1.063,
+        "snowDepthCm": 0.02,
+        "gwettop": 0.7
+      },
+      {
+        "month": 3,
+        "tMeanK": 286.35,
+        "tStdK": 2.51,
+        "diurnalDeltaK": 12.7,
+        "pPrecipGt5Mm": 0.1452,
+        "pressureKpa": 99.51,
+        "ambientDensityKgM3": 1.2106,
+        "uvAbFluxWm2": 0.26,
+        "clearSkyFraction": 0.504,
+        "grazingSunHoursPerDay": 0.756,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.684
+      },
+      {
+        "month": 4,
+        "tMeanK": 289.34,
+        "tStdK": 2.89,
+        "diurnalDeltaK": 13.21,
+        "pPrecipGt5Mm": 0.1067,
+        "pressureKpa": 99.3,
+        "ambientDensityKgM3": 1.1955,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.485,
+        "grazingSunHoursPerDay": 0.728,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.645
+      },
+      {
+        "month": 5,
+        "tMeanK": 293.97,
+        "tStdK": 3.3,
+        "diurnalDeltaK": 15.32,
+        "pPrecipGt5Mm": 0.0516,
+        "pressureKpa": 99.32,
+        "ambientDensityKgM3": 1.177,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.608,
+        "grazingSunHoursPerDay": 1.215,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.536
+      },
+      {
+        "month": 6,
+        "tMeanK": 298.27,
+        "tStdK": 3.36,
+        "diurnalDeltaK": 16.1,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 99.29,
+        "ambientDensityKgM3": 1.1597,
+        "uvAbFluxWm2": 0.45,
+        "clearSkyFraction": 0.719,
+        "grazingSunHoursPerDay": 1.437,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.352
+      },
+      {
+        "month": 7,
+        "tMeanK": 302.5,
+        "tStdK": 2.59,
+        "diurnalDeltaK": 17.73,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 99.26,
+        "ambientDensityKgM3": 1.1431,
+        "uvAbFluxWm2": 0.47,
+        "clearSkyFraction": 0.868,
+        "grazingSunHoursPerDay": 1.303,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.182
+      },
+      {
+        "month": 8,
+        "tMeanK": 302.35,
+        "tStdK": 2.23,
+        "diurnalDeltaK": 17.0,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 99.25,
+        "ambientDensityKgM3": 1.1435,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.821,
+        "grazingSunHoursPerDay": 1.232,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.138
+      },
+      {
+        "month": 9,
+        "tMeanK": 297.76,
+        "tStdK": 2.59,
+        "diurnalDeltaK": 14.55,
+        "pPrecipGt5Mm": 0.02,
+        "pressureKpa": 99.4,
+        "ambientDensityKgM3": 1.1629,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.702,
+        "grazingSunHoursPerDay": 1.053,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.249
+      },
+      {
+        "month": 10,
+        "tMeanK": 293.09,
+        "tStdK": 3.37,
+        "diurnalDeltaK": 12.77,
+        "pPrecipGt5Mm": 0.1355,
+        "pressureKpa": 99.47,
+        "ambientDensityKgM3": 1.1822,
+        "uvAbFluxWm2": 0.22,
+        "clearSkyFraction": 0.542,
+        "grazingSunHoursPerDay": 1.084,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.415
+      },
+      {
+        "month": 11,
+        "tMeanK": 286.84,
+        "tStdK": 2.66,
+        "diurnalDeltaK": 11.25,
+        "pPrecipGt5Mm": 0.1367,
+        "pressureKpa": 99.66,
+        "ambientDensityKgM3": 1.2103,
+        "uvAbFluxWm2": 0.15,
+        "clearSkyFraction": 0.582,
+        "grazingSunHoursPerDay": 0.873,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.617
+      },
+      {
+        "month": 12,
+        "tMeanK": 284.01,
+        "tStdK": 2.32,
+        "diurnalDeltaK": 10.64,
+        "pPrecipGt5Mm": 0.1,
+        "pressureKpa": 100.07,
+        "ambientDensityKgM3": 1.2274,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.569,
+        "grazingSunHoursPerDay": 1.139,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.683
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.141)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Pyritic gossan & jarosite-hematite terrace [Macrostrat: conglomerate, sandstone, slate and limestone. coal]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=346.5m, medSlope=3.53 deg (lit=7.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "mine_shaft span=8.0m, deltaT=1.5K",
+        "resolutionOrPeriod": "Subterranean survey"
+      }
+    ]
+  },
+  {
+    "id": "askja_scarp",
+    "name": "Askja Inner Caldera Scarp",
+    "region": "Dyngjufjoll Highlands",
+    "country": "Iceland",
+    "lat": 65.03,
+    "lon": -16.75,
+    "elevationM": 1120,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.66,
+      "silicaWtPct": 49.2,
+      "tiO2WtPct": 1.65,
+      "clayIndex": 0.03,
+      "sulfateIndex": 0.04,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 1.2,
+      "simulantNearest": "Basaltic Tephra & Hyaloclastite",
+      "macrostratLithology": "Tholeiitic basalt scarp & scoria talus"
+    },
+    "morphology": {
+      "medianSlopeDeg": 21.8,
+      "p95SlopeDeg": 36.5,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.32,
+      "cohesionKpa": 1.3,
+      "frictionAngleDeg": 37.5,
+      "regolithThicknessM": 0.7,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.9
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 345,
+      "albedo": 0.13
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 280,
+      "particleDensityKgM3": 2920
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 12.0,
+      "rfQuietnessScore": 0.96,
+      "ndvi": 0.01,
+      "ndwi": -0.3,
+      "ndsi": 0.18,
+      "logisticsFrictionIndex": 0.42
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.35,
+      "constructionFeedstockSuitability": 0.82,
+      "landingPlumeDustHazard": 0.38,
+      "directToEarthVisibilityPct": 78.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.02,
+      "waterActivityAw": 0.62,
+      "surfacePh": 6.8,
+      "biosignaturePreservationIndex": 0.45,
+      "extremophileGuilds": [
+        "psychrophile",
+        "chemoautotroph"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "lava_tube_inflation"
+    ],
+    "earthCoBenefits": "Supports sub-arctic volcanic hazard mapping and cold-desert dust-storm erosion tracking.",
+    "citations": [
+      "DOI: 10.1016/j.pss.2011.11.012 (Cousins & Crawford, 2011, Icelandic Mars basaltic analogs)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 265.24,
+        "tStdK": 4.17,
+        "diurnalDeltaK": 5.47,
+        "pPrecipGt5Mm": 0.1194,
+        "pressureKpa": 90.33,
+        "ambientDensityKgM3": 1.1863,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.212,
+        "grazingSunHoursPerDay": 0.899,
+        "snowDepthCm": 76.9,
+        "gwettop": 0.858
+      },
+      {
+        "month": 2,
+        "tMeanK": 265.85,
+        "tStdK": 4.16,
+        "diurnalDeltaK": 5.29,
+        "pPrecipGt5Mm": 0.1343,
+        "pressureKpa": 90.09,
+        "ambientDensityKgM3": 1.1805,
+        "uvAbFluxWm2": 0.04,
+        "clearSkyFraction": 0.18,
+        "grazingSunHoursPerDay": 0.898,
+        "snowDepthCm": 90.68,
+        "gwettop": 0.853
+      },
+      {
+        "month": 3,
+        "tMeanK": 266.31,
+        "tStdK": 3.86,
+        "diurnalDeltaK": 5.14,
+        "pPrecipGt5Mm": 0.1194,
+        "pressureKpa": 90.83,
+        "ambientDensityKgM3": 1.1881,
+        "uvAbFluxWm2": 0.14,
+        "clearSkyFraction": 0.187,
+        "grazingSunHoursPerDay": 0.654,
+        "snowDepthCm": 99.6,
+        "gwettop": 0.853
+      },
+      {
+        "month": 4,
+        "tMeanK": 268.7,
+        "tStdK": 4.1,
+        "diurnalDeltaK": 5.15,
+        "pPrecipGt5Mm": 0.09,
+        "pressureKpa": 91.75,
+        "ambientDensityKgM3": 1.1896,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.22,
+        "grazingSunHoursPerDay": 0.66,
+        "snowDepthCm": 82.47,
+        "gwettop": 0.89
+      },
+      {
+        "month": 5,
+        "tMeanK": 271.72,
+        "tStdK": 3.08,
+        "diurnalDeltaK": 4.11,
+        "pPrecipGt5Mm": 0.1,
+        "pressureKpa": 91.72,
+        "ambientDensityKgM3": 1.1758,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.2,
+        "grazingSunHoursPerDay": 0.801,
+        "snowDepthCm": 33.75,
+        "gwettop": 0.927
+      },
+      {
+        "month": 6,
+        "tMeanK": 274.72,
+        "tStdK": 1.82,
+        "diurnalDeltaK": 2.85,
+        "pPrecipGt5Mm": 0.13,
+        "pressureKpa": 91.73,
+        "ambientDensityKgM3": 1.1632,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.19,
+        "grazingSunHoursPerDay": 1.043,
+        "snowDepthCm": 8.32,
+        "gwettop": 0.864
+      },
+      {
+        "month": 7,
+        "tMeanK": 275.82,
+        "tStdK": 1.22,
+        "diurnalDeltaK": 2.25,
+        "pPrecipGt5Mm": 0.1871,
+        "pressureKpa": 91.63,
+        "ambientDensityKgM3": 1.1573,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.149,
+        "grazingSunHoursPerDay": 0.669,
+        "snowDepthCm": 4.99,
+        "gwettop": 0.825
+      },
+      {
+        "month": 8,
+        "tMeanK": 275.51,
+        "tStdK": 1.34,
+        "diurnalDeltaK": 2.42,
+        "pPrecipGt5Mm": 0.1387,
+        "pressureKpa": 91.44,
+        "ambientDensityKgM3": 1.1562,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.19,
+        "grazingSunHoursPerDay": 0.664,
+        "snowDepthCm": 5.17,
+        "gwettop": 0.815
+      },
+      {
+        "month": 9,
+        "tMeanK": 273.8,
+        "tStdK": 2.38,
+        "diurnalDeltaK": 3.13,
+        "pPrecipGt5Mm": 0.21,
+        "pressureKpa": 91.15,
+        "ambientDensityKgM3": 1.1597,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.2,
+        "grazingSunHoursPerDay": 0.699,
+        "snowDepthCm": 11.61,
+        "gwettop": 0.822
+      },
+      {
+        "month": 10,
+        "tMeanK": 270.58,
+        "tStdK": 3.18,
+        "diurnalDeltaK": 4.02,
+        "pPrecipGt5Mm": 0.1806,
+        "pressureKpa": 90.94,
+        "ambientDensityKgM3": 1.1708,
+        "uvAbFluxWm2": 0.06,
+        "clearSkyFraction": 0.205,
+        "grazingSunHoursPerDay": 0.819,
+        "snowDepthCm": 21.27,
+        "gwettop": 0.846
+      },
+      {
+        "month": 11,
+        "tMeanK": 267.81,
+        "tStdK": 3.86,
+        "diurnalDeltaK": 4.31,
+        "pPrecipGt5Mm": 0.1767,
+        "pressureKpa": 90.84,
+        "ambientDensityKgM3": 1.1816,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.217,
+        "grazingSunHoursPerDay": 1.247,
+        "snowDepthCm": 33.25,
+        "gwettop": 0.86
+      },
+      {
+        "month": 12,
+        "tMeanK": 265.48,
+        "tStdK": 4.63,
+        "diurnalDeltaK": 4.63,
+        "pPrecipGt5Mm": 0.1968,
+        "pressureKpa": 90.55,
+        "ambientDensityKgM3": 1.1882,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.234,
+        "grazingSunHoursPerDay": 0.644,
+        "snowDepthCm": 53.42,
+        "gwettop": 0.866
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.472)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Tholeiitic basalt scarp & scoria talus",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1124.8m, medSlope=0.16 deg (lit=21.8 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Basaltic Tephra & Hyaloclastite, O2 potential=0.35",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "krafla_lava",
+    "name": "Krafla Lava Field",
+    "region": "Myvatn Rift Zone",
+    "country": "Iceland",
+    "lat": 65.71,
+    "lon": -16.78,
+    "elevationM": 540,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.63,
+      "silicaWtPct": 49.8,
+      "tiO2WtPct": 1.48,
+      "clayIndex": 0.04,
+      "sulfateIndex": 0.06,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 1.5,
+      "simulantNearest": "Fresh Basaltic Pahoehoe/Aa",
+      "macrostratLithology": "Holocene rift basalt flows [Macrostrat: tuff-breccia, agglomerate, or pyroclastic breccia]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 6.8,
+      "p95SlopeDeg": 19.5,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.28,
+      "cohesionKpa": 1.5,
+      "frictionAngleDeg": 38.0,
+      "regolithThicknessM": 0.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.2
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 360,
+      "albedo": 0.11
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 230,
+      "particleDensityKgM3": 2900
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 3.0,
+      "rfQuietnessScore": 0.85,
+      "ndvi": 0.04,
+      "ndwi": -0.25,
+      "ndsi": 0.15,
+      "logisticsFrictionIndex": 0.88
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.32,
+      "constructionFeedstockSuitability": 0.84,
+      "landingPlumeDustHazard": 0.35,
+      "directToEarthVisibilityPct": 82.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.04,
+      "waterActivityAw": 0.72,
+      "surfacePh": 5.8,
+      "biosignaturePreservationIndex": 0.6,
+      "extremophileGuilds": [
+        "thermophile",
+        "chemoautotroph",
+        "acidophile"
+      ]
+    },
+    "activeProcesses": [
+      "acid_hydrothermal_alteration",
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "effusive_basalt_volcanism"
+    ],
+    "earthCoBenefits": "Integrates geothermal borehole monitoring with terrestrial volcanic degassing networks.",
+    "citations": [
+      "DOI: 10.1089/ast.2012.0933 (Warner & Farmer, 2010/2013, Krafla hydrothermal Mars analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 266.28,
+        "tStdK": 4.05,
+        "diurnalDeltaK": 5.91,
+        "pPrecipGt5Mm": 0.1548,
+        "pressureKpa": 94.05,
+        "ambientDensityKgM3": 1.2304,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.212,
+        "grazingSunHoursPerDay": 0.899,
+        "snowDepthCm": 71.77,
+        "gwettop": 0.826
+      },
+      {
+        "month": 2,
+        "tMeanK": 267.0,
+        "tStdK": 4.07,
+        "diurnalDeltaK": 5.94,
+        "pPrecipGt5Mm": 0.1696,
+        "pressureKpa": 93.82,
+        "ambientDensityKgM3": 1.2241,
+        "uvAbFluxWm2": 0.04,
+        "clearSkyFraction": 0.18,
+        "grazingSunHoursPerDay": 0.988,
+        "snowDepthCm": 87.0,
+        "gwettop": 0.821
+      },
+      {
+        "month": 3,
+        "tMeanK": 267.77,
+        "tStdK": 3.63,
+        "diurnalDeltaK": 5.97,
+        "pPrecipGt5Mm": 0.1194,
+        "pressureKpa": 94.58,
+        "ambientDensityKgM3": 1.2305,
+        "uvAbFluxWm2": 0.14,
+        "clearSkyFraction": 0.187,
+        "grazingSunHoursPerDay": 0.654,
+        "snowDepthCm": 95.8,
+        "gwettop": 0.822
+      },
+      {
+        "month": 4,
+        "tMeanK": 270.25,
+        "tStdK": 3.66,
+        "diurnalDeltaK": 5.58,
+        "pPrecipGt5Mm": 0.1,
+        "pressureKpa": 95.5,
+        "ambientDensityKgM3": 1.2311,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.22,
+        "grazingSunHoursPerDay": 0.66,
+        "snowDepthCm": 74.25,
+        "gwettop": 0.874
+      },
+      {
+        "month": 5,
+        "tMeanK": 273.91,
+        "tStdK": 3.19,
+        "diurnalDeltaK": 4.98,
+        "pPrecipGt5Mm": 0.1323,
+        "pressureKpa": 95.41,
+        "ambientDensityKgM3": 1.2135,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.2,
+        "grazingSunHoursPerDay": 0.901,
+        "snowDepthCm": 24.29,
+        "gwettop": 0.901
+      },
+      {
+        "month": 6,
+        "tMeanK": 277.87,
+        "tStdK": 2.48,
+        "diurnalDeltaK": 4.96,
+        "pPrecipGt5Mm": 0.14,
+        "pressureKpa": 95.35,
+        "ambientDensityKgM3": 1.1954,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.19,
+        "grazingSunHoursPerDay": 1.138,
+        "snowDepthCm": 5.08,
+        "gwettop": 0.819
+      },
+      {
+        "month": 7,
+        "tMeanK": 279.19,
+        "tStdK": 1.89,
+        "diurnalDeltaK": 4.74,
+        "pPrecipGt5Mm": 0.1806,
+        "pressureKpa": 95.22,
+        "ambientDensityKgM3": 1.1882,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.149,
+        "grazingSunHoursPerDay": 0.744,
+        "snowDepthCm": 0.45,
+        "gwettop": 0.775
+      },
+      {
+        "month": 8,
+        "tMeanK": 278.55,
+        "tStdK": 1.8,
+        "diurnalDeltaK": 4.76,
+        "pPrecipGt5Mm": 0.1839,
+        "pressureKpa": 95.04,
+        "ambientDensityKgM3": 1.1885,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.19,
+        "grazingSunHoursPerDay": 0.664,
+        "snowDepthCm": 0.89,
+        "gwettop": 0.765
+      },
+      {
+        "month": 9,
+        "tMeanK": 275.97,
+        "tStdK": 2.41,
+        "diurnalDeltaK": 4.44,
+        "pPrecipGt5Mm": 0.2533,
+        "pressureKpa": 94.79,
+        "ambientDensityKgM3": 1.1965,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.2,
+        "grazingSunHoursPerDay": 0.699,
+        "snowDepthCm": 6.59,
+        "gwettop": 0.778
+      },
+      {
+        "month": 10,
+        "tMeanK": 271.98,
+        "tStdK": 3.04,
+        "diurnalDeltaK": 4.35,
+        "pPrecipGt5Mm": 0.2258,
+        "pressureKpa": 94.63,
+        "ambientDensityKgM3": 1.2121,
+        "uvAbFluxWm2": 0.06,
+        "clearSkyFraction": 0.205,
+        "grazingSunHoursPerDay": 0.921,
+        "snowDepthCm": 18.83,
+        "gwettop": 0.818
+      },
+      {
+        "month": 11,
+        "tMeanK": 268.95,
+        "tStdK": 3.81,
+        "diurnalDeltaK": 4.6,
+        "pPrecipGt5Mm": 0.1767,
+        "pressureKpa": 94.56,
+        "ambientDensityKgM3": 1.2247,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.217,
+        "grazingSunHoursPerDay": 1.138,
+        "snowDepthCm": 28.19,
+        "gwettop": 0.835
+      },
+      {
+        "month": 12,
+        "tMeanK": 266.58,
+        "tStdK": 4.52,
+        "diurnalDeltaK": 5.07,
+        "pPrecipGt5Mm": 0.2258,
+        "pressureKpa": 94.3,
+        "ambientDensityKgM3": 1.2322,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.234,
+        "grazingSunHoursPerDay": 0.527,
+        "snowDepthCm": 47.16,
+        "gwettop": 0.838
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.472)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Holocene rift basalt flows [Macrostrat: tuff-breccia, agglomerate, or pyroclastic breccia]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=593.6m, medSlope=5.57 deg (lit=6.8 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Fresh Basaltic Pahoehoe/Aa, O2 potential=0.32",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "mauna_kea",
+    "name": "Mauna Kea Summit Cone",
+    "region": "Hawaii Island",
+    "country": "USA",
+    "lat": 19.82,
+    "lon": -155.47,
+    "elevationM": 4120,
+    "isClassicRegion": true,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.59,
+      "silicaWtPct": 47.4,
+      "tiO2WtPct": 2.95,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.02,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.4,
+      "simulantNearest": "JSC Mars-1 / Hawaiian Basalt Tephra",
+      "macrostratLithology": "Hawaiitic/basaltic cinder cone & tephra [Macrostrat: Scoria cones of the Older volcanic rocks member of the Laup\u0101hoehoe Volcanics]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 17.5,
+      "p95SlopeDeg": 31.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.24,
+      "cohesionKpa": 1.2,
+      "frictionAngleDeg": 36.5,
+      "regolithThicknessM": 1.2,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -6.8
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 285,
+      "albedo": 0.14
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 210,
+      "particleDensityKgM3": 2950
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 0.8,
+      "rfQuietnessScore": 0.9,
+      "ndvi": 0.01,
+      "ndwi": -0.35,
+      "ndsi": 0.02,
+      "logisticsFrictionIndex": 0.68
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.55,
+      "constructionFeedstockSuitability": 0.9,
+      "landingPlumeDustHazard": 0.48,
+      "directToEarthVisibilityPct": 96.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.015,
+      "waterActivityAw": 0.48,
+      "surfacePh": 7.1,
+      "biosignaturePreservationIndex": 0.42,
+      "extremophileGuilds": [
+        "cryptoendolith",
+        "psychrophile"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "effusive_basalt_volcanism"
+    ],
+    "earthCoBenefits": "Calibrates high-altitude alpine radiation sensors and volcanic tephra compaction.",
+    "citations": [
+      "DOI: 10.1029/97JE02798 (Allen et al., 1998, JSC Mars-1 simulant from Pu'u Nene/Mauna Kea)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 292.98,
+        "tStdK": 0.98,
+        "diurnalDeltaK": 5.52,
+        "pPrecipGt5Mm": 0.1742,
+        "pressureKpa": 94.53,
+        "ambientDensityKgM3": 1.124,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.524,
+        "grazingSunHoursPerDay": 0.786,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.671
+      },
+      {
+        "month": 2,
+        "tMeanK": 292.67,
+        "tStdK": 1.13,
+        "diurnalDeltaK": 5.32,
+        "pPrecipGt5Mm": 0.2473,
+        "pressureKpa": 94.49,
+        "ambientDensityKgM3": 1.1247,
+        "uvAbFluxWm2": 0.31,
+        "clearSkyFraction": 0.48,
+        "grazingSunHoursPerDay": 0.72,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.673
+      },
+      {
+        "month": 3,
+        "tMeanK": 292.96,
+        "tStdK": 1.21,
+        "diurnalDeltaK": 5.24,
+        "pPrecipGt5Mm": 0.3484,
+        "pressureKpa": 94.61,
+        "ambientDensityKgM3": 1.125,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.403,
+        "grazingSunHoursPerDay": 0.604,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.706
+      },
+      {
+        "month": 4,
+        "tMeanK": 293.62,
+        "tStdK": 0.75,
+        "diurnalDeltaK": 5.16,
+        "pPrecipGt5Mm": 0.29,
+        "pressureKpa": 94.61,
+        "ambientDensityKgM3": 1.1225,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.382,
+        "grazingSunHoursPerDay": 0.382,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.712
+      },
+      {
+        "month": 5,
+        "tMeanK": 294.22,
+        "tStdK": 0.8,
+        "diurnalDeltaK": 5.32,
+        "pPrecipGt5Mm": 0.2484,
+        "pressureKpa": 94.61,
+        "ambientDensityKgM3": 1.1202,
+        "uvAbFluxWm2": 0.38,
+        "clearSkyFraction": 0.41,
+        "grazingSunHoursPerDay": 0.615,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.701
+      },
+      {
+        "month": 6,
+        "tMeanK": 294.97,
+        "tStdK": 0.62,
+        "diurnalDeltaK": 5.6,
+        "pPrecipGt5Mm": 0.1333,
+        "pressureKpa": 94.59,
+        "ambientDensityKgM3": 1.1171,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.474,
+        "grazingSunHoursPerDay": 0.711,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.654
+      },
+      {
+        "month": 7,
+        "tMeanK": 295.66,
+        "tStdK": 0.69,
+        "diurnalDeltaK": 5.66,
+        "pPrecipGt5Mm": 0.1226,
+        "pressureKpa": 94.55,
+        "ambientDensityKgM3": 1.1141,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.507,
+        "grazingSunHoursPerDay": 0.761,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.602
+      },
+      {
+        "month": 8,
+        "tMeanK": 296.07,
+        "tStdK": 0.7,
+        "diurnalDeltaK": 5.66,
+        "pPrecipGt5Mm": 0.1935,
+        "pressureKpa": 94.49,
+        "ambientDensityKgM3": 1.1117,
+        "uvAbFluxWm2": 0.39,
+        "clearSkyFraction": 0.492,
+        "grazingSunHoursPerDay": 0.739,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.571
+      },
+      {
+        "month": 9,
+        "tMeanK": 296.06,
+        "tStdK": 0.74,
+        "diurnalDeltaK": 5.54,
+        "pPrecipGt5Mm": 0.1767,
+        "pressureKpa": 94.43,
+        "ambientDensityKgM3": 1.1111,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.485,
+        "grazingSunHoursPerDay": 0.727,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.565
+      },
+      {
+        "month": 10,
+        "tMeanK": 295.6,
+        "tStdK": 0.82,
+        "diurnalDeltaK": 5.35,
+        "pPrecipGt5Mm": 0.2097,
+        "pressureKpa": 94.43,
+        "ambientDensityKgM3": 1.1128,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.477,
+        "grazingSunHoursPerDay": 0.715,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.578
+      },
+      {
+        "month": 11,
+        "tMeanK": 294.5,
+        "tStdK": 1.03,
+        "diurnalDeltaK": 4.9,
+        "pPrecipGt5Mm": 0.2167,
+        "pressureKpa": 94.53,
+        "ambientDensityKgM3": 1.1182,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.469,
+        "grazingSunHoursPerDay": 0.703,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.605
+      },
+      {
+        "month": 12,
+        "tMeanK": 293.48,
+        "tStdK": 1.05,
+        "diurnalDeltaK": 4.91,
+        "pPrecipGt5Mm": 0.2323,
+        "pressureKpa": 94.52,
+        "ambientDensityKgM3": 1.122,
+        "uvAbFluxWm2": 0.25,
+        "clearSkyFraction": 0.478,
+        "grazingSunHoursPerDay": 0.718,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.651
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.081)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Hawaiitic/basaltic cinder cone & tephra [Macrostrat: Scoria cones of the Older volcanic rocks member of the Laup\u0101hoehoe Volcanics]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=4140.3m, medSlope=19.29 deg (lit=17.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=JSC Mars-1 / Hawaiian Basalt Tephra, O2 potential=0.55",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "kazumura_tube",
+    "name": "Kazumura Lava Tube",
+    "region": "Puna / Kilauea",
+    "country": "USA",
+    "lat": 19.52,
+    "lon": -155.04,
+    "elevationM": 420,
+    "isClassicRegion": true,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.61,
+      "silicaWtPct": 50.2,
+      "tiO2WtPct": 2.65,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.01,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.3,
+      "simulantNearest": "JSC-1A Basalt Tube",
+      "macrostratLithology": "Tholeiitic pahoehoe lava tube system [Macrostrat: Lava flows aged 200\u2013750 years before present of the Puna Basalt (basalt]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 7.5,
+      "p95SlopeDeg": 28.0,
+      "dtmResolutionM": 10.0,
+      "rockCfaK": 0.2,
+      "cohesionKpa": 1.6,
+      "frictionAngleDeg": 37.5,
+      "regolithThicknessM": 0.4,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.1
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 310,
+      "albedo": 0.09
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 150,
+      "particleDensityKgM3": 2980
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 1.5,
+      "rfQuietnessScore": 0.78,
+      "ndvi": 0.24,
+      "ndwi": -0.15,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.65
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 18.0,
+      "voidSpanWidthM": 21.0,
+      "ceilingHeightM": 16.0,
+      "skylightAccessSlopeDeg": 62.0,
+      "subterraneanDeltaTK": 1.2
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.52,
+      "constructionFeedstockSuitability": 0.9,
+      "landingPlumeDustHazard": 0.32,
+      "directToEarthVisibilityPct": 90.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.14,
+      "waterActivityAw": 0.85,
+      "surfacePh": 6.9,
+      "biosignaturePreservationIndex": 0.62,
+      "extremophileGuilds": [
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism"
+    ],
+    "earthCoBenefits": "Maps subterranean basaltic aquifers and subterranean LiDAR SLAM benchmarks.",
+    "citations": [
+      "DOI: 10.1016/j.icarus.2017.07.018 (Leveille & Datta, 2010; ASU Ronald Greeley Lava Tube DB)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 293.54,
+        "tStdK": 0.74,
+        "diurnalDeltaK": 4.17,
+        "pPrecipGt5Mm": 0.1806,
+        "pressureKpa": 96.37,
+        "ambientDensityKgM3": 1.1436,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.524,
+        "grazingSunHoursPerDay": 0.786,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.636
+      },
+      {
+        "month": 2,
+        "tMeanK": 293.36,
+        "tStdK": 0.9,
+        "diurnalDeltaK": 4.0,
+        "pPrecipGt5Mm": 0.265,
+        "pressureKpa": 96.32,
+        "ambientDensityKgM3": 1.1437,
+        "uvAbFluxWm2": 0.31,
+        "clearSkyFraction": 0.48,
+        "grazingSunHoursPerDay": 0.72,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.638
+      },
+      {
+        "month": 3,
+        "tMeanK": 293.49,
+        "tStdK": 0.98,
+        "diurnalDeltaK": 3.91,
+        "pPrecipGt5Mm": 0.3419,
+        "pressureKpa": 96.44,
+        "ambientDensityKgM3": 1.1448,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.403,
+        "grazingSunHoursPerDay": 0.604,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.672
+      },
+      {
+        "month": 4,
+        "tMeanK": 294.05,
+        "tStdK": 0.68,
+        "diurnalDeltaK": 3.73,
+        "pPrecipGt5Mm": 0.3133,
+        "pressureKpa": 96.46,
+        "ambientDensityKgM3": 1.1428,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.382,
+        "grazingSunHoursPerDay": 0.382,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.678
+      },
+      {
+        "month": 5,
+        "tMeanK": 294.56,
+        "tStdK": 0.64,
+        "diurnalDeltaK": 3.88,
+        "pPrecipGt5Mm": 0.271,
+        "pressureKpa": 96.46,
+        "ambientDensityKgM3": 1.1408,
+        "uvAbFluxWm2": 0.38,
+        "clearSkyFraction": 0.41,
+        "grazingSunHoursPerDay": 0.615,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.668
+      },
+      {
+        "month": 6,
+        "tMeanK": 295.15,
+        "tStdK": 0.46,
+        "diurnalDeltaK": 3.98,
+        "pPrecipGt5Mm": 0.1533,
+        "pressureKpa": 96.45,
+        "ambientDensityKgM3": 1.1383,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.474,
+        "grazingSunHoursPerDay": 0.711,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.623
+      },
+      {
+        "month": 7,
+        "tMeanK": 295.87,
+        "tStdK": 0.56,
+        "diurnalDeltaK": 3.93,
+        "pPrecipGt5Mm": 0.1419,
+        "pressureKpa": 96.4,
+        "ambientDensityKgM3": 1.135,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.507,
+        "grazingSunHoursPerDay": 0.761,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.574
+      },
+      {
+        "month": 8,
+        "tMeanK": 296.33,
+        "tStdK": 0.58,
+        "diurnalDeltaK": 4.02,
+        "pPrecipGt5Mm": 0.2097,
+        "pressureKpa": 96.33,
+        "ambientDensityKgM3": 1.1324,
+        "uvAbFluxWm2": 0.39,
+        "clearSkyFraction": 0.492,
+        "grazingSunHoursPerDay": 0.739,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.541
+      },
+      {
+        "month": 9,
+        "tMeanK": 296.36,
+        "tStdK": 0.65,
+        "diurnalDeltaK": 3.99,
+        "pPrecipGt5Mm": 0.2033,
+        "pressureKpa": 96.26,
+        "ambientDensityKgM3": 1.1315,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.485,
+        "grazingSunHoursPerDay": 0.727,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.541
+      },
+      {
+        "month": 10,
+        "tMeanK": 296.01,
+        "tStdK": 0.68,
+        "diurnalDeltaK": 4.0,
+        "pPrecipGt5Mm": 0.2194,
+        "pressureKpa": 96.25,
+        "ambientDensityKgM3": 1.1327,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.477,
+        "grazingSunHoursPerDay": 0.715,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.549
+      },
+      {
+        "month": 11,
+        "tMeanK": 295.07,
+        "tStdK": 0.78,
+        "diurnalDeltaK": 3.44,
+        "pPrecipGt5Mm": 0.23,
+        "pressureKpa": 96.37,
+        "ambientDensityKgM3": 1.1377,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.469,
+        "grazingSunHoursPerDay": 0.703,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.572
+      },
+      {
+        "month": 12,
+        "tMeanK": 294.08,
+        "tStdK": 0.78,
+        "diurnalDeltaK": 3.48,
+        "pPrecipGt5Mm": 0.2645,
+        "pressureKpa": 96.36,
+        "ambientDensityKgM3": 1.1415,
+        "uvAbFluxWm2": 0.25,
+        "clearSkyFraction": 0.478,
+        "grazingSunHoursPerDay": 0.718,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.619
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.081)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Tholeiitic pahoehoe lava tube system [Macrostrat: Lava flows aged 200\u2013750 years before present of the Puna Basalt (basalt]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=319.6m, medSlope=1.89 deg (lit=7.5 deg)",
+        "resolutionOrPeriod": "10.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "lava_tube span=21.0m, deltaT=1.2K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=JSC-1A Basalt Tube, O2 potential=0.52",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "mojave_silver_lake",
+    "name": "Mojave / Silver Lake Playa",
+    "region": "California Mojave",
+    "country": "USA",
+    "lat": 35.33,
+    "lon": -116.12,
+    "elevationM": 280,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.25,
+      "silicaWtPct": 62.0,
+      "tiO2WtPct": 0.55,
+      "clayIndex": 0.28,
+      "sulfateIndex": 0.18,
+      "carbonateIndex": 0.14,
+      "waterEquivalentHydrogenWtPct": 1.4,
+      "simulantNearest": "Alluvial Silt-Clay Playa",
+      "macrostratLithology": "Quaternary lacustrine silt-clay playa [Macrostrat: Alluvium, lake, playa, and terrace deposits (unconsolidated]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 0.8,
+      "p95SlopeDeg": 2.4,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.04,
+      "cohesionKpa": 4.2,
+      "frictionAngleDeg": 30.0,
+      "regolithThicknessM": 5.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -13.5
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 330,
+      "albedo": 0.38
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 85,
+      "particleDensityKgM3": 2650
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 1.8,
+      "rfQuietnessScore": 0.76,
+      "ndvi": 0.04,
+      "ndwi": -0.32,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.94
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.08,
+      "constructionFeedstockSuitability": 0.32,
+      "landingPlumeDustHazard": 0.72,
+      "directToEarthVisibilityPct": 96.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.06,
+      "waterActivityAw": 0.52,
+      "surfacePh": 8.4,
+      "biosignaturePreservationIndex": 0.65,
+      "extremophileGuilds": [
+        "halophile"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation",
+      "dust_devils_storms"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation",
+      "evaporite_brine_precipitation"
+    ],
+    "earthCoBenefits": "Monitors desert dust emission fluxes and dryland playa deflation.",
+    "citations": [
+      "NASA JPL Mars Rover Field Test Archive (Silver Lake Playa Mars Rover Testing)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 282.12,
+        "tStdK": 3.01,
+        "diurnalDeltaK": 11.66,
+        "pPrecipGt5Mm": 0.0645,
+        "pressureKpa": 93.82,
+        "ambientDensityKgM3": 1.1584,
+        "uvAbFluxWm2": 0.17,
+        "clearSkyFraction": 0.562,
+        "grazingSunHoursPerDay": 1.124,
+        "snowDepthCm": 1.78,
+        "gwettop": 0.403
+      },
+      {
+        "month": 2,
+        "tMeanK": 283.78,
+        "tStdK": 3.87,
+        "diurnalDeltaK": 13.31,
+        "pPrecipGt5Mm": 0.0353,
+        "pressureKpa": 93.63,
+        "ambientDensityKgM3": 1.1494,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.675,
+        "grazingSunHoursPerDay": 1.35,
+        "snowDepthCm": 1.57,
+        "gwettop": 0.416
+      },
+      {
+        "month": 3,
+        "tMeanK": 286.81,
+        "tStdK": 3.99,
+        "diurnalDeltaK": 14.26,
+        "pPrecipGt5Mm": 0.0548,
+        "pressureKpa": 93.47,
+        "ambientDensityKgM3": 1.1353,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.604,
+        "grazingSunHoursPerDay": 0.906,
+        "snowDepthCm": 0.5,
+        "gwettop": 0.383
+      },
+      {
+        "month": 4,
+        "tMeanK": 291.75,
+        "tStdK": 3.81,
+        "diurnalDeltaK": 16.11,
+        "pPrecipGt5Mm": 0.0367,
+        "pressureKpa": 93.26,
+        "ambientDensityKgM3": 1.1135,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.711,
+        "grazingSunHoursPerDay": 1.066,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.299
+      },
+      {
+        "month": 5,
+        "tMeanK": 295.75,
+        "tStdK": 4.24,
+        "diurnalDeltaK": 16.66,
+        "pPrecipGt5Mm": 0.0097,
+        "pressureKpa": 93.07,
+        "ambientDensityKgM3": 1.0962,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.767,
+        "grazingSunHoursPerDay": 1.15,
+        "snowDepthCm": 0.02,
+        "gwettop": 0.214
+      },
+      {
+        "month": 6,
+        "tMeanK": 302.86,
+        "tStdK": 3.86,
+        "diurnalDeltaK": 18.0,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 93.02,
+        "ambientDensityKgM3": 1.07,
+        "uvAbFluxWm2": 0.5,
+        "clearSkyFraction": 0.821,
+        "grazingSunHoursPerDay": 1.232,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.119
+      },
+      {
+        "month": 7,
+        "tMeanK": 306.12,
+        "tStdK": 2.84,
+        "diurnalDeltaK": 16.56,
+        "pPrecipGt5Mm": 0.029,
+        "pressureKpa": 93.2,
+        "ambientDensityKgM3": 1.0606,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.761,
+        "grazingSunHoursPerDay": 1.521,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.149
+      },
+      {
+        "month": 8,
+        "tMeanK": 304.98,
+        "tStdK": 2.31,
+        "diurnalDeltaK": 16.03,
+        "pPrecipGt5Mm": 0.0194,
+        "pressureKpa": 93.2,
+        "ambientDensityKgM3": 1.0645,
+        "uvAbFluxWm2": 0.44,
+        "clearSkyFraction": 0.798,
+        "grazingSunHoursPerDay": 1.197,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.189
+      },
+      {
+        "month": 9,
+        "tMeanK": 300.98,
+        "tStdK": 4.0,
+        "diurnalDeltaK": 15.24,
+        "pPrecipGt5Mm": 0.0133,
+        "pressureKpa": 93.22,
+        "ambientDensityKgM3": 1.0789,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.84,
+        "grazingSunHoursPerDay": 1.26,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.177
+      },
+      {
+        "month": 10,
+        "tMeanK": 294.46,
+        "tStdK": 4.47,
+        "diurnalDeltaK": 14.02,
+        "pPrecipGt5Mm": 0.0226,
+        "pressureKpa": 93.42,
+        "ambientDensityKgM3": 1.1052,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.796,
+        "grazingSunHoursPerDay": 1.591,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.187
+      },
+      {
+        "month": 11,
+        "tMeanK": 286.97,
+        "tStdK": 4.21,
+        "diurnalDeltaK": 13.23,
+        "pPrecipGt5Mm": 0.0167,
+        "pressureKpa": 93.66,
+        "ambientDensityKgM3": 1.1369,
+        "uvAbFluxWm2": 0.2,
+        "clearSkyFraction": 0.737,
+        "grazingSunHoursPerDay": 1.474,
+        "snowDepthCm": 0.14,
+        "gwettop": 0.214
+      },
+      {
+        "month": 12,
+        "tMeanK": 282.36,
+        "tStdK": 3.24,
+        "diurnalDeltaK": 11.95,
+        "pPrecipGt5Mm": 0.0355,
+        "pressureKpa": 93.77,
+        "ambientDensityKgM3": 1.1569,
+        "uvAbFluxWm2": 0.15,
+        "clearSkyFraction": 0.571,
+        "grazingSunHoursPerDay": 1.142,
+        "snowDepthCm": 0.79,
+        "gwettop": 0.291
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.215)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Quaternary lacustrine silt-clay playa [Macrostrat: Alluvium, lake, playa, and terrace deposits (unconsolidated]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=280.7m, medSlope=0.08 deg (lit=0.8 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  },
+  {
+    "id": "black_point_flow",
+    "name": "Black Point Lava Flow",
+    "region": "San Francisco Volcanic Field, AZ",
+    "country": "USA",
+    "lat": 35.69,
+    "lon": -111.46,
+    "elevationM": 1570,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.57,
+      "silicaWtPct": 46.8,
+      "tiO2WtPct": 2.45,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.02,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 0.25,
+      "simulantNearest": "JSC-1A / LMS-1 Basalt Regolith",
+      "macrostratLithology": "Pliocene alkali-olivine basalt flow & dust mantle [Macrostrat: Moenkopi Formation (gypsum, mudstone, sandstone]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 4.2,
+      "p95SlopeDeg": 12.0,
+      "dtmResolutionM": 10.0,
+      "rockCfaK": 0.11,
+      "cohesionKpa": 1.3,
+      "frictionAngleDeg": 36.5,
+      "regolithThicknessM": 2.8,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -7.8
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 260,
+      "albedo": 0.12
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 95,
+      "particleDensityKgM3": 2980
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 4.2,
+      "rfQuietnessScore": 0.86,
+      "ndvi": 0.05,
+      "ndwi": -0.34,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.92
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.58,
+      "constructionFeedstockSuitability": 0.91,
+      "landingPlumeDustHazard": 0.48,
+      "directToEarthVisibilityPct": 96.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.03,
+      "waterActivityAw": 0.45,
+      "surfacePh": 7.5,
+      "biosignaturePreservationIndex": 0.4,
+      "extremophileGuilds": [
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "impact_shock_ejecta"
+    ],
+    "earthCoBenefits": "Supports semi-arid Colorado Plateau basaltic dust-erosion tracking.",
+    "citations": [
+      "NASA Desert RATS Field Operations Reports (Black Point Lava Flow Artemis/Constellation site)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 275.42,
+        "tStdK": 2.98,
+        "diurnalDeltaK": 12.43,
+        "pPrecipGt5Mm": 0.0645,
+        "pressureKpa": 84.16,
+        "ambientDensityKgM3": 1.0645,
+        "uvAbFluxWm2": 0.18,
+        "clearSkyFraction": 0.506,
+        "grazingSunHoursPerDay": 1.012,
+        "snowDepthCm": 10.88,
+        "gwettop": 0.391
+      },
+      {
+        "month": 2,
+        "tMeanK": 277.64,
+        "tStdK": 3.92,
+        "diurnalDeltaK": 14.38,
+        "pPrecipGt5Mm": 0.0707,
+        "pressureKpa": 83.99,
+        "ambientDensityKgM3": 1.0539,
+        "uvAbFluxWm2": 0.25,
+        "clearSkyFraction": 0.58,
+        "grazingSunHoursPerDay": 1.16,
+        "snowDepthCm": 7.08,
+        "gwettop": 0.401
+      },
+      {
+        "month": 3,
+        "tMeanK": 281.32,
+        "tStdK": 3.85,
+        "diurnalDeltaK": 15.59,
+        "pPrecipGt5Mm": 0.071,
+        "pressureKpa": 83.92,
+        "ambientDensityKgM3": 1.0391,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.542,
+        "grazingSunHoursPerDay": 0.813,
+        "snowDepthCm": 4.75,
+        "gwettop": 0.409
+      },
+      {
+        "month": 4,
+        "tMeanK": 286.24,
+        "tStdK": 3.79,
+        "diurnalDeltaK": 17.26,
+        "pPrecipGt5Mm": 0.0233,
+        "pressureKpa": 83.83,
+        "ambientDensityKgM3": 1.0203,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.635,
+        "grazingSunHoursPerDay": 0.952,
+        "snowDepthCm": 0.94,
+        "gwettop": 0.366
+      },
+      {
+        "month": 5,
+        "tMeanK": 290.77,
+        "tStdK": 3.82,
+        "diurnalDeltaK": 17.44,
+        "pPrecipGt5Mm": 0.0161,
+        "pressureKpa": 83.81,
+        "ambientDensityKgM3": 1.0041,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.666,
+        "grazingSunHoursPerDay": 0.999,
+        "snowDepthCm": 0.28,
+        "gwettop": 0.331
+      },
+      {
+        "month": 6,
+        "tMeanK": 298.15,
+        "tStdK": 3.21,
+        "diurnalDeltaK": 17.98,
+        "pPrecipGt5Mm": 0.0133,
+        "pressureKpa": 83.99,
+        "ambientDensityKgM3": 0.9814,
+        "uvAbFluxWm2": 0.5,
+        "clearSkyFraction": 0.703,
+        "grazingSunHoursPerDay": 1.054,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.276
+      },
+      {
+        "month": 7,
+        "tMeanK": 300.29,
+        "tStdK": 2.41,
+        "diurnalDeltaK": 15.37,
+        "pPrecipGt5Mm": 0.0968,
+        "pressureKpa": 84.27,
+        "ambientDensityKgM3": 0.9776,
+        "uvAbFluxWm2": 0.45,
+        "clearSkyFraction": 0.504,
+        "grazingSunHoursPerDay": 1.007,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.31
+      },
+      {
+        "month": 8,
+        "tMeanK": 298.99,
+        "tStdK": 2.17,
+        "diurnalDeltaK": 14.99,
+        "pPrecipGt5Mm": 0.1065,
+        "pressureKpa": 84.27,
+        "ambientDensityKgM3": 0.9818,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.539,
+        "grazingSunHoursPerDay": 0.808,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.337
+      },
+      {
+        "month": 9,
+        "tMeanK": 295.12,
+        "tStdK": 3.33,
+        "diurnalDeltaK": 15.72,
+        "pPrecipGt5Mm": 0.0267,
+        "pressureKpa": 84.17,
+        "ambientDensityKgM3": 0.9936,
+        "uvAbFluxWm2": 0.36,
+        "clearSkyFraction": 0.689,
+        "grazingSunHoursPerDay": 1.033,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.311
+      },
+      {
+        "month": 10,
+        "tMeanK": 287.81,
+        "tStdK": 4.62,
+        "diurnalDeltaK": 15.94,
+        "pPrecipGt5Mm": 0.0613,
+        "pressureKpa": 84.15,
+        "ambientDensityKgM3": 1.0185,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.707,
+        "grazingSunHoursPerDay": 1.415,
+        "snowDepthCm": 0.65,
+        "gwettop": 0.318
+      },
+      {
+        "month": 11,
+        "tMeanK": 280.36,
+        "tStdK": 4.36,
+        "diurnalDeltaK": 15.01,
+        "pPrecipGt5Mm": 0.0333,
+        "pressureKpa": 84.17,
+        "ambientDensityKgM3": 1.0458,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.676,
+        "grazingSunHoursPerDay": 1.351,
+        "snowDepthCm": 2.0,
+        "gwettop": 0.344
+      },
+      {
+        "month": 12,
+        "tMeanK": 276.09,
+        "tStdK": 3.3,
+        "diurnalDeltaK": 12.6,
+        "pPrecipGt5Mm": 0.0419,
+        "pressureKpa": 84.14,
+        "ambientDensityKgM3": 1.0616,
+        "uvAbFluxWm2": 0.16,
+        "clearSkyFraction": 0.544,
+        "grazingSunHoursPerDay": 1.089,
+        "snowDepthCm": 6.53,
+        "gwettop": 0.365
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.205)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Pliocene alkali-olivine basalt flow & dust mantle [Macrostrat: Moenkopi Formation (gypsum, mudstone, sandstone]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1583.4m, medSlope=1.54 deg (lit=4.2 deg)",
+        "resolutionOrPeriod": "10.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=JSC-1A / LMS-1 Basalt Regolith, O2 potential=0.58",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "craters_of_moon",
+    "name": "Craters of the Moon",
+    "region": "Snake River Plain, ID",
+    "country": "USA",
+    "lat": 43.46,
+    "lon": -113.56,
+    "elevationM": 1790,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.56,
+      "silicaWtPct": 47.2,
+      "tiO2WtPct": 3.15,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.01,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.2,
+      "simulantNearest": "JSC-1A / High-Ti Mare Basalt",
+      "macrostratLithology": "Holocene high-Fe/Ti basaltic lava & cinder [Macrostrat: Basalt (basalt, latite]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 4.8,
+      "p95SlopeDeg": 14.5,
+      "dtmResolutionM": 10.0,
+      "rockCfaK": 0.14,
+      "cohesionKpa": 1.4,
+      "frictionAngleDeg": 37.0,
+      "regolithThicknessM": 2.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -6.9
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 270,
+      "albedo": 0.09
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 110,
+      "particleDensityKgM3": 3000
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 3.5,
+      "rfQuietnessScore": 0.88,
+      "ndvi": 0.05,
+      "ndwi": -0.33,
+      "ndsi": 0.05,
+      "logisticsFrictionIndex": 0.52
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 12.0,
+      "voidSpanWidthM": 15.0,
+      "ceilingHeightM": 10.0,
+      "skylightAccessSlopeDeg": 48.0,
+      "subterraneanDeltaTK": 2.2
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.65,
+      "constructionFeedstockSuitability": 0.92,
+      "landingPlumeDustHazard": 0.42,
+      "directToEarthVisibilityPct": 93.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.03,
+      "waterActivityAw": 0.5,
+      "surfacePh": 7.0,
+      "biosignaturePreservationIndex": 0.44,
+      "extremophileGuilds": [
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "effusive_basalt_volcanism",
+      "lava_tube_inflation"
+    ],
+    "earthCoBenefits": "Guides volcanic rift preservation and cold-desert thermal rock-weathering metrics.",
+    "citations": [
+      "NASA FINESSE Field Site Characterization (Lim et al., 2019, Astrobiology, Craters of the Moon)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 265.85,
+        "tStdK": 4.13,
+        "diurnalDeltaK": 9.77,
+        "pPrecipGt5Mm": 0.0935,
+        "pressureKpa": 80.93,
+        "ambientDensityKgM3": 1.0604,
+        "uvAbFluxWm2": 0.1,
+        "clearSkyFraction": 0.347,
+        "grazingSunHoursPerDay": 0.867,
+        "snowDepthCm": 31.66,
+        "gwettop": 0.52
+      },
+      {
+        "month": 2,
+        "tMeanK": 267.19,
+        "tStdK": 4.48,
+        "diurnalDeltaK": 10.08,
+        "pPrecipGt5Mm": 0.106,
+        "pressureKpa": 80.72,
+        "ambientDensityKgM3": 1.0525,
+        "uvAbFluxWm2": 0.17,
+        "clearSkyFraction": 0.375,
+        "grazingSunHoursPerDay": 0.75,
+        "snowDepthCm": 28.29,
+        "gwettop": 0.594
+      },
+      {
+        "month": 3,
+        "tMeanK": 272.25,
+        "tStdK": 4.7,
+        "diurnalDeltaK": 10.39,
+        "pPrecipGt5Mm": 0.0839,
+        "pressureKpa": 80.75,
+        "ambientDensityKgM3": 1.0332,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.389,
+        "grazingSunHoursPerDay": 0.778,
+        "snowDepthCm": 19.71,
+        "gwettop": 0.673
+      },
+      {
+        "month": 4,
+        "tMeanK": 277.12,
+        "tStdK": 4.26,
+        "diurnalDeltaK": 12.01,
+        "pPrecipGt5Mm": 0.05,
+        "pressureKpa": 80.76,
+        "ambientDensityKgM3": 1.0152,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.426,
+        "grazingSunHoursPerDay": 0.853,
+        "snowDepthCm": 11.14,
+        "gwettop": 0.674
+      },
+      {
+        "month": 5,
+        "tMeanK": 282.67,
+        "tStdK": 4.03,
+        "diurnalDeltaK": 12.96,
+        "pPrecipGt5Mm": 0.1065,
+        "pressureKpa": 80.83,
+        "ambientDensityKgM3": 0.9962,
+        "uvAbFluxWm2": 0.38,
+        "clearSkyFraction": 0.395,
+        "grazingSunHoursPerDay": 0.789,
+        "snowDepthCm": 4.75,
+        "gwettop": 0.617
+      },
+      {
+        "month": 6,
+        "tMeanK": 289.44,
+        "tStdK": 4.47,
+        "diurnalDeltaK": 14.72,
+        "pPrecipGt5Mm": 0.0333,
+        "pressureKpa": 81.04,
+        "ambientDensityKgM3": 0.9754,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.553,
+        "grazingSunHoursPerDay": 1.106,
+        "snowDepthCm": 0.74,
+        "gwettop": 0.522
+      },
+      {
+        "month": 7,
+        "tMeanK": 294.92,
+        "tStdK": 3.1,
+        "diurnalDeltaK": 15.6,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 81.3,
+        "ambientDensityKgM3": 0.9604,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.671,
+        "grazingSunHoursPerDay": 1.341,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.381
+      },
+      {
+        "month": 8,
+        "tMeanK": 293.67,
+        "tStdK": 3.17,
+        "diurnalDeltaK": 15.09,
+        "pPrecipGt5Mm": 0.0161,
+        "pressureKpa": 81.27,
+        "ambientDensityKgM3": 0.9641,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.637,
+        "grazingSunHoursPerDay": 1.274,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.299
+      },
+      {
+        "month": 9,
+        "tMeanK": 287.96,
+        "tStdK": 4.89,
+        "diurnalDeltaK": 14.26,
+        "pPrecipGt5Mm": 0.0633,
+        "pressureKpa": 81.18,
+        "ambientDensityKgM3": 0.9821,
+        "uvAbFluxWm2": 0.29,
+        "clearSkyFraction": 0.631,
+        "grazingSunHoursPerDay": 1.262,
+        "snowDepthCm": 1.05,
+        "gwettop": 0.309
+      },
+      {
+        "month": 10,
+        "tMeanK": 279.85,
+        "tStdK": 5.21,
+        "diurnalDeltaK": 12.31,
+        "pPrecipGt5Mm": 0.071,
+        "pressureKpa": 81.12,
+        "ambientDensityKgM3": 1.0098,
+        "uvAbFluxWm2": 0.2,
+        "clearSkyFraction": 0.545,
+        "grazingSunHoursPerDay": 1.091,
+        "snowDepthCm": 6.7,
+        "gwettop": 0.395
+      },
+      {
+        "month": 11,
+        "tMeanK": 271.95,
+        "tStdK": 4.57,
+        "diurnalDeltaK": 9.36,
+        "pPrecipGt5Mm": 0.08,
+        "pressureKpa": 80.99,
+        "ambientDensityKgM3": 1.0375,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.442,
+        "grazingSunHoursPerDay": 0.885,
+        "snowDepthCm": 14.09,
+        "gwettop": 0.459
+      },
+      {
+        "month": 12,
+        "tMeanK": 266.25,
+        "tStdK": 4.66,
+        "diurnalDeltaK": 9.4,
+        "pPrecipGt5Mm": 0.1161,
+        "pressureKpa": 80.87,
+        "ambientDensityKgM3": 1.058,
+        "uvAbFluxWm2": 0.08,
+        "clearSkyFraction": 0.355,
+        "grazingSunHoursPerDay": 0.889,
+        "snowDepthCm": 22.18,
+        "gwettop": 0.485
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.23)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Holocene high-Fe/Ti basaltic lava & cinder [Macrostrat: Basalt (basalt, latite]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1787.9m, medSlope=4.06 deg (lit=4.8 deg)",
+        "resolutionOrPeriod": "10.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "lava_tube span=15.0m, deltaT=2.2K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=JSC-1A / High-Ti Mare Basalt, O2 potential=0.65",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "valentine_cave",
+    "name": "Valentine Cave / Lava Beds",
+    "region": "Modoc Plateau, CA",
+    "country": "USA",
+    "lat": 41.73,
+    "lon": -121.51,
+    "elevationM": 1460,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.55,
+      "silicaWtPct": 49.5,
+      "tiO2WtPct": 1.45,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.01,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.25,
+      "simulantNearest": "Basalt Lava Tube",
+      "macrostratLithology": "Quaternary basaltic lava tube & skylight collapse [Macrostrat: Volcanic flow rocks and minor pyroclastic deposits (volcanic]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 8.4,
+      "p95SlopeDeg": 26.0,
+      "dtmResolutionM": 10.0,
+      "rockCfaK": 0.19,
+      "cohesionKpa": 1.6,
+      "frictionAngleDeg": 37.5,
+      "regolithThicknessM": 0.8,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.6
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 295,
+      "albedo": 0.11
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 130,
+      "particleDensityKgM3": 2940
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 2.2,
+      "rfQuietnessScore": 0.9,
+      "ndvi": 0.1,
+      "ndwi": -0.28,
+      "ndsi": 0.04,
+      "logisticsFrictionIndex": 0.5
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 22.0,
+      "voidSpanWidthM": 30.0,
+      "ceilingHeightM": 18.0,
+      "skylightAccessSlopeDeg": 58.0,
+      "subterraneanDeltaTK": 1.6
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.42,
+      "constructionFeedstockSuitability": 0.88,
+      "landingPlumeDustHazard": 0.36,
+      "directToEarthVisibilityPct": 91.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.08,
+      "waterActivityAw": 0.74,
+      "surfacePh": 7.3,
+      "biosignaturePreservationIndex": 0.68,
+      "extremophileGuilds": [
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism"
+    ],
+    "earthCoBenefits": "Monitors subterranean bat/cave microclimates and volcanic ice-cave hydrology.",
+    "citations": [
+      "DOI: 10.1089/ast.2019.2102 (Northup et al., Lava Beds National Monument cave geomicrobiology)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 272.85,
+        "tStdK": 3.52,
+        "diurnalDeltaK": 8.7,
+        "pPrecipGt5Mm": 0.229,
+        "pressureKpa": 85.56,
+        "ambientDensityKgM3": 1.0925,
+        "uvAbFluxWm2": 0.11,
+        "clearSkyFraction": 0.343,
+        "grazingSunHoursPerDay": 0.687,
+        "snowDepthCm": 15.38,
+        "gwettop": 0.655
+      },
+      {
+        "month": 2,
+        "tMeanK": 274.02,
+        "tStdK": 3.47,
+        "diurnalDeltaK": 10.16,
+        "pPrecipGt5Mm": 0.1802,
+        "pressureKpa": 85.5,
+        "ambientDensityKgM3": 1.087,
+        "uvAbFluxWm2": 0.17,
+        "clearSkyFraction": 0.412,
+        "grazingSunHoursPerDay": 0.823,
+        "snowDepthCm": 10.7,
+        "gwettop": 0.707
+      },
+      {
+        "month": 3,
+        "tMeanK": 276.19,
+        "tStdK": 3.79,
+        "diurnalDeltaK": 11.18,
+        "pPrecipGt5Mm": 0.171,
+        "pressureKpa": 85.39,
+        "ambientDensityKgM3": 1.0771,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.397,
+        "grazingSunHoursPerDay": 0.794,
+        "snowDepthCm": 10.89,
+        "gwettop": 0.72
+      },
+      {
+        "month": 4,
+        "tMeanK": 280.19,
+        "tStdK": 4.0,
+        "diurnalDeltaK": 13.66,
+        "pPrecipGt5Mm": 0.12,
+        "pressureKpa": 85.46,
+        "ambientDensityKgM3": 1.0626,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.486,
+        "grazingSunHoursPerDay": 0.972,
+        "snowDepthCm": 5.4,
+        "gwettop": 0.701
+      },
+      {
+        "month": 5,
+        "tMeanK": 284.89,
+        "tStdK": 4.19,
+        "diurnalDeltaK": 14.56,
+        "pPrecipGt5Mm": 0.0968,
+        "pressureKpa": 85.42,
+        "ambientDensityKgM3": 1.0445,
+        "uvAbFluxWm2": 0.42,
+        "clearSkyFraction": 0.548,
+        "grazingSunHoursPerDay": 1.096,
+        "snowDepthCm": 1.9,
+        "gwettop": 0.64
+      },
+      {
+        "month": 6,
+        "tMeanK": 290.67,
+        "tStdK": 4.62,
+        "diurnalDeltaK": 17.01,
+        "pPrecipGt5Mm": 0.0233,
+        "pressureKpa": 85.54,
+        "ambientDensityKgM3": 1.0252,
+        "uvAbFluxWm2": 0.49,
+        "clearSkyFraction": 0.687,
+        "grazingSunHoursPerDay": 1.374,
+        "snowDepthCm": 0.34,
+        "gwettop": 0.538
+      },
+      {
+        "month": 7,
+        "tMeanK": 295.66,
+        "tStdK": 3.15,
+        "diurnalDeltaK": 18.73,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 85.7,
+        "ambientDensityKgM3": 1.0098,
+        "uvAbFluxWm2": 0.49,
+        "clearSkyFraction": 0.822,
+        "grazingSunHoursPerDay": 1.644,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.401
+      },
+      {
+        "month": 8,
+        "tMeanK": 294.69,
+        "tStdK": 2.72,
+        "diurnalDeltaK": 17.94,
+        "pPrecipGt5Mm": 0.0097,
+        "pressureKpa": 85.67,
+        "ambientDensityKgM3": 1.0128,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.78,
+        "grazingSunHoursPerDay": 1.56,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.311
+      },
+      {
+        "month": 9,
+        "tMeanK": 289.51,
+        "tStdK": 4.57,
+        "diurnalDeltaK": 17.01,
+        "pPrecipGt5Mm": 0.0333,
+        "pressureKpa": 85.62,
+        "ambientDensityKgM3": 1.0302,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.713,
+        "grazingSunHoursPerDay": 1.425,
+        "snowDepthCm": 0.23,
+        "gwettop": 0.31
+      },
+      {
+        "month": 10,
+        "tMeanK": 283.09,
+        "tStdK": 4.65,
+        "diurnalDeltaK": 15.0,
+        "pPrecipGt5Mm": 0.0742,
+        "pressureKpa": 85.69,
+        "ambientDensityKgM3": 1.0545,
+        "uvAbFluxWm2": 0.22,
+        "clearSkyFraction": 0.627,
+        "grazingSunHoursPerDay": 1.255,
+        "snowDepthCm": 1.3,
+        "gwettop": 0.361
+      },
+      {
+        "month": 11,
+        "tMeanK": 275.99,
+        "tStdK": 3.85,
+        "diurnalDeltaK": 10.99,
+        "pPrecipGt5Mm": 0.16,
+        "pressureKpa": 85.62,
+        "ambientDensityKgM3": 1.0807,
+        "uvAbFluxWm2": 0.13,
+        "clearSkyFraction": 0.438,
+        "grazingSunHoursPerDay": 0.877,
+        "snowDepthCm": 8.92,
+        "gwettop": 0.452
+      },
+      {
+        "month": 12,
+        "tMeanK": 272.36,
+        "tStdK": 3.34,
+        "diurnalDeltaK": 8.63,
+        "pPrecipGt5Mm": 0.2194,
+        "pressureKpa": 85.56,
+        "ambientDensityKgM3": 1.0943,
+        "uvAbFluxWm2": 0.09,
+        "clearSkyFraction": 0.353,
+        "grazingSunHoursPerDay": 0.707,
+        "snowDepthCm": 15.64,
+        "gwettop": 0.546
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.138)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Quaternary basaltic lava tube & skylight collapse [Macrostrat: Volcanic flow rocks and minor pyroclastic deposits (volcanic]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1390.4m, medSlope=1.79 deg (lit=8.4 deg)",
+        "resolutionOrPeriod": "10.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "lava_tube span=30.0m, deltaT=1.6K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Basalt Lava Tube, O2 potential=0.42",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "pilot_valley",
+    "name": "Pilot Valley Basin",
+    "region": "Bonneville Basin, UT",
+    "country": "USA",
+    "lat": 40.88,
+    "lon": -113.97,
+    "elevationM": 1295,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.22,
+      "silicaWtPct": 52.0,
+      "tiO2WtPct": 0.4,
+      "clayIndex": 0.26,
+      "sulfateIndex": 0.55,
+      "carbonateIndex": 0.35,
+      "waterEquivalentHydrogenWtPct": 2.1,
+      "simulantNearest": "Playa Carbonate-Sulfate Crust",
+      "macrostratLithology": "Lacustrine marl, gypsum & halite playa [Macrostrat: Major:{clay}, Minor:{salt}]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 0.6,
+      "p95SlopeDeg": 1.8,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.02,
+      "cohesionKpa": 3.8,
+      "frictionAngleDeg": 29.0,
+      "regolithThicknessM": 6.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -14.0
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 340,
+      "albedo": 0.42
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 75,
+      "particleDensityKgM3": 2600
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 5.5,
+      "rfQuietnessScore": 0.94,
+      "ndvi": 0.01,
+      "ndwi": -0.25,
+      "ndsi": 0.02,
+      "logisticsFrictionIndex": 0.89
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.05,
+      "constructionFeedstockSuitability": 0.28,
+      "landingPlumeDustHazard": 0.78,
+      "directToEarthVisibilityPct": 96.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.05,
+      "waterActivityAw": 0.62,
+      "surfacePh": 8.5,
+      "biosignaturePreservationIndex": 0.8,
+      "extremophileGuilds": [
+        "halophile",
+        "chemoautotroph"
+      ]
+    },
+    "activeProcesses": [
+      "evaporite_brine_precipitation",
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Tracks Great Basin dust-plume salt crusts and arid groundwater evaporation.",
+    "citations": [
+      "DOI: 10.1089/ast.2016.1530 (Lynch et al., 2015/2019, Pilot Valley hypersaline paleolake Mars analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 271.24,
+        "tStdK": 3.84,
+        "diurnalDeltaK": 9.02,
+        "pPrecipGt5Mm": 0.0323,
+        "pressureKpa": 86.23,
+        "ambientDensityKgM3": 1.1075,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.371,
+        "grazingSunHoursPerDay": 0.742,
+        "snowDepthCm": 16.8,
+        "gwettop": 0.413
+      },
+      {
+        "month": 2,
+        "tMeanK": 273.94,
+        "tStdK": 3.69,
+        "diurnalDeltaK": 10.42,
+        "pPrecipGt5Mm": 0.0283,
+        "pressureKpa": 86.01,
+        "ambientDensityKgM3": 1.0938,
+        "uvAbFluxWm2": 0.19,
+        "clearSkyFraction": 0.408,
+        "grazingSunHoursPerDay": 0.612,
+        "snowDepthCm": 12.78,
+        "gwettop": 0.433
+      },
+      {
+        "month": 3,
+        "tMeanK": 278.22,
+        "tStdK": 4.17,
+        "diurnalDeltaK": 12.08,
+        "pPrecipGt5Mm": 0.0484,
+        "pressureKpa": 85.89,
+        "ambientDensityKgM3": 1.0754,
+        "uvAbFluxWm2": 0.26,
+        "clearSkyFraction": 0.348,
+        "grazingSunHoursPerDay": 0.696,
+        "snowDepthCm": 9.43,
+        "gwettop": 0.442
+      },
+      {
+        "month": 4,
+        "tMeanK": 282.34,
+        "tStdK": 4.07,
+        "diurnalDeltaK": 13.93,
+        "pPrecipGt5Mm": 0.0633,
+        "pressureKpa": 85.84,
+        "ambientDensityKgM3": 1.0591,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.432,
+        "grazingSunHoursPerDay": 0.865,
+        "snowDepthCm": 3.56,
+        "gwettop": 0.434
+      },
+      {
+        "month": 5,
+        "tMeanK": 287.55,
+        "tStdK": 4.17,
+        "diurnalDeltaK": 13.86,
+        "pPrecipGt5Mm": 0.0548,
+        "pressureKpa": 85.77,
+        "ambientDensityKgM3": 1.0391,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.381,
+        "grazingSunHoursPerDay": 0.762,
+        "snowDepthCm": 0.78,
+        "gwettop": 0.411
+      },
+      {
+        "month": 6,
+        "tMeanK": 294.78,
+        "tStdK": 4.22,
+        "diurnalDeltaK": 15.72,
+        "pPrecipGt5Mm": 0.0167,
+        "pressureKpa": 85.87,
+        "ambientDensityKgM3": 1.0148,
+        "uvAbFluxWm2": 0.45,
+        "clearSkyFraction": 0.529,
+        "grazingSunHoursPerDay": 1.058,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.346
+      },
+      {
+        "month": 7,
+        "tMeanK": 300.03,
+        "tStdK": 2.75,
+        "diurnalDeltaK": 15.6,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 86.05,
+        "ambientDensityKgM3": 0.9991,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.539,
+        "grazingSunHoursPerDay": 1.078,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.243
+      },
+      {
+        "month": 8,
+        "tMeanK": 298.27,
+        "tStdK": 2.9,
+        "diurnalDeltaK": 14.97,
+        "pPrecipGt5Mm": 0.0258,
+        "pressureKpa": 86.05,
+        "ambientDensityKgM3": 1.005,
+        "uvAbFluxWm2": 0.37,
+        "clearSkyFraction": 0.567,
+        "grazingSunHoursPerDay": 1.134,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.22
+      },
+      {
+        "month": 9,
+        "tMeanK": 292.65,
+        "tStdK": 4.74,
+        "diurnalDeltaK": 14.65,
+        "pPrecipGt5Mm": 0.0367,
+        "pressureKpa": 86.05,
+        "ambientDensityKgM3": 1.0244,
+        "uvAbFluxWm2": 0.3,
+        "clearSkyFraction": 0.616,
+        "grazingSunHoursPerDay": 1.233,
+        "snowDepthCm": 0.41,
+        "gwettop": 0.232
+      },
+      {
+        "month": 10,
+        "tMeanK": 284.14,
+        "tStdK": 5.18,
+        "diurnalDeltaK": 13.22,
+        "pPrecipGt5Mm": 0.029,
+        "pressureKpa": 86.17,
+        "ambientDensityKgM3": 1.0565,
+        "uvAbFluxWm2": 0.22,
+        "clearSkyFraction": 0.529,
+        "grazingSunHoursPerDay": 0.794,
+        "snowDepthCm": 1.06,
+        "gwettop": 0.321
+      },
+      {
+        "month": 11,
+        "tMeanK": 276.41,
+        "tStdK": 4.35,
+        "diurnalDeltaK": 10.62,
+        "pPrecipGt5Mm": 0.02,
+        "pressureKpa": 86.2,
+        "ambientDensityKgM3": 1.0863,
+        "uvAbFluxWm2": 0.14,
+        "clearSkyFraction": 0.44,
+        "grazingSunHoursPerDay": 0.879,
+        "snowDepthCm": 6.61,
+        "gwettop": 0.361
+      },
+      {
+        "month": 12,
+        "tMeanK": 271.44,
+        "tStdK": 3.34,
+        "diurnalDeltaK": 8.78,
+        "pPrecipGt5Mm": 0.0355,
+        "pressureKpa": 86.19,
+        "ambientDensityKgM3": 1.1061,
+        "uvAbFluxWm2": 0.1,
+        "clearSkyFraction": 0.372,
+        "grazingSunHoursPerDay": 0.93,
+        "snowDepthCm": 15.78,
+        "gwettop": 0.386
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.248)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Lacustrine marl, gypsum & halite playa [Macrostrat: Major:{clay}, Minor:{salt}]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1312.1m, medSlope=1.25 deg (lit=0.6 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  },
+  {
+    "id": "university_valley",
+    "name": "University Valley",
+    "region": "McMurdo Dry Valleys",
+    "country": "Antarctica",
+    "lat": -77.86,
+    "lon": 160.7,
+    "elevationM": 1680,
+    "isClassicRegion": true,
+    "permitTier": "polar_expedition",
+    "geology": {
+      "maficIndex": 0.34,
+      "silicaWtPct": 62.5,
+      "tiO2WtPct": 0.92,
+      "clayIndex": 0.04,
+      "sulfateIndex": 0.08,
+      "carbonateIndex": 0.02,
+      "waterEquivalentHydrogenWtPct": 3.2,
+      "simulantNearest": "Ice-Cemented Dolerite/Sandstone Permafrost",
+      "macrostratLithology": "Beacon sandstone & Ferrar dolerite permafrost [Macrostrat: gravel, sand, breccia]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 11.2,
+      "p95SlopeDeg": 24.5,
+      "dtmResolutionM": 8.0,
+      "rockCfaK": 0.14,
+      "cohesionKpa": 4.8,
+      "frictionAngleDeg": 37.5,
+      "regolithThicknessM": 0.9,
+      "iceTableDepthM": 0.2,
+      "sarBackscatterSigma0Db": -4.6
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 290,
+      "albedo": 0.35
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 180,
+      "particleDensityKgM3": 2720
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 15.0,
+      "rfQuietnessScore": 0.99,
+      "ndvi": 0.0,
+      "ndwi": -0.45,
+      "ndsi": 0.38,
+      "logisticsFrictionIndex": 0.22
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.22,
+      "constructionFeedstockSuitability": 0.72,
+      "landingPlumeDustHazard": 0.45,
+      "directToEarthVisibilityPct": 76.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.008,
+      "waterActivityAw": 0.45,
+      "surfacePh": 7.2,
+      "biosignaturePreservationIndex": 0.82,
+      "extremophileGuilds": [
+        "psychrophile",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "cryogenic_sublimation_permafrost",
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [],
+    "earthCoBenefits": "Measures Antarctic dry-permafrost stability and polar ice-sublimation climate sensitivity.",
+    "citations": [
+      "DOI: 10.1038/ismej.2015.223 (Goordial et al., 2016, University Valley hyperarid cold permafrost)",
+      "DOI: 10.1029/2012JE004145 (McKay et al., Ice-cemented ground in University Valley)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 253.41,
+        "tStdK": 2.52,
+        "diurnalDeltaK": 5.51,
+        "pPrecipGt5Mm": 0.0097,
+        "pressureKpa": 79.41,
+        "ambientDensityKgM3": 1.0916,
+        "uvAbFluxWm2": 0.52,
+        "clearSkyFraction": 0.321,
+        "grazingSunHoursPerDay": 1.043,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 2,
+        "tMeanK": 246.93,
+        "tStdK": 4.52,
+        "diurnalDeltaK": 5.66,
+        "pPrecipGt5Mm": 0.0106,
+        "pressureKpa": 79.05,
+        "ambientDensityKgM3": 1.1152,
+        "uvAbFluxWm2": 0.29,
+        "clearSkyFraction": 0.366,
+        "grazingSunHoursPerDay": 3.751,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 3,
+        "tMeanK": 238.69,
+        "tStdK": 4.25,
+        "diurnalDeltaK": 5.63,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 78.71,
+        "ambientDensityKgM3": 1.1488,
+        "uvAbFluxWm2": 0.09,
+        "clearSkyFraction": 0.397,
+        "grazingSunHoursPerDay": 2.579,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 4,
+        "tMeanK": 234.18,
+        "tStdK": 5.06,
+        "diurnalDeltaK": 5.5,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 78.5,
+        "ambientDensityKgM3": 1.1678,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.524,
+        "grazingSunHoursPerDay": 2.753,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 5,
+        "tMeanK": 233.82,
+        "tStdK": 5.16,
+        "diurnalDeltaK": 5.94,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 78.42,
+        "ambientDensityKgM3": 1.1684,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.518,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 6,
+        "tMeanK": 232.41,
+        "tStdK": 5.84,
+        "diurnalDeltaK": 6.14,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 78.43,
+        "ambientDensityKgM3": 1.1756,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.448,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 7,
+        "tMeanK": 232.18,
+        "tStdK": 5.48,
+        "diurnalDeltaK": 6.22,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 78.51,
+        "ambientDensityKgM3": 1.178,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.437,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 8,
+        "tMeanK": 232.45,
+        "tStdK": 6.47,
+        "diurnalDeltaK": 6.16,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 78.58,
+        "ambientDensityKgM3": 1.1776,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.4,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 9,
+        "tMeanK": 232.29,
+        "tStdK": 5.5,
+        "diurnalDeltaK": 6.05,
+        "pPrecipGt5Mm": 0.0067,
+        "pressureKpa": 77.96,
+        "ambientDensityKgM3": 1.1691,
+        "uvAbFluxWm2": 0.05,
+        "clearSkyFraction": 0.405,
+        "grazingSunHoursPerDay": 4.349,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 10,
+        "tMeanK": 238.58,
+        "tStdK": 4.5,
+        "diurnalDeltaK": 6.12,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 78.37,
+        "ambientDensityKgM3": 1.1443,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.378,
+        "grazingSunHoursPerDay": 2.649,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 11,
+        "tMeanK": 245.79,
+        "tStdK": 4.36,
+        "diurnalDeltaK": 5.98,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 78.71,
+        "ambientDensityKgM3": 1.1157,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.412,
+        "grazingSunHoursPerDay": 2.367,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      },
+      {
+        "month": 12,
+        "tMeanK": 253.49,
+        "tStdK": 2.52,
+        "diurnalDeltaK": 5.03,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 79.3,
+        "ambientDensityKgM3": 1.0898,
+        "uvAbFluxWm2": 0.6,
+        "clearSkyFraction": 0.334,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 0.0,
+        "gwettop": 1.0
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.553)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Beacon sandstone & Ferrar dolerite permafrost [Macrostrat: gravel, sand, breccia]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1428.4m, medSlope=8.47 deg (lit=11.2 deg)",
+        "resolutionOrPeriod": "8.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Ice-Cemented Dolerite/Sandstone Permafrost, O2 potential=0.22",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "haughton_crater",
+    "name": "Haughton Impact Structure",
+    "region": "Devon Island, Nunavut",
+    "country": "Canada",
+    "lat": 75.38,
+    "lon": -89.68,
+    "elevationM": 230,
+    "isClassicRegion": true,
+    "permitTier": "polar_expedition",
+    "geology": {
+      "maficIndex": 0.26,
+      "silicaWtPct": 48.5,
+      "tiO2WtPct": 0.55,
+      "clayIndex": 0.12,
+      "sulfateIndex": 0.14,
+      "carbonateIndex": 0.46,
+      "waterEquivalentHydrogenWtPct": 3.5,
+      "simulantNearest": "Impact Breccia & Dolostone Regolith",
+      "macrostratLithology": "Miocene polymict impact breccia on dolostone [Macrostrat: sedimentary]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 5.8,
+      "p95SlopeDeg": 15.2,
+      "dtmResolutionM": 20.0,
+      "rockCfaK": 0.16,
+      "cohesionKpa": 3.2,
+      "frictionAngleDeg": 34.5,
+      "regolithThicknessM": 2.4,
+      "iceTableDepthM": 0.55,
+      "sarBackscatterSigma0Db": -8.2
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 305,
+      "albedo": 0.28
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 165,
+      "particleDensityKgM3": 2700
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 15.0,
+      "rfQuietnessScore": 0.98,
+      "ndvi": 0.02,
+      "ndwi": -0.35,
+      "ndsi": 0.32,
+      "logisticsFrictionIndex": 0.25
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.14,
+      "constructionFeedstockSuitability": 0.62,
+      "landingPlumeDustHazard": 0.48,
+      "directToEarthVisibilityPct": 74.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.05,
+      "waterActivityAw": 0.65,
+      "surfacePh": 7.8,
+      "biosignaturePreservationIndex": 0.76,
+      "extremophileGuilds": [
+        "psychrophile",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "cryogenic_sublimation_permafrost"
+    ],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "earthCoBenefits": "Tracks High-Arctic active-layer permafrost thaw and polar ground-penetrating radar calibration.",
+    "citations": [
+      "DOI: 10.1111/j.1945-5100.2005.tb00956.x (Lee & Osinski, 2005, Haughton Mars Project)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 242.48,
+        "tStdK": 4.93,
+        "diurnalDeltaK": 4.23,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 98.85,
+        "ambientDensityKgM3": 1.4201,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.646,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 44.93,
+        "gwettop": 0.889
+      },
+      {
+        "month": 2,
+        "tMeanK": 240.88,
+        "tStdK": 4.47,
+        "diurnalDeltaK": 4.4,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 98.72,
+        "ambientDensityKgM3": 1.4277,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.606,
+        "grazingSunHoursPerDay": 1.968,
+        "snowDepthCm": 47.72,
+        "gwettop": 0.889
+      },
+      {
+        "month": 3,
+        "tMeanK": 244.88,
+        "tStdK": 5.23,
+        "diurnalDeltaK": 6.07,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 99.22,
+        "ambientDensityKgM3": 1.4115,
+        "uvAbFluxWm2": 0.09,
+        "clearSkyFraction": 0.439,
+        "grazingSunHoursPerDay": 3.073,
+        "snowDepthCm": 51.95,
+        "gwettop": 0.889
+      },
+      {
+        "month": 4,
+        "tMeanK": 253.84,
+        "tStdK": 4.97,
+        "diurnalDeltaK": 6.77,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 99.59,
+        "ambientDensityKgM3": 1.3668,
+        "uvAbFluxWm2": 0.29,
+        "clearSkyFraction": 0.444,
+        "grazingSunHoursPerDay": 2.442,
+        "snowDepthCm": 55.32,
+        "gwettop": 0.889
+      },
+      {
+        "month": 5,
+        "tMeanK": 265.07,
+        "tStdK": 4.03,
+        "diurnalDeltaK": 5.27,
+        "pPrecipGt5Mm": 0.0129,
+        "pressureKpa": 99.55,
+        "ambientDensityKgM3": 1.3083,
+        "uvAbFluxWm2": 0.49,
+        "clearSkyFraction": 0.378,
+        "grazingSunHoursPerDay": 2.744,
+        "snowDepthCm": 52.61,
+        "gwettop": 0.89
+      },
+      {
+        "month": 6,
+        "tMeanK": 274.09,
+        "tStdK": 2.91,
+        "diurnalDeltaK": 3.18,
+        "pPrecipGt5Mm": 0.0567,
+        "pressureKpa": 99.21,
+        "ambientDensityKgM3": 1.2609,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.218,
+        "grazingSunHoursPerDay": 0.707,
+        "snowDepthCm": 18.24,
+        "gwettop": 0.94
+      },
+      {
+        "month": 7,
+        "tMeanK": 278.63,
+        "tStdK": 2.83,
+        "diurnalDeltaK": 4.24,
+        "pPrecipGt5Mm": 0.0677,
+        "pressureKpa": 98.87,
+        "ambientDensityKgM3": 1.2361,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.24,
+        "grazingSunHoursPerDay": 1.258,
+        "snowDepthCm": 4.39,
+        "gwettop": 0.906
+      },
+      {
+        "month": 8,
+        "tMeanK": 275.73,
+        "tStdK": 2.38,
+        "diurnalDeltaK": 4.19,
+        "pPrecipGt5Mm": 0.0806,
+        "pressureKpa": 98.8,
+        "ambientDensityKgM3": 1.2483,
+        "uvAbFluxWm2": 0.16,
+        "clearSkyFraction": 0.203,
+        "grazingSunHoursPerDay": 1.524,
+        "snowDepthCm": 8.25,
+        "gwettop": 0.894
+      },
+      {
+        "month": 9,
+        "tMeanK": 269.05,
+        "tStdK": 3.33,
+        "diurnalDeltaK": 3.65,
+        "pPrecipGt5Mm": 0.0833,
+        "pressureKpa": 98.9,
+        "ambientDensityKgM3": 1.2806,
+        "uvAbFluxWm2": 0.06,
+        "clearSkyFraction": 0.182,
+        "grazingSunHoursPerDay": 1.0,
+        "snowDepthCm": 19.01,
+        "gwettop": 0.895
+      },
+      {
+        "month": 10,
+        "tMeanK": 260.18,
+        "tStdK": 6.22,
+        "diurnalDeltaK": 4.11,
+        "pPrecipGt5Mm": 0.0355,
+        "pressureKpa": 98.8,
+        "ambientDensityKgM3": 1.3228,
+        "uvAbFluxWm2": 0.01,
+        "clearSkyFraction": 0.264,
+        "grazingSunHoursPerDay": 1.784,
+        "snowDepthCm": 29.09,
+        "gwettop": 0.895
+      },
+      {
+        "month": 11,
+        "tMeanK": 250.22,
+        "tStdK": 5.69,
+        "diurnalDeltaK": 4.26,
+        "pPrecipGt5Mm": 0.0033,
+        "pressureKpa": 98.87,
+        "ambientDensityKgM3": 1.3766,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.404,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 35.35,
+        "gwettop": 0.895
+      },
+      {
+        "month": 12,
+        "tMeanK": 245.45,
+        "tStdK": 5.9,
+        "diurnalDeltaK": 4.86,
+        "pPrecipGt5Mm": 0.0129,
+        "pressureKpa": 98.94,
+        "ambientDensityKgM3": 1.4043,
+        "uvAbFluxWm2": 0.0,
+        "clearSkyFraction": 0.522,
+        "grazingSunHoursPerDay": 0.0,
+        "snowDepthCm": 41.78,
+        "gwettop": 0.895
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.513)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Miocene polymict impact breccia on dolostone [Macrostrat: sedimentary]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=133.9m, medSlope=3.36 deg (lit=5.8 deg)",
+        "resolutionOrPeriod": "20.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Impact Breccia & Dolostone Regolith, O2 potential=0.14",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "shawmere_anorthosite",
+    "name": "Shawmere Anorthosite Complex",
+    "region": "Kapuskasing, Ontario",
+    "country": "Canada",
+    "lat": 48.18,
+    "lon": -82.65,
+    "elevationM": 345,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.18,
+      "silicaWtPct": 46.2,
+      "tiO2WtPct": 0.36,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 0.8,
+      "simulantNearest": "NU-LHT-2M / LHS-1 Lunar Highland Anorthosite",
+      "macrostratLithology": "Archean calcic plagioclase anorthosite [Macrostrat: tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 6.2,
+      "p95SlopeDeg": 15.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.12,
+      "cohesionKpa": 1.8,
+      "frictionAngleDeg": 36.0,
+      "regolithThicknessM": 1.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -9.4
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 325,
+      "albedo": 0.25
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 90,
+      "particleDensityKgM3": 2760
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 2.0,
+      "rfQuietnessScore": 0.82,
+      "ndvi": 0.58,
+      "ndwi": -0.15,
+      "ndsi": 0.15,
+      "logisticsFrictionIndex": 0.78
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.16,
+      "constructionFeedstockSuitability": 0.94,
+      "landingPlumeDustHazard": 0.44,
+      "directToEarthVisibilityPct": 86.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.45,
+      "waterActivityAw": 0.92,
+      "surfacePh": 6.4,
+      "biosignaturePreservationIndex": 0.3,
+      "extremophileGuilds": []
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "earthCoBenefits": "Supplies low-carbon lunar highland anorthosite simulant feedstock and quarry geotechnical benchmarks.",
+    "citations": [
+      "DOI: 10.1016/j.pss.2013.09.003 (Stoeser et al., 2010; Rickman et al., NU-LHT-2M Shawmere Anorthosite)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 258.7,
+        "tStdK": 7.54,
+        "diurnalDeltaK": 9.91,
+        "pPrecipGt5Mm": 0.0581,
+        "pressureKpa": 96.87,
+        "ambientDensityKgM3": 1.3044,
+        "uvAbFluxWm2": 0.06,
+        "clearSkyFraction": 0.256,
+        "grazingSunHoursPerDay": 0.769,
+        "snowDepthCm": 25.7,
+        "gwettop": 0.601
+      },
+      {
+        "month": 2,
+        "tMeanK": 259.13,
+        "tStdK": 7.06,
+        "diurnalDeltaK": 10.52,
+        "pPrecipGt5Mm": 0.0883,
+        "pressureKpa": 96.82,
+        "ambientDensityKgM3": 1.3016,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.332,
+        "grazingSunHoursPerDay": 0.664,
+        "snowDepthCm": 32.47,
+        "gwettop": 0.604
+      },
+      {
+        "month": 3,
+        "tMeanK": 265.64,
+        "tStdK": 5.83,
+        "diurnalDeltaK": 9.66,
+        "pPrecipGt5Mm": 0.0839,
+        "pressureKpa": 97.03,
+        "ambientDensityKgM3": 1.2724,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.367,
+        "grazingSunHoursPerDay": 0.734,
+        "snowDepthCm": 26.96,
+        "gwettop": 0.623
+      },
+      {
+        "month": 4,
+        "tMeanK": 273.79,
+        "tStdK": 5.3,
+        "diurnalDeltaK": 10.27,
+        "pPrecipGt5Mm": 0.1633,
+        "pressureKpa": 96.86,
+        "ambientDensityKgM3": 1.2324,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.342,
+        "grazingSunHoursPerDay": 0.685,
+        "snowDepthCm": 13.61,
+        "gwettop": 0.649
+      },
+      {
+        "month": 5,
+        "tMeanK": 282.65,
+        "tStdK": 4.92,
+        "diurnalDeltaK": 12.6,
+        "pPrecipGt5Mm": 0.1516,
+        "pressureKpa": 96.98,
+        "ambientDensityKgM3": 1.1953,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.352,
+        "grazingSunHoursPerDay": 0.703,
+        "snowDepthCm": 3.04,
+        "gwettop": 0.634
+      },
+      {
+        "month": 6,
+        "tMeanK": 288.05,
+        "tStdK": 3.65,
+        "diurnalDeltaK": 11.4,
+        "pPrecipGt5Mm": 0.22,
+        "pressureKpa": 96.74,
+        "ambientDensityKgM3": 1.17,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.369,
+        "grazingSunHoursPerDay": 0.737,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.614
+      },
+      {
+        "month": 7,
+        "tMeanK": 290.76,
+        "tStdK": 2.66,
+        "diurnalDeltaK": 10.34,
+        "pPrecipGt5Mm": 0.1742,
+        "pressureKpa": 96.84,
+        "ambientDensityKgM3": 1.1602,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.427,
+        "grazingSunHoursPerDay": 0.854,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.584
+      },
+      {
+        "month": 8,
+        "tMeanK": 289.72,
+        "tStdK": 2.89,
+        "diurnalDeltaK": 10.05,
+        "pPrecipGt5Mm": 0.1871,
+        "pressureKpa": 96.93,
+        "ambientDensityKgM3": 1.1655,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.394,
+        "grazingSunHoursPerDay": 0.789,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.558
+      },
+      {
+        "month": 9,
+        "tMeanK": 286.21,
+        "tStdK": 4.15,
+        "diurnalDeltaK": 10.27,
+        "pPrecipGt5Mm": 0.2267,
+        "pressureKpa": 97.12,
+        "ambientDensityKgM3": 1.1821,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.394,
+        "grazingSunHoursPerDay": 0.787,
+        "snowDepthCm": 0.17,
+        "gwettop": 0.561
+      },
+      {
+        "month": 10,
+        "tMeanK": 278.41,
+        "tStdK": 5.2,
+        "diurnalDeltaK": 8.43,
+        "pPrecipGt5Mm": 0.1839,
+        "pressureKpa": 96.92,
+        "ambientDensityKgM3": 1.2127,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.242,
+        "grazingSunHoursPerDay": 0.606,
+        "snowDepthCm": 7.19,
+        "gwettop": 0.573
+      },
+      {
+        "month": 11,
+        "tMeanK": 270.78,
+        "tStdK": 5.54,
+        "diurnalDeltaK": 7.2,
+        "pPrecipGt5Mm": 0.11,
+        "pressureKpa": 96.84,
+        "ambientDensityKgM3": 1.2458,
+        "uvAbFluxWm2": 0.06,
+        "clearSkyFraction": 0.164,
+        "grazingSunHoursPerDay": 0.41,
+        "snowDepthCm": 15.12,
+        "gwettop": 0.586
+      },
+      {
+        "month": 12,
+        "tMeanK": 263.79,
+        "tStdK": 6.53,
+        "diurnalDeltaK": 7.9,
+        "pPrecipGt5Mm": 0.0774,
+        "pressureKpa": 96.79,
+        "ambientDensityKgM3": 1.2783,
+        "uvAbFluxWm2": 0.05,
+        "clearSkyFraction": 0.194,
+        "grazingSunHoursPerDay": 0.581,
+        "snowDepthCm": 18.77,
+        "gwettop": 0.591
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.144)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Archean calcic plagioclase anorthosite [Macrostrat: tonalite to granodiorite-foliated to gneissic-with minor supracrustal inclusions]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=354.0m, medSlope=1.64 deg (lit=6.2 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=NU-LHT-2M / LHS-1 Lunar Highland Anorthosite, O2 potential=0.16",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "mistastin_crater",
+    "name": "Mistastin Impact Structure",
+    "region": "Labrador",
+    "country": "Canada",
+    "lat": 55.89,
+    "lon": -63.31,
+    "elevationM": 390,
+    "isClassicRegion": true,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.23,
+      "silicaWtPct": 50.5,
+      "tiO2WtPct": 0.48,
+      "clayIndex": 0.04,
+      "sulfateIndex": 0.0,
+      "carbonateIndex": 0.0,
+      "waterEquivalentHydrogenWtPct": 1.0,
+      "simulantNearest": "Anorthositic Impact Melt Breccia",
+      "macrostratLithology": "Proterozoic anorthosite & impact melt sheet [Macrostrat: intrusive igneous rocks]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 9.8,
+      "p95SlopeDeg": 22.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.18,
+      "cohesionKpa": 2.0,
+      "frictionAngleDeg": 36.5,
+      "regolithThicknessM": 1.8,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -8.1
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 330,
+      "albedo": 0.22
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 140,
+      "particleDensityKgM3": 2780
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 15.0,
+      "rfQuietnessScore": 0.98,
+      "ndvi": 0.35,
+      "ndwi": -0.05,
+      "ndsi": 0.25,
+      "logisticsFrictionIndex": 0.38
+    },
+    "voidProfile": {
+      "voidType": "impact_melt_pit",
+      "overburdenThicknessM": 15.0,
+      "voidSpanWidthM": 18.0,
+      "ceilingHeightM": 12.0,
+      "skylightAccessSlopeDeg": 45.0,
+      "subterraneanDeltaTK": 2.8
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.2,
+      "constructionFeedstockSuitability": 0.88,
+      "landingPlumeDustHazard": 0.42,
+      "directToEarthVisibilityPct": 82.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.22,
+      "waterActivityAw": 0.88,
+      "surfacePh": 6.5,
+      "biosignaturePreservationIndex": 0.48,
+      "extremophileGuilds": [
+        "psychrophile"
+      ]
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "impact_shock_ejecta"
+    ],
+    "earthCoBenefits": "Documents sub-arctic impact-melt breccia fracture networks and remote field logistics.",
+    "citations": [
+      "DOI: 10.1016/j.pss.2012.01.007 (Mader et al., 2012, Mistastin Lake Lunar South Pole-Aitken analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 249.21,
+        "tStdK": 7.74,
+        "diurnalDeltaK": 9.56,
+        "pPrecipGt5Mm": 0.0903,
+        "pressureKpa": 95.51,
+        "ambientDensityKgM3": 1.3351,
+        "uvAbFluxWm2": 0.05,
+        "clearSkyFraction": 0.447,
+        "grazingSunHoursPerDay": 1.789,
+        "snowDepthCm": 67.98,
+        "gwettop": 0.781
+      },
+      {
+        "month": 2,
+        "tMeanK": 248.64,
+        "tStdK": 7.37,
+        "diurnalDeltaK": 10.91,
+        "pPrecipGt5Mm": 0.0707,
+        "pressureKpa": 95.52,
+        "ambientDensityKgM3": 1.3383,
+        "uvAbFluxWm2": 0.12,
+        "clearSkyFraction": 0.492,
+        "grazingSunHoursPerDay": 1.476,
+        "snowDepthCm": 80.49,
+        "gwettop": 0.777
+      },
+      {
+        "month": 3,
+        "tMeanK": 257.72,
+        "tStdK": 6.98,
+        "diurnalDeltaK": 10.38,
+        "pPrecipGt5Mm": 0.1065,
+        "pressureKpa": 95.84,
+        "ambientDensityKgM3": 1.2955,
+        "uvAbFluxWm2": 0.23,
+        "clearSkyFraction": 0.363,
+        "grazingSunHoursPerDay": 0.725,
+        "snowDepthCm": 89.51,
+        "gwettop": 0.773
+      },
+      {
+        "month": 4,
+        "tMeanK": 265.27,
+        "tStdK": 5.52,
+        "diurnalDeltaK": 8.93,
+        "pPrecipGt5Mm": 0.1433,
+        "pressureKpa": 96.13,
+        "ambientDensityKgM3": 1.2624,
+        "uvAbFluxWm2": 0.32,
+        "clearSkyFraction": 0.295,
+        "grazingSunHoursPerDay": 0.737,
+        "snowDepthCm": 86.46,
+        "gwettop": 0.787
+      },
+      {
+        "month": 5,
+        "tMeanK": 272.39,
+        "tStdK": 3.76,
+        "diurnalDeltaK": 6.79,
+        "pPrecipGt5Mm": 0.1548,
+        "pressureKpa": 96.2,
+        "ambientDensityKgM3": 1.2304,
+        "uvAbFluxWm2": 0.31,
+        "clearSkyFraction": 0.215,
+        "grazingSunHoursPerDay": 0.644,
+        "snowDepthCm": 36.24,
+        "gwettop": 0.883
+      },
+      {
+        "month": 6,
+        "tMeanK": 280.07,
+        "tStdK": 4.59,
+        "diurnalDeltaK": 8.62,
+        "pPrecipGt5Mm": 0.19,
+        "pressureKpa": 96.04,
+        "ambientDensityKgM3": 1.1945,
+        "uvAbFluxWm2": 0.31,
+        "clearSkyFraction": 0.225,
+        "grazingSunHoursPerDay": 0.676,
+        "snowDepthCm": 6.65,
+        "gwettop": 0.858
+      },
+      {
+        "month": 7,
+        "tMeanK": 284.53,
+        "tStdK": 3.73,
+        "diurnalDeltaK": 8.21,
+        "pPrecipGt5Mm": 0.2387,
+        "pressureKpa": 95.91,
+        "ambientDensityKgM3": 1.1743,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.216,
+        "grazingSunHoursPerDay": 0.649,
+        "snowDepthCm": 0.49,
+        "gwettop": 0.8
+      },
+      {
+        "month": 8,
+        "tMeanK": 283.74,
+        "tStdK": 3.51,
+        "diurnalDeltaK": 8.1,
+        "pPrecipGt5Mm": 0.2194,
+        "pressureKpa": 96.02,
+        "ambientDensityKgM3": 1.1789,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.247,
+        "grazingSunHoursPerDay": 0.618,
+        "snowDepthCm": 0.42,
+        "gwettop": 0.78
+      },
+      {
+        "month": 9,
+        "tMeanK": 278.34,
+        "tStdK": 3.69,
+        "diurnalDeltaK": 7.29,
+        "pPrecipGt5Mm": 0.1833,
+        "pressureKpa": 96.13,
+        "ambientDensityKgM3": 1.2031,
+        "uvAbFluxWm2": 0.16,
+        "clearSkyFraction": 0.218,
+        "grazingSunHoursPerDay": 0.436,
+        "snowDepthCm": 6.31,
+        "gwettop": 0.775
+      },
+      {
+        "month": 10,
+        "tMeanK": 272.0,
+        "tStdK": 4.48,
+        "diurnalDeltaK": 5.84,
+        "pPrecipGt5Mm": 0.129,
+        "pressureKpa": 96.01,
+        "ambientDensityKgM3": 1.2297,
+        "uvAbFluxWm2": 0.09,
+        "clearSkyFraction": 0.204,
+        "grazingSunHoursPerDay": 0.613,
+        "snowDepthCm": 15.15,
+        "gwettop": 0.785
+      },
+      {
+        "month": 11,
+        "tMeanK": 262.76,
+        "tStdK": 5.05,
+        "diurnalDeltaK": 6.79,
+        "pPrecipGt5Mm": 0.13,
+        "pressureKpa": 95.81,
+        "ambientDensityKgM3": 1.2703,
+        "uvAbFluxWm2": 0.04,
+        "clearSkyFraction": 0.226,
+        "grazingSunHoursPerDay": 0.789,
+        "snowDepthCm": 28.6,
+        "gwettop": 0.787
+      },
+      {
+        "month": 12,
+        "tMeanK": 255.7,
+        "tStdK": 7.53,
+        "diurnalDeltaK": 8.14,
+        "pPrecipGt5Mm": 0.1323,
+        "pressureKpa": 95.69,
+        "ambientDensityKgM3": 1.3036,
+        "uvAbFluxWm2": 0.03,
+        "clearSkyFraction": 0.329,
+        "grazingSunHoursPerDay": 1.646,
+        "snowDepthCm": 52.83,
+        "gwettop": 0.783
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.351)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Proterozoic anorthosite & impact melt sheet [Macrostrat: intrusive igneous rocks]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=338.6m, medSlope=0.37 deg (lit=9.8 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "impact_melt_pit span=18.0m, deltaT=2.8K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Anorthositic Impact Melt Breccia, O2 potential=0.2",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "undara_tubes",
+    "name": "Undara Lava Tubes",
+    "region": "Queensland",
+    "country": "Australia",
+    "lat": -18.21,
+    "lon": 144.57,
+    "elevationM": 590,
+    "isClassicRegion": false,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.56,
+      "silicaWtPct": 47.5,
+      "tiO2WtPct": 2.35,
+      "clayIndex": 0.03,
+      "sulfateIndex": 0.01,
+      "carbonateIndex": 0.01,
+      "waterEquivalentHydrogenWtPct": 0.35,
+      "simulantNearest": "Alkali-Basalt Mega Lava Tube",
+      "macrostratLithology": "Quaternary alkali basalt mega-tube system [Macrostrat: Whitewater Creek Granite]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 7.8,
+      "p95SlopeDeg": 24.5,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.17,
+      "cohesionKpa": 1.6,
+      "frictionAngleDeg": 37.0,
+      "regolithThicknessM": 1.1,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.8
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 300,
+      "albedo": 0.12
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 135,
+      "particleDensityKgM3": 2920
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 6.0,
+      "rfQuietnessScore": 0.92,
+      "ndvi": 0.16,
+      "ndwi": -0.22,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.72
+    },
+    "voidProfile": {
+      "voidType": "lava_tube",
+      "overburdenThicknessM": 26.0,
+      "voidSpanWidthM": 38.0,
+      "ceilingHeightM": 22.0,
+      "skylightAccessSlopeDeg": 64.0,
+      "subterraneanDeltaTK": 1.8
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.5,
+      "constructionFeedstockSuitability": 0.88,
+      "landingPlumeDustHazard": 0.36,
+      "directToEarthVisibilityPct": 90.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.1,
+      "waterActivityAw": 0.68,
+      "surfacePh": 7.2,
+      "biosignaturePreservationIndex": 0.64,
+      "extremophileGuilds": [
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [],
+    "relictProcesses": [
+      "lava_tube_inflation",
+      "effusive_basalt_volcanism"
+    ],
+    "earthCoBenefits": "Conserves the world's longest single-flow lava tube network and semi-arid groundwater conduits.",
+    "citations": [
+      "DOI: 10.1016/j.earscirev.2020.103240 (Sauro et al., 2020, Undara vs lunar/Martian mega-lava tubes)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 299.38,
+        "tStdK": 1.59,
+        "diurnalDeltaK": 10.18,
+        "pPrecipGt5Mm": 0.4032,
+        "pressureKpa": 94.73,
+        "ambientDensityKgM3": 1.1023,
+        "uvAbFluxWm2": 0.42,
+        "clearSkyFraction": 0.311,
+        "grazingSunHoursPerDay": 0.467,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.632
+      },
+      {
+        "month": 2,
+        "tMeanK": 298.66,
+        "tStdK": 1.53,
+        "diurnalDeltaK": 9.67,
+        "pPrecipGt5Mm": 0.3145,
+        "pressureKpa": 94.78,
+        "ambientDensityKgM3": 1.1056,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.344,
+        "grazingSunHoursPerDay": 0.516,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.681
+      },
+      {
+        "month": 3,
+        "tMeanK": 297.88,
+        "tStdK": 1.38,
+        "diurnalDeltaK": 9.73,
+        "pPrecipGt5Mm": 0.3194,
+        "pressureKpa": 94.94,
+        "ambientDensityKgM3": 1.1102,
+        "uvAbFluxWm2": 0.39,
+        "clearSkyFraction": 0.405,
+        "grazingSunHoursPerDay": 0.608,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.691
+      },
+      {
+        "month": 4,
+        "tMeanK": 296.53,
+        "tStdK": 1.62,
+        "diurnalDeltaK": 11.61,
+        "pPrecipGt5Mm": 0.14,
+        "pressureKpa": 95.17,
+        "ambientDensityKgM3": 1.1181,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.611,
+        "grazingSunHoursPerDay": 0.916,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.598
+      },
+      {
+        "month": 5,
+        "tMeanK": 294.37,
+        "tStdK": 1.82,
+        "diurnalDeltaK": 12.37,
+        "pPrecipGt5Mm": 0.0323,
+        "pressureKpa": 95.38,
+        "ambientDensityKgM3": 1.1288,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.658,
+        "grazingSunHoursPerDay": 0.987,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.528
+      },
+      {
+        "month": 6,
+        "tMeanK": 293.09,
+        "tStdK": 2.02,
+        "diurnalDeltaK": 13.49,
+        "pPrecipGt5Mm": 0.0233,
+        "pressureKpa": 95.47,
+        "ambientDensityKgM3": 1.1347,
+        "uvAbFluxWm2": 0.25,
+        "clearSkyFraction": 0.667,
+        "grazingSunHoursPerDay": 1.001,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.451
+      },
+      {
+        "month": 7,
+        "tMeanK": 292.6,
+        "tStdK": 2.12,
+        "diurnalDeltaK": 14.49,
+        "pPrecipGt5Mm": 0.0452,
+        "pressureKpa": 95.46,
+        "ambientDensityKgM3": 1.1365,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.746,
+        "grazingSunHoursPerDay": 1.493,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.428
+      },
+      {
+        "month": 8,
+        "tMeanK": 294.16,
+        "tStdK": 1.84,
+        "diurnalDeltaK": 16.05,
+        "pPrecipGt5Mm": 0.0129,
+        "pressureKpa": 95.46,
+        "ambientDensityKgM3": 1.1305,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.791,
+        "grazingSunHoursPerDay": 1.186,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.309
+      },
+      {
+        "month": 9,
+        "tMeanK": 296.83,
+        "tStdK": 2.16,
+        "diurnalDeltaK": 16.57,
+        "pPrecipGt5Mm": 0.01,
+        "pressureKpa": 95.39,
+        "ambientDensityKgM3": 1.1195,
+        "uvAbFluxWm2": 0.39,
+        "clearSkyFraction": 0.755,
+        "grazingSunHoursPerDay": 1.132,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.271
+      },
+      {
+        "month": 10,
+        "tMeanK": 299.82,
+        "tStdK": 2.32,
+        "diurnalDeltaK": 16.46,
+        "pPrecipGt5Mm": 0.029,
+        "pressureKpa": 95.19,
+        "ambientDensityKgM3": 1.1061,
+        "uvAbFluxWm2": 0.44,
+        "clearSkyFraction": 0.684,
+        "grazingSunHoursPerDay": 0.684,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.276
+      },
+      {
+        "month": 11,
+        "tMeanK": 301.51,
+        "tStdK": 1.73,
+        "diurnalDeltaK": 15.46,
+        "pPrecipGt5Mm": 0.0433,
+        "pressureKpa": 95.0,
+        "ambientDensityKgM3": 1.0976,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.554,
+        "grazingSunHoursPerDay": 0.831,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.269
+      },
+      {
+        "month": 12,
+        "tMeanK": 301.07,
+        "tStdK": 2.19,
+        "diurnalDeltaK": 13.27,
+        "pPrecipGt5Mm": 0.2258,
+        "pressureKpa": 94.8,
+        "ambientDensityKgM3": 1.0969,
+        "uvAbFluxWm2": 0.44,
+        "clearSkyFraction": 0.462,
+        "grazingSunHoursPerDay": 0.693,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.433
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.15)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Quaternary alkali basalt mega-tube system [Macrostrat: Whitewater Creek Granite]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=733.0m, medSlope=3.18 deg (lit=7.8 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "lava_tube span=38.0m, deltaT=1.8K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Alkali-Basalt Mega Lava Tube, O2 potential=0.5",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "qadisha_jeita_karst",
+    "name": "Qadisha / Jeita High Karst & Caves",
+    "region": "Mount Lebanon Range",
+    "country": "Lebanon",
+    "lat": 34.1,
+    "lon": 35.84,
+    "elevationM": 1350,
+    "isClassicRegion": false,
+    "permitTier": "regulated_research",
+    "geology": {
+      "maficIndex": 0.1,
+      "silicaWtPct": 12.5,
+      "tiO2WtPct": 0.18,
+      "clayIndex": 0.04,
+      "sulfateIndex": 0.02,
+      "carbonateIndex": 0.78,
+      "waterEquivalentHydrogenWtPct": 0.8,
+      "simulantNearest": "Jurassic Karst Limestone & Subterranean Vault",
+      "macrostratLithology": "Jurassic Kesrouane karstic dolomitic limestone [Macrostrat: Major:{limestone}, Minor{sandstone,chalk}]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 16.5,
+      "p95SlopeDeg": 38.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.25,
+      "cohesionKpa": 2.4,
+      "frictionAngleDeg": 38.0,
+      "regolithThicknessM": 0.5,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -5.5
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 340,
+      "albedo": 0.28
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 160,
+      "particleDensityKgM3": 2710
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 3.0,
+      "rfQuietnessScore": 0.74,
+      "ndvi": 0.12,
+      "ndwi": -0.24,
+      "ndsi": 0.04,
+      "logisticsFrictionIndex": 0.7
+    },
+    "voidProfile": {
+      "voidType": "karst_cave",
+      "overburdenThicknessM": 42.0,
+      "voidSpanWidthM": 48.0,
+      "ceilingHeightM": 28.0,
+      "skylightAccessSlopeDeg": 66.0,
+      "subterraneanDeltaTK": 1.1
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.05,
+      "constructionFeedstockSuitability": 0.6,
+      "landingPlumeDustHazard": 0.3,
+      "directToEarthVisibilityPct": 86.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.12,
+      "waterActivityAw": 0.78,
+      "surfacePh": 7.9,
+      "biosignaturePreservationIndex": 0.74,
+      "extremophileGuilds": [
+        "chemoautotroph",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "pit_collapse_karst"
+    ],
+    "relictProcesses": [
+      "evaporite_brine_precipitation"
+    ],
+    "earthCoBenefits": "Maps Mediterranean karstic aquifer recharge conduits and subterranean collapse-risk stability.",
+    "citations": [
+      "BGR/UNESCO WHYMAP World Karst Aquifer Map (WOKAM) \u2014 Mount Lebanon Jurassic Karst",
+      "DOI: 10.1007/s10040-017-1595-4 (Nader et al., Lebanon Jurassic karst cave systems)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 284.62,
+        "tStdK": 2.5,
+        "diurnalDeltaK": 5.12,
+        "pPrecipGt5Mm": 0.2677,
+        "pressureKpa": 96.47,
+        "ambientDensityKgM3": 1.1808,
+        "uvAbFluxWm2": 0.14,
+        "clearSkyFraction": 0.33,
+        "grazingSunHoursPerDay": 0.495,
+        "snowDepthCm": 5.98,
+        "gwettop": 0.768
+      },
+      {
+        "month": 2,
+        "tMeanK": 285.25,
+        "tStdK": 2.69,
+        "diurnalDeltaK": 5.76,
+        "pPrecipGt5Mm": 0.1908,
+        "pressureKpa": 96.45,
+        "ambientDensityKgM3": 1.1779,
+        "uvAbFluxWm2": 0.2,
+        "clearSkyFraction": 0.399,
+        "grazingSunHoursPerDay": 0.599,
+        "snowDepthCm": 3.67,
+        "gwettop": 0.812
+      },
+      {
+        "month": 3,
+        "tMeanK": 286.97,
+        "tStdK": 2.98,
+        "diurnalDeltaK": 6.43,
+        "pPrecipGt5Mm": 0.1194,
+        "pressureKpa": 96.2,
+        "ambientDensityKgM3": 1.1677,
+        "uvAbFluxWm2": 0.28,
+        "clearSkyFraction": 0.379,
+        "grazingSunHoursPerDay": 0.569,
+        "snowDepthCm": 1.38,
+        "gwettop": 0.773
+      },
+      {
+        "month": 4,
+        "tMeanK": 290.74,
+        "tStdK": 3.6,
+        "diurnalDeltaK": 7.56,
+        "pPrecipGt5Mm": 0.0633,
+        "pressureKpa": 96.12,
+        "ambientDensityKgM3": 1.1517,
+        "uvAbFluxWm2": 0.36,
+        "clearSkyFraction": 0.473,
+        "grazingSunHoursPerDay": 0.71,
+        "snowDepthCm": 0.1,
+        "gwettop": 0.688
+      },
+      {
+        "month": 5,
+        "tMeanK": 294.41,
+        "tStdK": 3.29,
+        "diurnalDeltaK": 7.71,
+        "pPrecipGt5Mm": 0.0161,
+        "pressureKpa": 96.04,
+        "ambientDensityKgM3": 1.1364,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.595,
+        "grazingSunHoursPerDay": 0.893,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.549
+      },
+      {
+        "month": 6,
+        "tMeanK": 297.44,
+        "tStdK": 2.56,
+        "diurnalDeltaK": 7.64,
+        "pPrecipGt5Mm": 0.0067,
+        "pressureKpa": 95.85,
+        "ambientDensityKgM3": 1.1226,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.761,
+        "grazingSunHoursPerDay": 1.522,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.294
+      },
+      {
+        "month": 7,
+        "tMeanK": 299.86,
+        "tStdK": 1.69,
+        "diurnalDeltaK": 7.44,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 95.58,
+        "ambientDensityKgM3": 1.1104,
+        "uvAbFluxWm2": 0.47,
+        "clearSkyFraction": 0.806,
+        "grazingSunHoursPerDay": 1.612,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.166
+      },
+      {
+        "month": 8,
+        "tMeanK": 299.83,
+        "tStdK": 1.54,
+        "diurnalDeltaK": 7.22,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 95.7,
+        "ambientDensityKgM3": 1.1118,
+        "uvAbFluxWm2": 0.42,
+        "clearSkyFraction": 0.773,
+        "grazingSunHoursPerDay": 1.159,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.137
+      },
+      {
+        "month": 9,
+        "tMeanK": 298.61,
+        "tStdK": 1.97,
+        "diurnalDeltaK": 7.14,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 95.99,
+        "ambientDensityKgM3": 1.1199,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.72,
+        "grazingSunHoursPerDay": 1.079,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.158
+      },
+      {
+        "month": 10,
+        "tMeanK": 295.65,
+        "tStdK": 2.09,
+        "diurnalDeltaK": 6.68,
+        "pPrecipGt5Mm": 0.0323,
+        "pressureKpa": 96.28,
+        "ambientDensityKgM3": 1.1344,
+        "uvAbFluxWm2": 0.25,
+        "clearSkyFraction": 0.554,
+        "grazingSunHoursPerDay": 1.108,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.282
+      },
+      {
+        "month": 11,
+        "tMeanK": 291.23,
+        "tStdK": 2.37,
+        "diurnalDeltaK": 6.08,
+        "pPrecipGt5Mm": 0.0967,
+        "pressureKpa": 96.43,
+        "ambientDensityKgM3": 1.1535,
+        "uvAbFluxWm2": 0.17,
+        "clearSkyFraction": 0.433,
+        "grazingSunHoursPerDay": 0.865,
+        "snowDepthCm": 0.11,
+        "gwettop": 0.507
+      },
+      {
+        "month": 12,
+        "tMeanK": 287.12,
+        "tStdK": 2.23,
+        "diurnalDeltaK": 5.42,
+        "pPrecipGt5Mm": 0.1903,
+        "pressureKpa": 96.55,
+        "ambientDensityKgM3": 1.1715,
+        "uvAbFluxWm2": 0.13,
+        "clearSkyFraction": 0.389,
+        "grazingSunHoursPerDay": 0.777,
+        "snowDepthCm": 1.49,
+        "gwettop": 0.638
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.08)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Jurassic Kesrouane karstic dolomitic limestone [Macrostrat: Major:{limestone}, Minor{sandstone,chalk}]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1252.0m, medSlope=19.67 deg (lit=16.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "void",
+        "source": "ASU Ronald Greeley Lava Tube DB / WHYMAP WOKAM",
+        "detail": "karst_cave span=48.0m, deltaT=1.1K",
+        "resolutionOrPeriod": "Subterranean survey"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Jurassic Karst Limestone & Subterranean Vault, O2 potential=0.05",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "pilbara_gorge",
+    "name": "Pilbara Gorge (Marble Bar)",
+    "region": "Western Australia",
+    "country": "Australia",
+    "lat": -21.17,
+    "lon": 119.74,
+    "elevationM": 210,
+    "isClassicRegion": true,
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.52,
+      "silicaWtPct": 49.5,
+      "tiO2WtPct": 1.1,
+      "clayIndex": 0.12,
+      "sulfateIndex": 0.1,
+      "carbonateIndex": 0.22,
+      "waterEquivalentHydrogenWtPct": 1.1,
+      "simulantNearest": "Archean Mafic-Chert Stromatolite",
+      "macrostratLithology": "Archean komatiitic basalt & BIF chert [Macrostrat: Coongan Subgroup]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 9.5,
+      "p95SlopeDeg": 24.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.22,
+      "cohesionKpa": 2.4,
+      "frictionAngleDeg": 35.0,
+      "regolithThicknessM": 0.8,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -7.5
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 370,
+      "albedo": 0.17
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 150,
+      "particleDensityKgM3": 2850
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 5.0,
+      "rfQuietnessScore": 0.9,
+      "ndvi": 0.08,
+      "ndwi": -0.28,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.86
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.28,
+      "constructionFeedstockSuitability": 0.78,
+      "landingPlumeDustHazard": 0.45,
+      "directToEarthVisibilityPct": 94.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.06,
+      "waterActivityAw": 0.58,
+      "surfacePh": 7.5,
+      "biosignaturePreservationIndex": 0.91,
+      "extremophileGuilds": [
+        "chemoautotroph",
+        "cryptoendolith",
+        "thermophile"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [
+      "acid_hydrothermal_alteration",
+      "fluvial_deltaic_sedimentation"
+    ],
+    "earthCoBenefits": "Preserves Earth's earliest 3.5 Ga stromatolite biosignatures and arid Outback thermal stress data.",
+    "citations": [
+      "DOI: 10.1089/ast.2007.0155 (Allwood et al., 2006/2009, Pilbara Dresser Fm Mars biosignature analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 306.36,
+        "tStdK": 2.7,
+        "diurnalDeltaK": 13.67,
+        "pPrecipGt5Mm": 0.1419,
+        "pressureKpa": 98.24,
+        "ambientDensityKgM3": 1.1171,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.41,
+        "grazingSunHoursPerDay": 0.616,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.267
+      },
+      {
+        "month": 2,
+        "tMeanK": 305.77,
+        "tStdK": 2.92,
+        "diurnalDeltaK": 13.86,
+        "pPrecipGt5Mm": 0.106,
+        "pressureKpa": 98.41,
+        "ambientDensityKgM3": 1.1211,
+        "uvAbFluxWm2": 0.47,
+        "clearSkyFraction": 0.51,
+        "grazingSunHoursPerDay": 0.765,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.32
+      },
+      {
+        "month": 3,
+        "tMeanK": 304.84,
+        "tStdK": 2.53,
+        "diurnalDeltaK": 13.41,
+        "pPrecipGt5Mm": 0.0968,
+        "pressureKpa": 98.62,
+        "ambientDensityKgM3": 1.127,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.495,
+        "grazingSunHoursPerDay": 0.742,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.322
+      },
+      {
+        "month": 4,
+        "tMeanK": 301.85,
+        "tStdK": 3.03,
+        "diurnalDeltaK": 14.32,
+        "pPrecipGt5Mm": 0.02,
+        "pressureKpa": 98.97,
+        "ambientDensityKgM3": 1.1422,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.587,
+        "grazingSunHoursPerDay": 0.88,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.27
+      },
+      {
+        "month": 5,
+        "tMeanK": 296.79,
+        "tStdK": 2.59,
+        "diurnalDeltaK": 14.55,
+        "pPrecipGt5Mm": 0.0387,
+        "pressureKpa": 99.28,
+        "ambientDensityKgM3": 1.1653,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.721,
+        "grazingSunHoursPerDay": 1.081,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.241
+      },
+      {
+        "month": 6,
+        "tMeanK": 293.33,
+        "tStdK": 2.51,
+        "diurnalDeltaK": 14.65,
+        "pPrecipGt5Mm": 0.0267,
+        "pressureKpa": 99.4,
+        "ambientDensityKgM3": 1.1805,
+        "uvAbFluxWm2": 0.24,
+        "clearSkyFraction": 0.709,
+        "grazingSunHoursPerDay": 1.064,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.269
+      },
+      {
+        "month": 7,
+        "tMeanK": 293.17,
+        "tStdK": 2.42,
+        "diurnalDeltaK": 15.84,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 99.42,
+        "ambientDensityKgM3": 1.1814,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.844,
+        "grazingSunHoursPerDay": 1.267,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.222
+      },
+      {
+        "month": 8,
+        "tMeanK": 295.41,
+        "tStdK": 2.92,
+        "diurnalDeltaK": 16.93,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 99.32,
+        "ambientDensityKgM3": 1.1712,
+        "uvAbFluxWm2": 0.33,
+        "clearSkyFraction": 0.897,
+        "grazingSunHoursPerDay": 1.345,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.169
+      },
+      {
+        "month": 9,
+        "tMeanK": 299.45,
+        "tStdK": 2.54,
+        "diurnalDeltaK": 17.63,
+        "pPrecipGt5Mm": 0.0133,
+        "pressureKpa": 99.11,
+        "ambientDensityKgM3": 1.153,
+        "uvAbFluxWm2": 0.4,
+        "clearSkyFraction": 0.864,
+        "grazingSunHoursPerDay": 1.295,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.132
+      },
+      {
+        "month": 10,
+        "tMeanK": 303.85,
+        "tStdK": 2.92,
+        "diurnalDeltaK": 17.83,
+        "pPrecipGt5Mm": 0.0032,
+        "pressureKpa": 98.82,
+        "ambientDensityKgM3": 1.1329,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.8,
+        "grazingSunHoursPerDay": 0.8,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.097
+      },
+      {
+        "month": 11,
+        "tMeanK": 305.89,
+        "tStdK": 2.63,
+        "diurnalDeltaK": 17.04,
+        "pPrecipGt5Mm": 0.0133,
+        "pressureKpa": 98.57,
+        "ambientDensityKgM3": 1.1226,
+        "uvAbFluxWm2": 0.49,
+        "clearSkyFraction": 0.698,
+        "grazingSunHoursPerDay": 1.047,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.106
+      },
+      {
+        "month": 12,
+        "tMeanK": 307.52,
+        "tStdK": 2.43,
+        "diurnalDeltaK": 16.02,
+        "pPrecipGt5Mm": 0.0323,
+        "pressureKpa": 98.33,
+        "ambientDensityKgM3": 1.1139,
+        "uvAbFluxWm2": 0.51,
+        "clearSkyFraction": 0.599,
+        "grazingSunHoursPerDay": 0.899,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.147
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.173)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Archean komatiitic basalt & BIF chert [Macrostrat: Coongan Subgroup]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=184.0m, medSlope=2.43 deg (lit=9.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      },
+      {
+        "domain": "isru",
+        "source": "NASA Simulant / Oxide ISRU Registry",
+        "detail": "Simulant=Archean Mafic-Chert Stromatolite, O2 potential=0.28",
+        "resolutionOrPeriod": "Laboratory characterization"
+      }
+    ]
+  },
+  {
+    "id": "white_sands",
+    "name": "White Sands Gypsum Dune Field",
+    "region": "Tularosa Basin, NM",
+    "country": "USA",
+    "lat": 32.78,
+    "lon": -106.33,
+    "elevationM": 1200,
+    "isClassicRegion": true,
+    "permitTier": "protected_park",
+    "geology": {
+      "maficIndex": 0.05,
+      "silicaWtPct": 6.5,
+      "tiO2WtPct": 0.05,
+      "clayIndex": 0.06,
+      "sulfateIndex": 0.94,
+      "carbonateIndex": 0.08,
+      "waterEquivalentHydrogenWtPct": 5.2,
+      "simulantNearest": "Pure Gypsum (CaSO4-2H2O) Dunes",
+      "macrostratLithology": "Holocene eolian gypsum dune sheet [Macrostrat: Gypsiferous eolian deposits]"
+    },
+    "morphology": {
+      "medianSlopeDeg": 4.5,
+      "p95SlopeDeg": 16.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.01,
+      "cohesionKpa": 1.1,
+      "frictionAngleDeg": 32.0,
+      "regolithThicknessM": 8.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -13.2
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 220,
+      "albedo": 0.58
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 260,
+      "particleDensityKgM3": 2320
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 1.5,
+      "rfQuietnessScore": 0.8,
+      "ndvi": 0.01,
+      "ndwi": -0.35,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.55
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.02,
+      "constructionFeedstockSuitability": 0.25,
+      "landingPlumeDustHazard": 0.65,
+      "directToEarthVisibilityPct": 95.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.02,
+      "waterActivityAw": 0.6,
+      "surfacePh": 7.9,
+      "biosignaturePreservationIndex": 0.83,
+      "extremophileGuilds": [
+        "halophile",
+        "cryptoendolith"
+      ]
+    },
+    "activeProcesses": [
+      "aeolian_saltation",
+      "evaporite_brine_precipitation"
+    ],
+    "relictProcesses": [],
+    "earthCoBenefits": "Tracks Chihuahuan sulfate dune migration and gypsum water-retention dynamics.",
+    "citations": [
+      "DOI: 10.1029/2010JE003681 (Szynkiewicz et al., 2010, White Sands Mars Olympia Undae gypsum analog)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 278.1,
+        "tStdK": 2.8,
+        "diurnalDeltaK": 12.83,
+        "pPrecipGt5Mm": 0.0258,
+        "pressureKpa": 85.64,
+        "ambientDensityKgM3": 1.0728,
+        "uvAbFluxWm2": 0.2,
+        "clearSkyFraction": 0.608,
+        "grazingSunHoursPerDay": 1.216,
+        "snowDepthCm": 7.74,
+        "gwettop": 0.306
+      },
+      {
+        "month": 2,
+        "tMeanK": 280.82,
+        "tStdK": 3.93,
+        "diurnalDeltaK": 14.23,
+        "pPrecipGt5Mm": 0.0283,
+        "pressureKpa": 85.5,
+        "ambientDensityKgM3": 1.0606,
+        "uvAbFluxWm2": 0.26,
+        "clearSkyFraction": 0.618,
+        "grazingSunHoursPerDay": 0.927,
+        "snowDepthCm": 4.97,
+        "gwettop": 0.297
+      },
+      {
+        "month": 3,
+        "tMeanK": 284.97,
+        "tStdK": 3.43,
+        "diurnalDeltaK": 14.95,
+        "pPrecipGt5Mm": 0.0258,
+        "pressureKpa": 85.44,
+        "ambientDensityKgM3": 1.0445,
+        "uvAbFluxWm2": 0.34,
+        "clearSkyFraction": 0.579,
+        "grazingSunHoursPerDay": 0.868,
+        "snowDepthCm": 1.91,
+        "gwettop": 0.272
+      },
+      {
+        "month": 4,
+        "tMeanK": 289.42,
+        "tStdK": 3.23,
+        "diurnalDeltaK": 16.28,
+        "pPrecipGt5Mm": 0.02,
+        "pressureKpa": 85.3,
+        "ambientDensityKgM3": 1.0268,
+        "uvAbFluxWm2": 0.43,
+        "clearSkyFraction": 0.685,
+        "grazingSunHoursPerDay": 1.027,
+        "snowDepthCm": 0.2,
+        "gwettop": 0.23
+      },
+      {
+        "month": 5,
+        "tMeanK": 294.46,
+        "tStdK": 3.02,
+        "diurnalDeltaK": 16.4,
+        "pPrecipGt5Mm": 0.0161,
+        "pressureKpa": 85.29,
+        "ambientDensityKgM3": 1.009,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.741,
+        "grazingSunHoursPerDay": 1.111,
+        "snowDepthCm": 0.03,
+        "gwettop": 0.201
+      },
+      {
+        "month": 6,
+        "tMeanK": 300.23,
+        "tStdK": 2.71,
+        "diurnalDeltaK": 15.47,
+        "pPrecipGt5Mm": 0.0333,
+        "pressureKpa": 85.46,
+        "ambientDensityKgM3": 0.9916,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.629,
+        "grazingSunHoursPerDay": 1.257,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.201
+      },
+      {
+        "month": 7,
+        "tMeanK": 301.55,
+        "tStdK": 2.29,
+        "diurnalDeltaK": 13.56,
+        "pPrecipGt5Mm": 0.0742,
+        "pressureKpa": 85.69,
+        "ambientDensityKgM3": 0.99,
+        "uvAbFluxWm2": 0.47,
+        "clearSkyFraction": 0.515,
+        "grazingSunHoursPerDay": 0.773,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.238
+      },
+      {
+        "month": 8,
+        "tMeanK": 300.28,
+        "tStdK": 2.36,
+        "diurnalDeltaK": 12.98,
+        "pPrecipGt5Mm": 0.0903,
+        "pressureKpa": 85.7,
+        "ambientDensityKgM3": 0.9942,
+        "uvAbFluxWm2": 0.42,
+        "clearSkyFraction": 0.515,
+        "grazingSunHoursPerDay": 0.773,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.265
+      },
+      {
+        "month": 9,
+        "tMeanK": 296.95,
+        "tStdK": 2.54,
+        "diurnalDeltaK": 14.0,
+        "pPrecipGt5Mm": 0.0367,
+        "pressureKpa": 85.67,
+        "ambientDensityKgM3": 1.005,
+        "uvAbFluxWm2": 0.36,
+        "clearSkyFraction": 0.654,
+        "grazingSunHoursPerDay": 0.98,
+        "snowDepthCm": 0.01,
+        "gwettop": 0.255
+      },
+      {
+        "month": 10,
+        "tMeanK": 290.59,
+        "tStdK": 4.12,
+        "diurnalDeltaK": 14.26,
+        "pPrecipGt5Mm": 0.0548,
+        "pressureKpa": 85.64,
+        "ambientDensityKgM3": 1.0267,
+        "uvAbFluxWm2": 0.29,
+        "clearSkyFraction": 0.705,
+        "grazingSunHoursPerDay": 1.057,
+        "snowDepthCm": 0.34,
+        "gwettop": 0.264
+      },
+      {
+        "month": 11,
+        "tMeanK": 283.6,
+        "tStdK": 3.81,
+        "diurnalDeltaK": 13.57,
+        "pPrecipGt5Mm": 0.04,
+        "pressureKpa": 85.67,
+        "ambientDensityKgM3": 1.0523,
+        "uvAbFluxWm2": 0.22,
+        "clearSkyFraction": 0.651,
+        "grazingSunHoursPerDay": 0.976,
+        "snowDepthCm": 1.67,
+        "gwettop": 0.278
+      },
+      {
+        "month": 12,
+        "tMeanK": 279.38,
+        "tStdK": 3.4,
+        "diurnalDeltaK": 12.83,
+        "pPrecipGt5Mm": 0.0194,
+        "pressureKpa": 85.62,
+        "ambientDensityKgM3": 1.0676,
+        "uvAbFluxWm2": 0.18,
+        "clearSkyFraction": 0.595,
+        "grazingSunHoursPerDay": 1.189,
+        "snowDepthCm": 3.09,
+        "gwettop": 0.286
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.225)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Holocene eolian gypsum dune sheet [Macrostrat: Gypsiferous eolian deposits]",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=1203.0m, medSlope=0.5 deg (lit=4.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  },
+  {
+    "id": "erg_chebbi",
+    "name": "Erg Chebbi (Visual Anti-Analog)",
+    "region": "Tafilalt",
+    "country": "Morocco",
+    "lat": 31.15,
+    "lon": -3.97,
+    "elevationM": 720,
+    "isClassicRegion": true,
+    "isAntiAnalog": true,
+    "antiAnalogNote": "Visual false-friend: iron-oxide coated pure quartz dunes (SiO2 ~93 wt%) mislead color imagery while lacking Martian mafic mineralogy, steep basalt talus, and hydrated salts.",
+    "permitTier": "open_public",
+    "geology": {
+      "maficIndex": 0.04,
+      "silicaWtPct": 93.2,
+      "tiO2WtPct": 0.12,
+      "clayIndex": 0.02,
+      "sulfateIndex": 0.01,
+      "carbonateIndex": 0.03,
+      "waterEquivalentHydrogenWtPct": 0.1,
+      "simulantNearest": "Quartz Dune Sand (Non-Basaltic)",
+      "macrostratLithology": "Fe-stained aeolian quartz erg"
+    },
+    "morphology": {
+      "medianSlopeDeg": 6.5,
+      "p95SlopeDeg": 18.0,
+      "dtmResolutionM": 38.0,
+      "rockCfaK": 0.01,
+      "cohesionKpa": 0.4,
+      "frictionAngleDeg": 31.5,
+      "regolithThicknessM": 40.0,
+      "iceTableDepthM": null,
+      "sarBackscatterSigma0Db": -16.8
+    },
+    "thermalStatic": {
+      "apparentThermalInertia": 165,
+      "albedo": 0.31
+    },
+    "aeolianStatic": {
+      "medianGrainDiameterUm": 240,
+      "particleDensityKgM3": 2650
+    },
+    "operationsStatic": {
+      "roadDistanceKm": 1.0,
+      "rfQuietnessScore": 0.65,
+      "ndvi": 0.01,
+      "ndwi": -0.35,
+      "ndsi": 0.0,
+      "logisticsFrictionIndex": 0.84
+    },
+    "voidProfile": {
+      "voidType": "none",
+      "overburdenThicknessM": null,
+      "voidSpanWidthM": null,
+      "ceilingHeightM": null,
+      "skylightAccessSlopeDeg": null,
+      "subterraneanDeltaTK": null
+    },
+    "isruProfile": {
+      "ilmeniteO2YieldPotential": 0.03,
+      "constructionFeedstockSuitability": 0.2,
+      "landingPlumeDustHazard": 0.62,
+      "directToEarthVisibilityPct": 94.0
+    },
+    "astrobiology": {
+      "tocWtPct": 0.008,
+      "waterActivityAw": 0.35,
+      "surfacePh": 7.6,
+      "biosignaturePreservationIndex": 0.22,
+      "extremophileGuilds": []
+    },
+    "activeProcesses": [
+      "aeolian_saltation"
+    ],
+    "relictProcesses": [],
+    "earthCoBenefits": "Demonstrates why true planetary analog selection must verify orbital spectroscopy over RGB desert color.",
+    "citations": [
+      "DOI: 10.1016/j.icarus.2013.09.020 (Farr et al., 2013; Planetary analog mineralogical pitfalls of quartz ergs)"
+    ],
+    "provenanceTier": "tier1_literature_plus_nasa",
+    "monthly": [
+      {
+        "month": 1,
+        "tMeanK": 282.67,
+        "tStdK": 2.59,
+        "diurnalDeltaK": 14.16,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 92.73,
+        "ambientDensityKgM3": 1.1428,
+        "uvAbFluxWm2": 0.21,
+        "clearSkyFraction": 0.785,
+        "grazingSunHoursPerDay": 1.57,
+        "snowDepthCm": 0.41,
+        "gwettop": 0.223
+      },
+      {
+        "month": 2,
+        "tMeanK": 284.99,
+        "tStdK": 2.88,
+        "diurnalDeltaK": 14.71,
+        "pPrecipGt5Mm": 0.0177,
+        "pressureKpa": 92.52,
+        "ambientDensityKgM3": 1.131,
+        "uvAbFluxWm2": 0.27,
+        "clearSkyFraction": 0.765,
+        "grazingSunHoursPerDay": 1.148,
+        "snowDepthCm": 0.08,
+        "gwettop": 0.239
+      },
+      {
+        "month": 3,
+        "tMeanK": 288.87,
+        "tStdK": 2.85,
+        "diurnalDeltaK": 15.81,
+        "pPrecipGt5Mm": 0.0097,
+        "pressureKpa": 92.15,
+        "ambientDensityKgM3": 1.1112,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.741,
+        "grazingSunHoursPerDay": 1.112,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.227
+      },
+      {
+        "month": 4,
+        "tMeanK": 293.81,
+        "tStdK": 3.06,
+        "diurnalDeltaK": 16.38,
+        "pPrecipGt5Mm": 0.0167,
+        "pressureKpa": 91.88,
+        "ambientDensityKgM3": 1.0894,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.704,
+        "grazingSunHoursPerDay": 1.057,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.185
+      },
+      {
+        "month": 5,
+        "tMeanK": 298.73,
+        "tStdK": 3.2,
+        "diurnalDeltaK": 16.44,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 91.95,
+        "ambientDensityKgM3": 1.0722,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.7,
+        "grazingSunHoursPerDay": 1.4,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.133
+      },
+      {
+        "month": 6,
+        "tMeanK": 303.39,
+        "tStdK": 2.32,
+        "diurnalDeltaK": 16.64,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 91.94,
+        "ambientDensityKgM3": 1.0557,
+        "uvAbFluxWm2": 0.48,
+        "clearSkyFraction": 0.73,
+        "grazingSunHoursPerDay": 1.46,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.095
+      },
+      {
+        "month": 7,
+        "tMeanK": 307.7,
+        "tStdK": 1.53,
+        "diurnalDeltaK": 16.11,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 92.08,
+        "ambientDensityKgM3": 1.0425,
+        "uvAbFluxWm2": 0.46,
+        "clearSkyFraction": 0.666,
+        "grazingSunHoursPerDay": 0.999,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.064
+      },
+      {
+        "month": 8,
+        "tMeanK": 306.82,
+        "tStdK": 1.62,
+        "diurnalDeltaK": 15.11,
+        "pPrecipGt5Mm": 0.0,
+        "pressureKpa": 92.08,
+        "ambientDensityKgM3": 1.0454,
+        "uvAbFluxWm2": 0.41,
+        "clearSkyFraction": 0.602,
+        "grazingSunHoursPerDay": 0.902,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.071
+      },
+      {
+        "month": 9,
+        "tMeanK": 301.64,
+        "tStdK": 3.06,
+        "diurnalDeltaK": 14.04,
+        "pPrecipGt5Mm": 0.0233,
+        "pressureKpa": 92.17,
+        "ambientDensityKgM3": 1.0645,
+        "uvAbFluxWm2": 0.35,
+        "clearSkyFraction": 0.622,
+        "grazingSunHoursPerDay": 0.933,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.149
+      },
+      {
+        "month": 10,
+        "tMeanK": 295.25,
+        "tStdK": 2.88,
+        "diurnalDeltaK": 13.79,
+        "pPrecipGt5Mm": 0.0129,
+        "pressureKpa": 92.32,
+        "ambientDensityKgM3": 1.0893,
+        "uvAbFluxWm2": 0.3,
+        "clearSkyFraction": 0.733,
+        "grazingSunHoursPerDay": 1.099,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.201
+      },
+      {
+        "month": 11,
+        "tMeanK": 288.45,
+        "tStdK": 3.1,
+        "diurnalDeltaK": 13.58,
+        "pPrecipGt5Mm": 0.0067,
+        "pressureKpa": 92.44,
+        "ambientDensityKgM3": 1.1164,
+        "uvAbFluxWm2": 0.23,
+        "clearSkyFraction": 0.759,
+        "grazingSunHoursPerDay": 1.138,
+        "snowDepthCm": 0.0,
+        "gwettop": 0.204
+      },
+      {
+        "month": 12,
+        "tMeanK": 284.13,
+        "tStdK": 2.78,
+        "diurnalDeltaK": 13.37,
+        "pPrecipGt5Mm": 0.0065,
+        "pressureKpa": 92.78,
+        "ambientDensityKgM3": 1.1376,
+        "uvAbFluxWm2": 0.2,
+        "clearSkyFraction": 0.775,
+        "grazingSunHoursPerDay": 1.163,
+        "snowDepthCm": 0.36,
+        "gwettop": 0.209
+      }
+    ],
+    "dataLineage": [
+      {
+        "domain": "thermal",
+        "source": "NASA POWER Daily API (2015-2024)",
+        "detail": "10-yr daily T2M/T2M_MIN/T2M_MAX/UVA/UVB/ALB (ALB=0.291)",
+        "resolutionOrPeriod": "0.5 deg x 0.625 deg / 2015-2024"
+      },
+      {
+        "domain": "atmospheric",
+        "source": "NASA POWER PS + Shao-Lu (2000)",
+        "detail": "Surface pressure kPa -> ambient density & analytical cohesive saltation threshold u*t",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "operations",
+        "source": "NASA POWER PRECTOTCORR / CLOUD_AMT / SNODP + Ephemeris",
+        "detail": "12-mo storm exceedance (>5 mm), clear-sky fraction & 96-step grazing-sun hours",
+        "resolutionOrPeriod": "2015-2024 daily climatology"
+      },
+      {
+        "domain": "geochemistry",
+        "source": "Literature XRF/Spectral + Macrostrat v2",
+        "detail": "Fe-stained aeolian quartz erg",
+        "resolutionOrPeriod": "Site outcrop scale"
+      },
+      {
+        "domain": "morphology",
+        "source": "AWS Mapzen Terrarium z=12 + Field DTM/SAR",
+        "detail": "Terrarium z=12 patch elev=747.0m, medSlope=6.58 deg (lit=6.5 deg)",
+        "resolutionOrPeriod": "38.0 m"
+      }
+    ]
+  }
+]

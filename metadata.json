@@ -1,0 +1,8 @@
+{
+  "name": "WeywotEngine",
+  "description": "Planetary analog discovery and mission-qualification engine for Mars and Permanent Moon Base exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
